@@ -4,7 +4,7 @@ title: Blog
 ---
 
 <div id="home">
-  <h2><i class="fa fa-bookmark"></i> Blog Posts</h2>
+  <h2><i class="fa fa-bookmark"></i>Posts</h2>
   <ul id="blog-posts" class="posts">
     {% for post in site.posts %}
 	  {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
@@ -13,6 +13,6 @@ title: Blog
       {{ post.excerpt }}
       {% endif %}
     {% endfor %}
-    <div style="text-align: center"><li><a href="archive.html">Older?</a></li></div>
+    <div style="text-align: center"><li><a href="archive.html">Plus ?</a></li></div>
   </ul>
 </div>
