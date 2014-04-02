@@ -1,0 +1,44 @@
+# General Jekyll Config
+pygments: true
+url: cedced19.github.io
+lsi: false
+exclude: [ README.md, .gitignore]
+
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#e6801a'
+
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: cedced19
+    #bitbucket: james12802
+    #hacker_news: swanson
+    #stackexchange: 2268955
+    #stackoverflow: 1996889
+    twitter: cedced19
+    #facebook: zuck
+    #tumblr: animalygifs
+    #linkedin: philipjagielski
+    #gplus: 110552447039675960964
+    email: cedced19@gmail.com
+
+  # "Hey, I'm _______"
+  name: Cedced19
+  email: cedced19@gmail.com
+  tagline: "What does God need with a starship?"
+
+  # Google Analytics key, leave blank to ignore
+  #google_analytics_key: UA-49008165-1
+
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: false
+
+  # Comments by Disqus
+  comments :
+  provider : disqus
+  disqus :
+    short_name : cedced19
+
+  #Timezone
+  timezone: Europe/United_Kingdom
