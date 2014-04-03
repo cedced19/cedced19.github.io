@@ -14,14 +14,27 @@
   {% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}" />
 
+  <script src="/script/script.js"></script>
+
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css">
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="alternate" type="application/rss+xml" title="{{ site.theme.name }}" href="{{site.url}}/atom.xml" />
 
   <link rel="stylesheet" href="/assets/css/all.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+<header class="header" role="banner">
+<div class="masthead">
+      <h1>Adam Whitcroft</h1>
+      <hr>
+      <h2>Designer and Iconographer</h2>
+</div>
+
+<span class="scroll-notice"></span>
+
+</header>
   <div class="container">
     <div class="four columns sidebar">
       {% include sidebar.html %}
