@@ -15,7 +15,7 @@ $(function(){
 	// When down arrow is clicked, scroll to content
 	scrollNotice.click(function(){
 		$('html, body').animate({
-			scrollTop: $('.container').offset().top
+			scrollTop: $('.home').offset().top
 		},800, "swing");
 	});
 
