@@ -74,7 +74,7 @@
 	h5 { font-size: 17px; line-height: 24px; }
 	h6 { font-size: 14px; line-height: 21px; }
 	.subheader { color: #777; }
-
+	#nav { font-size: 35px; line-height: 40px; margin-bottom: 10px; color: #e6801a; }
 	p { margin: 0 0 20px 0; }
 	p img { margin: 0; }
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
