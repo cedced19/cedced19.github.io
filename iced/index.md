@@ -5,10 +5,6 @@ meta-title: Cedced19|ICed
 
 title: ICed
 subtitle: A software.
-
-contrast:
-
-class: home
 ---
 ###ICed
 ====

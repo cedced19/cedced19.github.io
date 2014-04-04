@@ -11,7 +11,14 @@ contrast:
 class: home
 ---
 
-I've spent the past 6-and-a-bit years designing websites, icons and web apps. This year, however, I'd like to spend my downtime exploring new design disciplines like lettering and illustration. This is not to say I've lost interest in what I currently do &mdash; far from it &mdash; I'm just looking to grow as a designer.
+J’utilise quotidiennement : C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
+Mes logiciels sont sous la licence :Creative Commons By Attribution 4.0.
+Je pratique aussi de la stéganographie.
+
+###Desing
+
+Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://www.youtube.com/channel/UCOmStS_lSNYu9iudht0mrwQ) où il fait des vidéos sur TrackMania.
+
 
 ###Contact
 
