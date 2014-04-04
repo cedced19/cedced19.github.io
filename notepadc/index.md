@@ -15,4 +15,5 @@ Enregistrement dans le logiciel et sur le bureau disponible.
 
 ![](demo.png)
 
+It's the extension of the brain.
 
