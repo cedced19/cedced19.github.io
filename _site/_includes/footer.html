@@ -1,0 +1,9 @@
+<footer class="footer-wrap" role="complementary">
+{% if page.class == 'home' %}
+	<p>Allez-y créez, c'est que du bonheur.</p>
+{% endif %}
+
+{% if page.class == 'post' %}
+	<p>Merci pour avoir vu cela. Vous pouvez <a href="http://twitter.com/share?text=&ldquo;{{ page.title }}&rdquo; by @adamwhitcroft">Tweeter</a> ou <a href="/" rel="home">retourne à l'accueille</a>.</p>
+{% endif %}
+</footer>
