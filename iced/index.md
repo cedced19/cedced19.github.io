@@ -1,7 +1,7 @@
 ---
 layout: default
 
-meta-title: Cedced19|ICed
+meta-title: Cedced19 | ICed
 
 title: ICed
 subtitle: A software.
