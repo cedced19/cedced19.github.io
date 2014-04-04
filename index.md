@@ -19,6 +19,11 @@ Je pratique aussi de la stéganographie.
 
 Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://www.youtube.com/channel/UCOmStS_lSNYu9iudht0mrwQ) où il fait des vidéos sur TrackMania.
 
+###Projets
+
+[ICed](http://cedced19.github.io/iced/),[Notepad C](http://cedced19.github.io/notepadc/),[Chat C](http://cedced19.github.io/chatc/),
+[Hub Shutdown](http://cedced19.github.io/hubshutdown/)
+
 
 ###Contact
 
@@ -26,6 +31,4 @@ Vous pouvez [me suivre sur Twitter](https://twitter.com/cedced19), [m'envoyer un
 
 ###Github
 
-Tous mes logiciel et site sont sur github alors allez-y !
-
-[Mon github](https://github.com/cedced19)
+Tous mes logiciel et site sont sur [github](https://github.com/cedced19) alors allez-y !

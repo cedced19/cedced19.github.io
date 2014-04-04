@@ -1,10 +1,10 @@
 ---
 layout: default
 
-meta-title: Cedced19 | Notepad C 
+meta-title: Cedced19 | Hub Shutdown
 
-title: Notepad C
-subtitle: A Notepad.
+title: Hub Shutdown
+subtitle: A Software.
 
 contrast:
 
