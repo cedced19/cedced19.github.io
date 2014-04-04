@@ -1,0 +1,6 @@
+# General Jekyll Config
+pygments: true
+url: cedced19.github.io
+lsi: false
+exclude: [ README.md, .gitignore]
+markdown: kramdown
