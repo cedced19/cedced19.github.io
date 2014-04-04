@@ -1,24 +1,45 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
+# General Jekyll Config
+pygments: true
+url: cedced19.github.io
+lsi: false
+exclude: [ README.md, .gitignore]
+markdown: kramdown
 
-# Permalinks
-permalink:        pretty
+# Theme customization - please change from the defaults!
+theme:
+  # Color for top bar, links, etc
+  highlight_color: '#e6801a'
 
-# Setup
-title:            Cedced19
-tagline:          'Developpeur'
-description:      'Je suis le Créateur d Iced'
-url:              http://cedced19.github.io/
+  # Profile links on the left sidebar, leave blank to ignore
+  social:
+    github: cedced19
+    #bitbucket: james12802
+    #hacker_news: swanson
+    #stackexchange: 2268955
+    #stackoverflow: 1996889
+    twitter: cedced19
+    #facebook: zuck
+    #tumblr: animalygifs
+    #linkedin: philipjagielski
+    #gplus: 110552447039675960964
+    email: cedced19@gmail.com
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  # "Hey, I'm _______"
+  name: Cedced19
+  email: cedced19@gmail.com
+  tagline: "What does God need with a starship?"
 
-paginate:         5
+  # Google Analytics key, leave blank to ignore
+  #google_analytics_key: UA-49008165-1
 
-# Custom vars
-version:          1.0.0
+  # Toggle "Postings are my own" disclaimer in footer
+  show_disclaimer: false
 
-github:
-  repo:           https://github.com/cedced19/cedced19.github.io
+  # Comments by Disqus
+  comments :
+  provider : disqus
+  disqus :
+    short_name : cedced19
+
+  #Timezone
+  timezone: Europe/France
