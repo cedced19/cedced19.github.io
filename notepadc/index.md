@@ -5,6 +5,10 @@ meta-title: Cedced19 | Notepad C
 
 title: Notepad C
 subtitle: A Notepad.
+
+contrast:
+
+class: home
 ---
 ###Notepad C
 
