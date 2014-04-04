@@ -30,5 +30,5 @@ Puis partager l'ip aux futures utilisateurs !
 
 ![](demo.png)
 
-It's the extension of the brain.
+Change the world.
 
