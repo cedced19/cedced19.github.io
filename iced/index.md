@@ -10,7 +10,7 @@ contrast:
 
 class: home
 ---
-###ICed
+#ICed
 
 [Download](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe)
 

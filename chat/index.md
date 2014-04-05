@@ -10,7 +10,7 @@ contrast:
 
 class: home
 ---
-###Chat C
+#Chat C
 
 [Download Client](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe)
 
