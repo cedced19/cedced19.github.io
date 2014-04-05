@@ -28,5 +28,5 @@ Tous mes sites css sont sur [github](https://github.com/cedced19) alors allez-y 
 
 ###Contact
 
-Vous pouvez [me suivre sur Twitter](https://twitter.com/cedced19), [m'envoyer un email](mailto:cedced19@gmail.com)
+Vous pouvez [me suivre sur Twitter](https://twitter.com/cedced19), [m'envoyer un email](mailto:cedced19@gmail.com).
 
