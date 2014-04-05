@@ -77,7 +77,7 @@ Inspire du jeu de société No panic, trouve des mots selon un thème ,ce joue j
 **MC Get Skin :**
 
 Permet d'obtenir des skins minecraft à l'aide d'un pseudo.
-![](demo/MC Get Skin.png)
+![](demo/MC Get Skin.PNG)
 
 Et bien d'autres!
 
