@@ -21,14 +21,12 @@ Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://
 
 ###Projets
 
-[ICed](http://cedced19.github.io/iced/),[Notepad C](http://cedced19.github.io/notepadc/),[Chat C](http://cedced19.github.io/chatc/),
-[Hub Shutdown](http://cedced19.github.io/hubshutdown/)
+[ICed](http://cedced19.github.io/iced/) un logiciel, [Notepad C](http://cedced19.github.io/notepadc/) un bloc-note, [Chat C](http://cedced19.github.io/chatc/) un chat, 
+[Hub Shutdown](http://cedced19.github.io/hubshutdown/) un logiciel pour eteintre son ordinateur.
 
+Tous mes sites css sont sur [github](https://github.com/cedced19) alors allez-y !
 
 ###Contact
 
 Vous pouvez [me suivre sur Twitter](https://twitter.com/cedced19), [m'envoyer un email](mailto:cedced19@gmail.com)
 
-###Github
-
-Tous mes logiciel et site sont sur [github](https://github.com/cedced19) alors allez-y !
