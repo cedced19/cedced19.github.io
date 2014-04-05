@@ -27,7 +27,7 @@ Il contient :
 
 C'est un bloc-note.[Sa page.](http://cedced19.github.io/notepadc/)
 
-![](demo/Notepad C.png)
+![](demo/Notepad C.PNG)
 
 **Player :**
 
