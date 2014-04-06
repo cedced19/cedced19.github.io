@@ -4,7 +4,7 @@ layout: default
 meta-title: Cedced19 | Hub Shutdown
 
 title: Hub Shutdown
-subtitle: A Software.
+subtitle: Un logiciel.
 
 contrast:
 
