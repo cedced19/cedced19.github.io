@@ -5,6 +5,9 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Le blog de Cedced19 </title>
+ <description>Le flux RSS du blog de Cédric</description>
+ <language>fr</language>
+ <copyright>Copyright © Cedced19 2014</copyright>
  <link href="{{ site.url }}/atom.xml" rel="self"/>
  <link href="{{ site.url }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
