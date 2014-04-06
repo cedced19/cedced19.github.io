@@ -8,13 +8,13 @@ layout: nil
  <description>Le flux RSS du blog de Cédric</description>
  <language>fr</language>
  <copyright>Copyright © Cedced19 2014</copyright>
- <link href="{{ site.url }}/atom.xml" rel="self"/>
- <link href="{{ site.url }}"/>
+ <link href="cedced19.github.io/atom.xml" rel="self"/>
+ <link href="cedced19.github.io"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
  <author>
-   <name>{{ site.theme.name }}</name>
-   <email>{{ site.theme.email }}</email>
+   <name>Cedced19</name>
+   <email>cedced19@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
