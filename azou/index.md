@@ -4,7 +4,7 @@ layout: default
 meta-title: Cedced19 | Azou
 
 title: Azou
-subtitle: Un logiciel pour les enfants. Beta 1.2
+subtitle: Un logiciel pour les enfants. Beta 1.3
 
 contrast:
 
