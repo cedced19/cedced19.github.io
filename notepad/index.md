@@ -4,7 +4,7 @@ layout: default
 meta-title: Cedced19 | Notepad C 
 
 title: Notepad C
-subtitle: A Notepad.
+subtitle: Un bloc-note.
 
 contrast:
 
