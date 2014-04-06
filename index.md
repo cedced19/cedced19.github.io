@@ -14,7 +14,8 @@ class: home
 J’utilise quotidiennement : C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
 Mes logiciels sont sous la licence : Creative Commons By Attribution 4.0.
 Je pratique aussi de la stéganographie.
-[Flux RSS](/atom.xml)
+
+Suivez le [flux RSS](/atom.xml).
 
 ###Desing
 
