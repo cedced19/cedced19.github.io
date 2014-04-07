@@ -11,13 +11,13 @@ contrast:
 class: home
 ---
 
-J’utilise quotidiennement : C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
+J’utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
 Mes logiciels sont sous la licence : Creative Commons By Attribution 4.0.
 Je pratique aussi de la stéganographie.
 
 Suivez le [flux RSS](/atom.xml).
 
-###Desing
+###Design
 
 Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://www.youtube.com/channel/UCOmStS_lSNYu9iudht0mrwQ) où il fait des vidéos sur TrackMania.
 
