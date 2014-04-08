@@ -12,10 +12,13 @@ class: home
 ---
 #Azou
 
-[Download](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe)
+[Téléchargement](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe)
 
 Hello ! Vous voulez apprendre  à utiliser le clavier AZERTY ?
 Apprenez le avec Azou !
-Azou est un petit personnage qui va vous aidez pour le clavier AZERTY !
+Tapez 60 lettre en un minimum de temps.
+Moins vous metez de temps plus vous êtes rapide.
+
+![](demo.png)
 
 Le projet est sur [github](https://github.com/cedced19/azou).

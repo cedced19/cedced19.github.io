@@ -12,9 +12,9 @@ class: home
 ---
 #Chat C
 
-[Download Client](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe)
+[Télécharger le Client](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe)
 
-[Download Serveur](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe)
+[Télécharger le Serveur](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe)
 
 Le chat est basique pour le moment.
 "More security" c'est le slogan pour ce chat pas comme les autres !
