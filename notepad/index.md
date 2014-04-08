@@ -16,7 +16,8 @@ class: home
 
 Sur une idée de Charly mon designer, Notepad C a été crée.
 Notepad C est un logiciel  qui permet de prendre des notes.
-Enregistrement dans le logiciel et sur le bureau disponible.
+Enregistrement du fichier diponible.
+Gère maintenant le DragDrop (glisser-deposer).
 
 ![](demo.png)
 
