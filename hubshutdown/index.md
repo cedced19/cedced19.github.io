@@ -19,7 +19,7 @@ Salut ! Vous savez windows 7 etait plus rapide pour éteindre, Hub Shutdown est 
 Télécharge ça ici !
 
 
-[Download](https://raw.githubusercontent.com/cedced19/Hub-Shutdown/master/setup/Hub%20Shutdown.exe)
+[Téléchargement](https://raw.githubusercontent.com/cedced19/Hub-Shutdown/master/setup/Hub%20Shutdown.exe)
 
 
 ![](demo.png)
