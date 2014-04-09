@@ -10,7 +10,6 @@ contrast:
 
 class: home
 ---
-#Notepad C
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe)
 
