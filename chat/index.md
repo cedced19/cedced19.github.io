@@ -10,7 +10,6 @@ contrast:
 
 class: home
 ---
-#Chat C
 
 Le chat est basique pour le moment.
 "More security" c'est le slogan pour ce chat pas comme les autres !
