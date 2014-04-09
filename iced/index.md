@@ -48,12 +48,12 @@ Calculer votre voyage en fonction de la consommation de votre voiture et du prix
 
 Affiche l'heure.
 
-##Brush your Teeth :
+###Brush your Teeth :
 
 Tous est dans le nom.Il offre un conte à rebours de trois minutes pour se brosser les dents.
 ![](demo/Brushyourteeth.png)
 
-##Shutdown It :
+###Shutdown It :
 
 Vous pouvez éteindre votre pc quand le téléchargement est fini !
 
