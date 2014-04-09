@@ -51,7 +51,6 @@ Affiche l'heure.
 ###Brush your Teeth :
 
 Tous est dans le nom.Il offre un conte à rebours de trois minutes pour se brosser les dents.
-![](demo/Brushyourteeth.png)
 
 ###Shutdown It :
 
