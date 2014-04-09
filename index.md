@@ -21,21 +21,13 @@ Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://
 
 ###Logiciels
 
-[ICed](http://cedced19.github.io/iced/) un logiciel,
-
-[Notepad C](http://cedced19.github.io/notepad/) un bloc-note,
-
-[Chat C](http://cedced19.github.io/chat/) un chat, 
-
-[Azou](http://cedced19.github.io/azou/) un logiciel pour utiliser AZERTY,
-
-[Hub Shutdown](http://cedced19.github.io/hubshutdown/) un logiciel pour eteintre son ordinateur.
+[ICed](http://cedced19.github.io/iced/) un logiciel,  [Notepad C](http://cedced19.github.io/notepad/) un bloc-note,  [Chat C](http://cedced19.github.io/chat/) un chat,   [Azou](http://cedced19.github.io/azou/) un logiciel pour utiliser AZERTY,  [Hub Shutdown](http://cedced19.github.io/hubshutdown/) un logiciel pour eteintre son ordinateur.
 
 Une mise à jour de logiciel par semaine.
 
 ###Sites
 
-[Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,[HTML5-Page](https://github.com/cedced19/HTML5-Page) une page en HTML5,[Download-Page](https://github.com/cedced19/Download-Page) une page de téléchargement,[Download-Center](https://github.com/cedced19/Download-Center) un centre de téléchargement en PHP,[Birthday-Page](https://github.com/cedced19/Birthday-Page) une page pour les anniversaire.
+[Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,  [HTML5-Page](https://github.com/cedced19/HTML5-Page) une page en HTML5,  [Download-Page](https://github.com/cedced19/Download-Page) une page de téléchargement, [Download-Center](https://github.com/cedced19/Download-Center) un centre de téléchargement en PHP, [Birthday-Page](https://github.com/cedced19/Birthday-Page) une page pour les anniversaire.
 
 ###Contact
 
