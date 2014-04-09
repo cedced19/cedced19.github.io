@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Prototype</title>
+	<link rel="shortcut icon" href="icon.png">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="s.css">
+	<script type="text/javascript" src="//use.typekit.net/kxs7tky.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</head>
+<body>
+
+	<div class="header">
+		<h1><strong>Prototype</strong></h1>
+	</div>
+
+	<section class="protoDemo">
+		<iframe></iframe>
+	</section>
+
+	<div class="reference">
+		<p>C'est très simple, il y a pas encore le javascript mais c'est déjà ça.</p>
+	</div>
+
+	<section class="protoBuilder">
+		<div class="input protoHTML">
+			<div class="inner left">
+<pre class="prettyprint"><code>&lt;!--
+HTML example:
+&lt;div class="block header"&gt;header&lt;/div&gt;
+--&gt;</code></pre>
+				<textarea id="inputHTML"></textarea>
+			</div>
+		</div>
+
+		<div class="input protoCSS">
+			<div class="inner right">
+<pre class="prettyprint"><code>/*
+CSS example:
+.header {padding: 20px;}
+*/</code></pre>
+			<textarea id="inputCSS"></textarea>
+			</div>
+		</div>
+	</section>
+
+	<div class="island disclaimer">
+		<p>Testez maintenant sans wamp et recharement intensif de la page !</p>
+	</div>
+
+	<div class="island tweetThis">
+		<a data-tip="&hearts;" class="bttn tweet" href="http://twitter.com/share?url=http://cedced19.github.io/proto&text=Prototype by @cedced19 :"><img src="birdy.png" width="50" height="50" /></a>
+	</div>
+
+	<div class="island footer">
+		<p>Crée par <a href="https://cedced19.github.io/cedced19">Cedced19</a>.</p>
+	</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+(function() {
+	var	contents = $('iframe').contents(),
+		head = contents.find('head').html("<link rel='stylesheet' href='/proto/scss/proto-compiled.css'>"),
+		body = contents.find('body'),
+		styleTag = $('<style></style>').appendTo(head);
+
+	$('textarea').keyup(function() {
+		var $this = $(this);
+		if ( $this.attr('id') === 'inputHTML') {
+			body.html( $this.val() );
+		}
+		if ( $this.attr('id') === 'inputCSS') {
+			styleTag.text( $this.val() );
+		}
+	});
+
+})();
+</script>
+</html>
