@@ -10,7 +10,6 @@ contrast:
 
 class: home
 ---
-#Hub Shutdown
 
 Hi ! You see windows 7 was more fast for shutdown, Hub Shutdown is here for this !
 Download it here !
