@@ -10,7 +10,6 @@ contrast:
 
 class: home
 ---
-#Azou
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe)
 
