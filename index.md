@@ -30,5 +30,5 @@ Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://
 
 ###Contact
 
-Vous pouvez me suivre [sur Twitter](https://twitter.com/cedced19) ou [sur Google+](https://plus.google.com/u/0/b/104855167193751168501/104855167193751168501/posts), [m'envoyer un email](mailto:cedced19@gmail.com).
+Vous pouvez me suivre sur [Twitter](https://twitter.com/cedced19) ou sur [Google+](https://plus.google.com/u/0/b/104855167193751168501/104855167193751168501/posts), [m'envoyer un email](mailto:cedced19@gmail.com).
 
