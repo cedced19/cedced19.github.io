@@ -16,9 +16,7 @@ class: home
 
 
 ICed est un logiciel crée par cedced19 qui permet tous et rien !
-
-Il est avant tout GRATUIT
-
+Il est avant tout GRATUIT.Il y a un système de verification de nouvelle version.
 
 Il contient :
 
