@@ -11,8 +11,8 @@ contrast:
 class: home
 ---
 
-J’utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
-Je pratique aussi de la stéganographie.
+Developpeur, j’utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
+Tout mes codes sources sont sur mon [github](https://github.com/cedced19/).
 
 ###Logiciels
 
@@ -22,7 +22,7 @@ Une mise à jour de logiciel par semaine.
 
 ###Sites
 
-[Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,  [HTML5-Page](https://github.com/cedced19/HTML5-Page) une page en HTML5,  [Download-Page](https://github.com/cedced19/Download-Page) une page de téléchargement, [Download-Center](https://github.com/cedced19/Download-Center) un centre de téléchargement en PHP, [Birthday-Page](https://github.com/cedced19/Birthday-Page) une page pour les anniversaire.
+[Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,  [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5,  [Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement, [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP, [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
 
 ###Design
 
