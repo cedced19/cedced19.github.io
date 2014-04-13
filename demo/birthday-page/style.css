@@ -1,0 +1,36 @@
+body { color: #444; font: 12px/1.5em "Segoe Ui", Arial,Helvetica,sans-serif; background: #FF69B4 }
+#block { width: 75%; margin: 5% auto 0; padding: 15px; text-align: justify }
+.shadow {
+	position: relative;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,.25), 0 0 50px rgba(0,0,0,.1) inset;
+	}
+.shadow:before {
+	content: " ";
+	box-shadow: 0 0 15px rgba(0,0,0,.6);
+	position: absolute;
+	left: 0; right: 0;
+	top: 10%;
+	bottom: 10%;
+	border-radius: 10px/100px;
+	z-index: -1;
+    }
+h2 {
+	margin-top: 0.5em;
+}
+h1, h2 {
+	color: #FF69B4;
+	font-family: bad-script;
+	font-style: normal;
+	font-weight: 400;
+}
+#scroller { margin: 20px 0; padding: 10px; background: #FF69B4; box-shadow: 3px 3px 0 rgba(233,223,202,.5); color: #fff; font-size: 15px}
+
+	.marquee { overflow: hidden; white-space: nowrap; -webkit-animation: marquee 50s linear infinite; animation: marquee 50s linear infinite }
+	.marquee:hover { -webkit-animation-play-state: paused; animation-play-state: paused }
+
+	@keyframes marquee {
+	0%   { text-indent: 25em }
+	100% { text-indent: -105em }
+}
