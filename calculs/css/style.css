@@ -1,0 +1,30 @@
+body { color: #444; font: 12px/1.5em "Segoe Ui", Arial,Helvetica,sans-serif; background: #FE6F01 }
+#block { width: 75%; margin: 5% auto 0; padding: 15px; text-align: justify }
+.shadow {
+	position: relative;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 1px 5px rgba(0,0,0,.25), 0 0 50px rgba(0,0,0,.1) inset;
+	}
+.shadow:before {
+	content: " ";
+	box-shadow: 0 0 15px rgba(0,0,0,.6);
+	position: absolute;
+	left: 0; right: 0;
+	top: 10%;
+	bottom: 10%;
+	border-radius: 10px/100px;
+	z-index: -1;
+    }
+h2 {
+	margin-top: 0.5em;
+}
+h1, h2 {
+	color: #FE6F01;
+	font-family: bad-script;
+	font-style: normal;
+	font-weight: 400;
+}
+strong {
+	color: #FE6F01;
+}
