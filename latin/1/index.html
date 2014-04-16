@@ -1,0 +1,436 @@
+<html>
+
+<head>
+<link href="../bootstrap.css" rel="stylesheet"> 
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /> 
+<link rel="icon" type="image/x-icon" href="../favicon.ico" /> 
+<script src="../jquery.js"></script> 
+<script src="../bootstrap.min.js"></script>
+<title>1&egrave;re D&eacute;clinaison</title>
+<script>
+
+/* script réalisé par Maxime Bochon,& scénario de Jean-Louis Pinon le 31.03.2001, */
+
+var nbrQuestions = 22 ; //indique ici le nombre de questions posées par essai (il y a deux essais)
+var ptsNecessaires = 18 ; //indique ici le nombre de points nécessaires pour passer au niveau suivant
+var essai = 0 ; //ne pas toucher à ça !
+var score = 0 ;
+var reponsesBonnes = 0 ;
+var reponsesMauvaises = 0 ;
+var nbrBonus = 0 ;
+var bonusReponsesBonnes = 0 ;
+var bonusDelai = 12 ; //délai du bonus en secondes
+var bonusTimeout = false ;
+var message = '' ;
+var n = 0 ;
+var delai = 0 ;
+var tempsRestant = 0 ;
+messageBon = new Array() ; //tu peux ajouter des messages de félicitation
+messageBon[0] = 'Bravo !' ;
+messageBon[1] = 'Bien joué !' ;
+messageBon[2] = 'Très fort !' ;
+messageFaux = new Array() ; //et la aussi
+messageFaux[0] = 'Dommage !' ;
+messageFaux[1] = 'Mauvaise réponse !' ;
+messageFaux[2] = 'Et non !' ;
+
+function commencer(){
+	erreurs = new Array() ;
+	nombre = new Array() ;
+	for(i=0;i<questions.length;i++){
+		nombre[i] = Math.floor(Math.random()*questions.length) ;
+		for(j=0;j<nombre.length;j++){
+			if((nombre[i] == nombre[j]) && (j != i)){
+				i-- ;
+				break;
+			}
+		}
+	}
+	document.all.commencer.style.display = 'none' ;
+	document.all.contenu.style.display = 'block' ;
+	document.quizz.boutonErreurs.disabled = true ;
+	verbeSuivant() ;
+}
+
+function verbeSuivant(){
+	if((n < nbrQuestions)&&(essai == 0)||(n < nbrQuestions*2)&&(essai == 1)){
+		document.all.numero.innerHTML = (((essai == 0)?n:(n-nbrQuestions)) + 1) + '/' + nbrQuestions ;
+		document.all.verbe.innerHTML = questions[nombre[n]].verbe ;
+		document.all.forme.innerHTML = questions[nombre[n]].forme ;
+		document.quizz.reset() ;
+		document.quizz.r.focus() ;
+		chrono('debut') ;
+	}
+	else{
+		document.all.contenu.style.display = 'none' ;
+		document.all.bas.style.display = 'block' ;
+		tempsRestant = 0 ;
+		essai++ ;
+		bilan() ;
+	}
+}
+
+function objetQuestion(verbe,forme,solution,pointVrai,pointFaux){
+	this.verbe = verbe ;
+	this.forme = forme ;
+	this.solution = solution ;
+	this.pointVrai = pointVrai ;
+	this.pointFaux = pointFaux ;
+}
+
+function faireQuestions(){
+	questions = new Array() ; //le nombre de questions n'est absolument pas limité
+	questions[0] = new objetQuestion('causa, ae (f) = la cause','Nominatif SINGULIER','causa',1,.5) ;
+	questions[1] = new objetQuestion('causa, ae (f) = la cause','Vocatif SINGULIER','causa',1,.5) ;
+	questions[2] = new objetQuestion('causa, ae (f) = la cause','Accusatif SINGULIER','causam',1,.5) ;
+	questions[3] = new objetQuestion('causa, ae (f) = la cause','Génitif SINGULIER','causae',1,.5) ;
+	questions[4] = new objetQuestion('causa, ae (f) = la cause','Datif SINGULIER','causae',1,.5) ;
+	questions[5] = new objetQuestion('causa, ae (f) = la cause','Ablatif SINGULIER','causa',1,.5) ;
+	questions[6] = new objetQuestion('causa, ae (f) = la cause','Nominatif PLURIEL','causae',1,.5) ;
+	questions[7] = new objetQuestion('causa, ae (f) = la cause','Vocatif PLURIEL','causae',1,.5) ;
+	questions[8] = new objetQuestion('causa, ae (f) = la cause','Accusatif PLURIEL','causas',1,.5) ;
+	questions[9] = new objetQuestion('causa, ae (f) = la cause','Génitif PLURIEL','causarum',1,.5) ;
+	questions[10] = new objetQuestion('causa, ae (f) = la cause','Datif PLURIEL','causis',1,.5) ;
+	questions[11] = new objetQuestion('causa, ae (f) = la cause','Ablatif PLURIEL','causis',1,.5) ;
+	questions[12] = new objetQuestion('vita, ae (f) = la vie','Nominatif SINGULIER','vita',1,.5) ;
+	questions[13] = new objetQuestion('vita, ae (f) = la vie','Vocatif SINGULIER','vita',1,.5) ;
+	questions[14] = new objetQuestion('vita, ae (f) = la vie','Accusatif SINGULIER','vitam',1,.5) ;
+	questions[15] = new objetQuestion('vita, ae (f) = la vie','Génitif SINGULIER','vitae',1,.5) ;
+	questions[16] = new objetQuestion('vita, ae (f) = la vie','Datif SINGULIER','vitae',1,.5) ;
+	questions[17] = new objetQuestion('vita, ae (f) = la vie','Ablatif SINGULIER','vita',1,.5) ;
+	questions[18] = new objetQuestion('vita, ae (f) = la vie','Nominatif PLURIEL','vitae',1,.5) ;
+	questions[19] = new objetQuestion('vita, ae (f) = la vie','Vocatif PLURIEL','vitae',1,.5) ;
+	questions[20] = new objetQuestion('vita, ae (f) = la vie','Accusatif PLURIEL','vitas',1,.5) ;
+	questions[21] = new objetQuestion('vita, ae (f) = la vie','Génitif PLURIEL','vitarum',1,.5) ;
+	questions[22] = new objetQuestion('vita, ae (f) = la vie','Datif PLURIEL','vitis',1,.5) ;
+	questions[23] = new objetQuestion('vita, ae (f) = la vie','Ablatif PLURIEL','vitis',1,.5) ;
+	questions[24] = new objetQuestion('via, ae (f) = la route','Nominatif SINGULIER','via',1,.5) ;
+	questions[25] = new objetQuestion('via, ae (f) = la route','Vocatif SINGULIER','via',1,.5) ;
+	questions[26] = new objetQuestion('via, ae (f) = la route','Accusatif SINGULIER','viam',1,.5) ;
+	questions[27] = new objetQuestion('via, ae (f) = la route','Génitif SINGULIER','viae',1,.5) ;
+	questions[28] = new objetQuestion('via, ae (f) = la route','Datif SINGULIER','viae',1,.5) ;
+	questions[29] = new objetQuestion('via, ae (f) = la route','Ablatif SINGULIER','via',1,.5) ;
+	questions[30] = new objetQuestion('via, ae (f) = la route','Nominatif PLURIEL','viae',1,.5) ;
+	questions[31] = new objetQuestion('via, ae (f) = la route','Vocatif PLURIEL','viae',1,.5) ;
+	questions[32] = new objetQuestion('via, ae (f) = la route','Accusatif PLURIEL','vias',1,.5) ;
+	questions[33] = new objetQuestion('via, ae (f) = la route','Génitif PLURIEL','viarum',1,.5) ;
+	questions[34] = new objetQuestion('via, ae (f) = la route','Datif PLURIEL','viis',1,.5) ;
+	questions[35] = new objetQuestion('via, ae (f) = la route','Ablatif PLURIEL','viis',1,.5) ;
+	questions[36] = new objetQuestion('agricola, ae (m) = le paysan','Nominatif SINGULIER','agricola',1,.5) ;
+	questions[37] = new objetQuestion('agricola, ae (m) = le paysan','Vocatif SINGULIER','agricola',1,.5) ;
+	questions[38] = new objetQuestion('agricola, ae (m) = le paysan','Accusatif SINGULIER','agricolam',1,.5) ;
+	questions[39] = new objetQuestion('agricola, ae (m) = le paysan','Génitif SINGULIER','agricolae',1,.5) ;
+	questions[40] = new objetQuestion('agricola, ae (m) = le paysan','Datif SINGULIER','agricolae',1,.5) ;
+	questions[41] = new objetQuestion('agricola, ae (m) = le paysan','Ablatif SINGULIER','agricola',1,.5) ;
+	questions[42] = new objetQuestion('agricola, ae (m) = le paysan','Nominatif PLURIEL','agricolae',1,.5) ;
+	questions[43] = new objetQuestion('agricola, ae (m) = le paysan','Vocatif PLURIEL','agricolae',1,.5) ;
+	questions[44] = new objetQuestion('agricola, ae (m) = le paysan','Accusatif PLURIEL','agricolas',1,.5) ;
+	questions[45] = new objetQuestion('agricola, ae (m) = le paysan','Génitif PLURIEL','agricolarum',1,.5) ;
+	questions[46] = new objetQuestion('agricola, ae (m) = le paysan','Datif PLURIEL','agricolis',1,.5) ;
+	questions[47] = new objetQuestion('agricola, ae (m) = le paysan','Ablatif PLURIEL','agricolis',1,.5) ;
+	questions[48] = new objetQuestion('pecunia, ae (f) = l\'argent','Nominatif SINGULIER','pecunia',1,.5) ;
+	questions[49] = new objetQuestion('pecunia, ae (f) = l\'argent','Vocatif SINGULIER','pecunia',1,.5) ;
+	questions[50] = new objetQuestion('pecunia, ae (f) = l\'argent','Accusatif SINGULIER','pecuniam',1,.5) ;
+	questions[51] = new objetQuestion('pecunia, ae (f) = l\'argent','Génitif SINGULIER','pecuniae',1,.5) ;
+	questions[52] = new objetQuestion('pecunia, ae (f) = l\'argent','Datif SINGULIER','pecuniae',1,.5) ;
+	questions[53] = new objetQuestion('pecunia, ae (f) = l\'argent','Ablatif SINGULIER','pecunia',1,.5) ;
+	questions[54] = new objetQuestion('pecunia, ae (f) = l\'argent','Nominatif PLURIEL','pecuniae',1,.5) ;
+	questions[55] = new objetQuestion('pecunia, ae (f) = l\'argent','Vocatif PLURIEL','pecuniae',1,.5) ;
+	questions[56] = new objetQuestion('pecunia, ae (f) = l\'argent','Accusatif PLURIEL','pecunias',1,.5) ;
+	questions[57] = new objetQuestion('pecunia, ae (f) = l\'argent','Génitif PLURIEL','pecuniarum',1,.5) ;
+	questions[58] = new objetQuestion('pecunia, ae (f) = l\'argent','Datif PLURIEL','pecuniis',1,.5) ;
+	questions[59] = new objetQuestion('pecunia, ae (f) = l\'argent','Ablatif PLURIEL','pecuniis',1,.5) ;
+}
+
+function repondre(){
+	clearInterval(chronoIntervale) ;
+	var solution = questions[nombre[n]].solution ;
+	var solutionTxt = solution.split(/,/) ;
+	var reponseTxt = document.quizz.r.value ;
+	var reponse = false ;
+	for(i=0;i<solutionTxt.length;i++){
+		if(reponseTxt == solutionTxt[i]){
+			reponse = true ;
+		}
+	}
+	if(reponse){
+		message = messageBon[Math.floor(Math.random()*messageBon.length)] ;
+		score += questions[nombre[n]].pointVrai ;
+		reponsesBonnes++ ;
+		bonusReponsesBonnes++ ;
+		if(!(bonusTimeout)){
+			btmt = setTimeout('bonusTimeout=false;bonusReponsesBonnes=0;',bonusDelai*1000) ;
+			bonusTimeout = true ;
+		}
+	}
+	else{
+		message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;		message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'était pas "'+reponseTxt+'" mais '):'était ') ;
+for(i=0;i<solutionTxt.length;i++){
+			message += ((i != 0)?' ou ':'')+solutionTxt[i] ;
+		}
+		message += '.' ;
+		score -= questions[nombre[n]].pointFaux ;
+		score = (score < 0)?0:score ;
+		reponsesMauvaises++ ;
+		bonusReponsesBonnes = 0 ;
+		if(bonusTimeout){
+			clearTimeout(btmt) ;
+			bonusTimeout = false ;
+		}
+		erreurs[erreurs.length] = new objetErreur(questions[nombre[n]].verbe,questions[nombre[n]].forme,questions[nombre[n]].solution,document.quizz.r.value)
+	}
+	alert(message+'\n\nVotre score est de ' + Math.ceil(score) + ' point' + ((score>1)?'s.':'.')) ;
+	bonus() ;
+	bilan() ;
+	n++ ;
+	verbeSuivant() ;
+}
+
+function temps(combien){
+	delai = combien ;
+	document.all.tmps10.style.fontWeight = (combien == 10)?'bold':'' ;
+	document.all.tmps15.style.fontWeight = (combien == 15)?'bold':'' ;
+	document.all.tmps20.style.fontWeight = (combien == 20)?'bold':'' ;
+	document.all.tmps25.style.fontWeight = (combien == 25)?'bold':'' ;
+}
+
+function chrono(fonction) {
+	switch(fonction){
+		case 'debut' :
+			tempsRestant = delai ;
+			chronoIntervale = setInterval('chrono(\'decompte\')',250) ;
+			bilan() ;
+			break ;
+		case 'decompte' :
+			if(tempsRestant > 0){
+				tempsRestant -= .25 ;
+				bilan() ;
+			}
+			else{
+				chrono('fin') ;
+			}
+			break ;
+		case 'fin' :
+			repondre() ;
+			break ;
+	}
+}
+
+function objetErreur(verbe,forme,solution,reponseFausse){
+	this.verbe = new String(verbe) ;
+	this.forme = new String(forme) ;
+	this.solution = new String(solution) ;
+	this.reponseFausse = new String(reponseFausse) ;
+	this.essai = new String(essai) ;
+	document.quizz.boutonErreurs.disabled = false ;
+}
+
+function voirErreurs(){
+	var contenu = '' ;
+	var message = '' ;
+	var hr = false ;
+	if(document.all.mesErreurs.innerHTML.toLowerCase() == '<br><br>'){
+		contenu += '<br><br>' ;
+		for(i=0;i<erreurs.length;i++){
+			contenu += '<span class="blanc">' + erreurs[i].verbe + '</span>' ;
+			contenu += ' ==> <span class="blanc">' + erreurs[i].forme + '</span>' ;
+			contenu += ' donne <span class="blanc">' + erreurs[i].solution + '</span>' ;
+			contenu += (erreurs[i].reponseFausse != '')?(' et non <span class="noir">' + erreurs[i].reponseFausse + '</span>.'):'.' ;
+			contenu += '<br>' ;
+			if((hr == false)&&(erreurs[i].essai == 1)){
+				contenu += '<br><hr class="blanc" noshade size="1">' ;
+				hr = true ;
+			}
+			contenu += '<br>' ;
+		}
+		contenu += '<br>' ;
+		message += 'Cacher les erreurs' ;
+	}
+	else{
+		contenu += '<br><br>' ;
+		message += 'Voir les erreurs' ;
+	}
+	document.all.mesErreurs.innerHTML = contenu ;
+	document.quizz.boutonErreurs.value = message ;
+}
+
+function bilan(){
+	var contenu = '' ;
+	contenu += '<span style="font-size:20px">score actuel : <span class="blanc">' + Math.ceil(score) + '</span></span><br>' ;
+	contenu += '<hr align="center" width="20" color="white" size="1">' ;
+	contenu += 'bonnes rép. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
+	contenu += 'mauvaises rép. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
+	contenu += 'bonus gagnés : <span class="blanc">' + nbrBonus + '</span><br>' ;
+	contenu += '<hr align="center" width="20" color="white" size="1">' ;
+	contenu += '<span style="font-size:20px">temps restant : <span class="blanc">' + Math.floor(tempsRestant) + '</span></span>' ;
+	document.all.bilan.innerHTML = contenu ;
+	document.all.decompte.style.width = (Math.floor(tempsRestant*(70/delai))) + 'px';
+	document.all.decompte.style.visibility = ((tempsRestant<5)&&((tempsRestant*10) != parseInt(tempsRestant*10)))?'hidden':'visible' ;
+}
+
+function bilanPosition(){
+	document.all.bilan.style.top = (document.body.scrollTop+5)+'px' ;
+}
+
+function niveauSuivant(){
+	if(Math.ceil(score) >= ptsNecessaires){
+		self.location = 'menu_latin.asp' ;
+	}
+	else{
+		if(essai == 1){
+			autreEssai = confirm('Vous n\'avez pas suffisamment de points pour revenir au sommaire.\n\nSouhaitez-vous réessayer ?') ;
+			if(autreEssai) reessayer() ;
+		}
+		else{
+			alert('Impossible de revenir au sommaire sans avoir un minimum de ' + ptsNecessaires + ' points.') ;
+		}
+	}
+}
+
+function reessayer(){
+	score = 0 ;
+	reponsesBonnes = 0 ;
+	bonusReponsesBonnes = 0 ;
+	reponsesMauvaises = 0 ;
+	document.all.contenu.style.display = 'block' ;
+	document.all.bas.style.display = 'none' ;
+	if(document.all.mesErreurs.innerHTML.toLowerCase() != '<br><br>') document.quizz.boutonErreurs.click() ;
+	verbeSuivant() ;
+}
+
+function bonus(){
+	if(bonusReponsesBonnes == 3){
+		nbrBonus++ ;
+		bonusReponsesBonnes = 0 ;
+		clearTimeout(btmt) ;
+		bonusTimeout = false ;
+		score += 1.5 ;
+		setTimeout('document.body.style.backgroundColor="rgb(51,102,102)"',0) ;
+		setTimeout('document.body.style.backgroundColor="rgb(171,145,255)"',50) ;
+		setTimeout('document.body.style.backgroundColor="rgb(255,255,255)"',100) ;
+		setTimeout('document.body.style.backgroundColor="rgb(171,145,255)"',150) ;
+		setTimeout('document.body.style.backgroundColor="rgb(18,00,102)"',200) ;
+		setTimeout('document.body.style.backgroundColor="rgb(51,102,102)"',250) ;
+	}
+}
+
+</script>
+
+<style type="text/css">
+
+BODY {
+	font-family: Verdana;
+	font-size: 13px;
+	color: rgb(255,255,255);
+	background-image:url('../background.png');
+	text-align:center;
+	}
+
+
+INPUT {
+	background: rgb(0,0,0);
+	font-family: Verdana;
+	font-size: 13px;
+	color: rgb(83,169,255);
+	}
+
+SELECT {
+background: rgb(0,0,0);
+font-family: Verdana;
+font-size: 13px;
+color: rgb(83,169,255);
+}
+
+.blanc {
+	color: rgba(255, 255, 255, 1);
+}
+
+.rouge {
+	color: rgb(255,0,0);
+}
+
+.noir {
+	color: rgb(0,0,0);
+}
+.main {
+	cursor: hand;
+}
+
+#bilan {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	border: solid 1px white;
+	padding: 5px;
+	text-align: left;
+	font-size: 20px;
+	background: rgba(25, 144, 64, 1);
+}
+
+</style>
+
+</head>
+
+<body onload="faireQuestions();temps(15);bilan();" onscroll="bilanPosition();">
+<div id="bilan"></div>
+
+<div id="haut">
+			<br>  
+        	<button align="center" data-toggle="modal" href="#aide" class="btn btn-primary">Auxilium (aide)</button>
+</div>
+<form name="quizz" action="javascript:repondre();">
+  <div align="center"> 
+    <p>&nbsp; </p>
+  </div>
+  <div id="commencer" style="display:block;">
+    <div align="center"> 
+            <div align="center"><span class="blanc"><font size="1">Choisissez 
+              en cliquant dessus un temps pour répondre (en secondes) :</font></span> 
+              <font size="2"><span class="main btn btn-danger" id="tmps10" onClick="temps(10);">10</span> 
+               <span class="main btn btn-warning" id="tmps15" onClick="temps(15);">15</span> 
+               <span class="main btn btn-info" id="tmps20" onClick="temps(20);">20</span> 
+               <span class="main btn btn-success" id="tmps25" onClick="temps(25);">25</span></font></div>
+      <div align="center"><br>
+        <input type="button" value="Incipe ! (commencer)" onclick="commencer();" class="btn btn-success">
+      </div>
+    </div>
+  </div>
+  <div id="contenu" style="display:none;" align="center"> <span class="blanc"><span id="numero"></span>&nbsp;<b><span id="verbe"></span>&nbsp;&nbsp;==>&nbsp;&nbsp;<u><span id="forme"></span></u></b></span><br>
+    <br>
+    <br>
+    <div class="input-group">
+    	<input type="text" name="r" style="width: 250px;" class="form-control">
+    	<input type="submit" value="OK" class="btn btn-success">
+    </div>
+    
+    &nbsp;&nbsp;&nbsp;<span id="barreTemps"><span id="decompte"></span></span> 
+  </div>
+  <div id="bas" style="display: none;" align="center"> 
+    <input type="button" class="bouton btn btn-success" onclick="self.location=self.location;" value="Recommencer">
+    <input type="button" class="bouton btn btn-success" onclick="voirErreurs();" value="Voir les erreurs" name="boutonErreurs">
+    <div id="mesErreurs" align="center"><br>
+      <br>
+    </div>
+    <input type="button" class="bouton btn btn-success" onclick="niveauSuivant();" value="Revenir au sommaire !">
+  </div>
+
+</form>
+
+<div class="modal" id="aide">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">x</button>
+        <h4 class="modal-title" style="color:#000;">Aide</h4>
+      </div>
+      <div class="modal-body">
+        <img src="aide.png" height="180" width="250"> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
