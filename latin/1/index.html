@@ -7,6 +7,9 @@
 <script src="../jquery.js"></script> 
 <script src="../bootstrap.min.js"></script>
 <title>1&egrave;re D&eacute;clinaison</title>
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <script>
 
 /* script realise par Maxime Bochon,& scenario de Jean-Louis Pinon le 31.03.2001, */
@@ -235,7 +238,7 @@ function voirErreurs(){
 			contenu += '<span class="blanc">' + erreurs[i].verbe + '</span>' ;
 			contenu += ' ==> <span class="blanc">' + erreurs[i].forme + '</span>' ;
 			contenu += ' donne <span class="blanc">' + erreurs[i].solution + '</span>' ;
-			contenu += (erreurs[i].reponseFausse != '')?(' et non <span class="noir">' + erreurs[i].reponseFausse + '</span>.'):'.' ;
+			contenu += (erreurs[i].reponseFausse != '')?(' et non <span class="blanc">' + erreurs[i].reponseFausse + '</span>.'):'.' ;
 			contenu += '<br>' ;
 			if((hr == false)&&(erreurs[i].essai == 1)){
 				contenu += '<br><hr class="blanc" noshade size="1">' ;
