@@ -9,25 +9,25 @@
 <title>4&egrave;me D&eacute;clinaison</title>
 <script>
 
-/* script réalisé par Maxime Bochon,& scénario de Jean-Louis Pinon le 31.03.2001, */
+/* script realise par Maxime Bochon,& scenario de Jean-Louis Pinon le 31.03.2001, */
 
-var nbrQuestions = 22 ; //indique ici le nombre de questions posées par essai (il y a deux essais)
-var ptsNecessaires = 18 ; //indique ici le nombre de points nécessaires pour passer au niveau suivant
+var nbrQuestions = 22 ; //indique ici le nombre de questions posees par essai (il y a deux essais)
+var ptsNecessaires = 18 ; //indique ici le nombre de points necessaires pour passer au niveau suivant
 var essai = 0 ; //ne pas toucher à ça !
 var score = 0 ;
 var reponsesBonnes = 0 ;
 var reponsesMauvaises = 0 ;
 var nbrBonus = 0 ;
 var bonusReponsesBonnes = 0 ;
-var bonusDelai = 12 ; //délai du bonus en secondes
+var bonusDelai = 12 ; //delai du bonus en secondes
 var bonusTimeout = false ;
 var message = '' ;
 var n = 0 ;
 var delai = 0 ;
 var tempsRestant = 0 ;
-messageBon = new Array() ; //tu peux ajouter des messages de félicitation
+messageBon = new Array() ; //tu peux ajouter des messages de felicitation
 messageBon[0] = 'Bravo !' ;
-messageBon[1] = 'Bien joué !' ;
+messageBon[1] = 'Bien joue !' ;
 messageBon[2] = 'Très fort !' ;
 messageFaux = new Array() ; //et la aussi
 messageFaux[0] = 'Dommage !' ;
@@ -79,53 +79,53 @@ function objetQuestion(verbe,forme,solution,pointVrai,pointFaux){
 }
 
 function faireQuestions(){
-	questions = new Array() ; //le nombre de questions n'est absolument pas limité
+	questions = new Array() ; //le nombre de questions n'est absolument pas limite
 	questions[0] = new objetQuestion('manus, us (f) = la main','Nominatif SINGULIER','manus',1,.5) ;
 	questions[1] = new objetQuestion('manus, us (f) = la main','Vocatif SINGULIER','manus',1,.5) ;
 	questions[2] = new objetQuestion('manus, us (f) = la main','Accusatif SINGULIER','manum',1,.5) ;
-	questions[3] = new objetQuestion('manus, us (f) = la main','Génitif SINGULIER','manus',1,.5) ;
+	questions[3] = new objetQuestion('manus, us (f) = la main','Genitif SINGULIER','manus',1,.5) ;
 	questions[4] = new objetQuestion('manus, us (f) = la main','Datif SINGULIER','manui',1,.5) ;
 	questions[5] = new objetQuestion('manus, us (f) = la main','Ablatif SINGULIER','manu',1,.5) ;
 	questions[6] = new objetQuestion('manus, us (f) = la main','Nominatif PLURIEL','manus',1,.5) ;
 	questions[7] = new objetQuestion('manus, us (f) = la main','Vocatif PLURIEL','manus',1,.5) ;
 	questions[8] = new objetQuestion('manus, us (f) = la main','Accusatif PLURIEL','manus',1,.5) ;
-	questions[9] = new objetQuestion('manus, us (f) = la main','Génitif PLURIEL','manuum',1,.5) ;
+	questions[9] = new objetQuestion('manus, us (f) = la main','Genitif PLURIEL','manuum',1,.5) ;
 	questions[10] = new objetQuestion('manus, us (f) = la main','Datif PLURIEL','manibus',1,.5) ;
 	questions[11] = new objetQuestion('manus, us (f) = la main','Ablatif PLURIEL','manibus',1,.5) ;
 	questions[12] = new objetQuestion('metus, us (m) = la crainte','Nominatif SINGULIER','metus',1,.5) ;
 	questions[13] = new objetQuestion('metus, us (m) = la crainte','Vocatif SINGULIER','metus',1,.5) ;
 	questions[14] = new objetQuestion('metus, us (m) = la crainte','Accusatif SINGULIER','metum',1,.5) ;
-	questions[15] = new objetQuestion('metus, us (m) = la crainte','Génitif SINGULIER','metus',1,.5) ;
+	questions[15] = new objetQuestion('metus, us (m) = la crainte','Genitif SINGULIER','metus',1,.5) ;
 	questions[16] = new objetQuestion('metus, us (m) = la crainte','Datif SINGULIER','metui',1,.5) ;
 	questions[17] = new objetQuestion('metus, us (m) = la crainte','Ablatif SINGULIER','metu',1,.5) ;
 	questions[18] = new objetQuestion('metus, us (m) = la crainte','Nominatif PLURIEL','metus',1,.5) ;
 	questions[19] = new objetQuestion('metus, us (m) = la crainte','Vocatif PLURIEL','metus',1,.5) ;
 	questions[20] = new objetQuestion('metus, us (m) = la crainte','Accusatif PLURIEL','metus',1,.5) ;
-	questions[21] = new objetQuestion('metus, us (m) = la crainte','Génitif PLURIEL','metuum',1,.5) ;
+	questions[21] = new objetQuestion('metus, us (m) = la crainte','Genitif PLURIEL','metuum',1,.5) ;
 	questions[22] = new objetQuestion('metus, us (m) = la crainte','Datif PLURIEL','metibus',1,.5) ;
 	questions[23] = new objetQuestion('metus, us (m) = la crainte','Ablatif PLURIEL','metibus',1,.5) ;
-	questions[24] = new objetQuestion('exercitus, us (m) = l\'armée','Nominatif SINGULIER','exercitus',1,.5) ;
-	questions[25] = new objetQuestion('exercitus, us (m) = l\'armée','Vocatif SINGULIER','exercitus',1,.5) ;
-	questions[26] = new objetQuestion('exercitus, us (m) = l\'armée','Accusatif SINGULIER','exercitum',1,.5) ;
-	questions[27] = new objetQuestion('exercitus, us (m) = l\'armée','Génitif SINGULIER','exercitus',1,.5) ;
-	questions[28] = new objetQuestion('exercitus, us (m) = l\'armée','Datif SINGULIER','exercitui',1,.5) ;
-	questions[29] = new objetQuestion('exercitus, us (m) = l\'armée','Ablatif SINGULIER','exercitu',1,.5) ;
-	questions[30] = new objetQuestion('exercitus, us (m) = l\'armée','Nominatif PLURIEL','exercitus',1,.5) ;
-	questions[31] = new objetQuestion('exercitus, us (m) = l\'armée','Vocatif PLURIEL','exercitus',1,.5) ;
-	questions[32] = new objetQuestion('exercitus, us (m) = l\'armée','Accusatif PLURIEL','exercitus',1,.5) ;
-	questions[33] = new objetQuestion('exercitus, us (m) = l\'armée','Génitif PLURIEL','exercituum',1,.5) ;
-	questions[34] = new objetQuestion('exercitus, us (m) = l\'armée','Datif PLURIEL','exercitibus',1,.5) ;
-	questions[35] = new objetQuestion('exercitus, us (m) = l\'armée','Ablatif PLURIEL','exercitibus',1,.5) ;
+	questions[24] = new objetQuestion('exercitus, us (m) = l\'armee','Nominatif SINGULIER','exercitus',1,.5) ;
+	questions[25] = new objetQuestion('exercitus, us (m) = l\'armee','Vocatif SINGULIER','exercitus',1,.5) ;
+	questions[26] = new objetQuestion('exercitus, us (m) = l\'armee','Accusatif SINGULIER','exercitum',1,.5) ;
+	questions[27] = new objetQuestion('exercitus, us (m) = l\'armee','Genitif SINGULIER','exercitus',1,.5) ;
+	questions[28] = new objetQuestion('exercitus, us (m) = l\'armee','Datif SINGULIER','exercitui',1,.5) ;
+	questions[29] = new objetQuestion('exercitus, us (m) = l\'armee','Ablatif SINGULIER','exercitu',1,.5) ;
+	questions[30] = new objetQuestion('exercitus, us (m) = l\'armee','Nominatif PLURIEL','exercitus',1,.5) ;
+	questions[31] = new objetQuestion('exercitus, us (m) = l\'armee','Vocatif PLURIEL','exercitus',1,.5) ;
+	questions[32] = new objetQuestion('exercitus, us (m) = l\'armee','Accusatif PLURIEL','exercitus',1,.5) ;
+	questions[33] = new objetQuestion('exercitus, us (m) = l\'armee','Genitif PLURIEL','exercituum',1,.5) ;
+	questions[34] = new objetQuestion('exercitus, us (m) = l\'armee','Datif PLURIEL','exercitibus',1,.5) ;
+	questions[35] = new objetQuestion('exercitus, us (m) = l\'armee','Ablatif PLURIEL','exercitibus',1,.5) ;
 	questions[36] = new objetQuestion('cornu, us (n) = la corne','Nominatif SINGULIER','cornu',1,.5) ;
 	questions[37] = new objetQuestion('cornu, us (n) = la corne','Vocatif SINGULIER','cornu',1,.5) ;
 	questions[38] = new objetQuestion('cornu, us (n) = la corne','Accusatif SINGULIER','cornu',1,.5) ;
-	questions[39] = new objetQuestion('cornu, us (n) = la corne','Génitif SINGULIER','cornus',1,.5) ;
+	questions[39] = new objetQuestion('cornu, us (n) = la corne','Genitif SINGULIER','cornus',1,.5) ;
 	questions[40] = new objetQuestion('cornu, us (n) = la corne','Datif SINGULIER','cornui',1,.5) ;
 	questions[41] = new objetQuestion('cornu, us (n) = la corne','Ablatif SINGULIER','cornu',1,.5) ;
 	questions[42] = new objetQuestion('cornu, us (n) = la corne','Nominatif PLURIEL','cornua',1,.5) ;
 	questions[43] = new objetQuestion('cornu, us (n) = la corne','Vocatif PLURIEL','cornua',1,.5) ;
 	questions[44] = new objetQuestion('cornu, us (n) = la corne','Accusatif PLURIEL','cornua',1,.5) ;
-	questions[45] = new objetQuestion('cornu, us (n) = la corne','Génitif PLURIEL','cornuum',1,.5) ;
+	questions[45] = new objetQuestion('cornu, us (n) = la corne','Genitif PLURIEL','cornuum',1,.5) ;
 	questions[46] = new objetQuestion('cornu, us (n) = la corne','Datif PLURIEL','cornibus',1,.5) ;
 	questions[47] = new objetQuestion('cornu, us (n) = la corne','Ablatif PLURIEL','cornibus',1,.5) ;
 }
@@ -152,7 +152,7 @@ function repondre(){
 		}
 	}
 	else{
-		message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;		message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'était pas "'+reponseTxt+'" mais '):'était ') ;
+		message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;		message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'etait pas "'+reponseTxt+'" mais '):'etait ') ;
 for(i=0;i<solutionTxt.length;i++){
 			message += ((i != 0)?' ou ':'')+solutionTxt[i] ;
 		}
@@ -248,7 +248,7 @@ function bilan(){
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
 	contenu += 'bonnes rep. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
 	contenu += 'mauvaises rep. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
-	contenu += 'bonus gagnés : <span class="blanc">' + nbrBonus + '</span><br>' ;
+	contenu += 'bonus gagnes : <span class="blanc">' + nbrBonus + '</span><br>' ;
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
 	contenu += '<span style="font-size:20px">temps restant : <span class="blanc">' + Math.floor(tempsRestant) + '</span></span>' ;
 	document.all.bilan.innerHTML = contenu ;

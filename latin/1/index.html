@@ -9,25 +9,25 @@
 <title>1&egrave;re D&eacute;clinaison</title>
 <script>
 
-/* script réalisé par Maxime Bochon,& scénario de Jean-Louis Pinon le 31.03.2001, */
+/* script realise par Maxime Bochon,& scenario de Jean-Louis Pinon le 31.03.2001, */
 
-var nbrQuestions = 22 ; //indique ici le nombre de questions posées par essai (il y a deux essais)
-var ptsNecessaires = 18 ; //indique ici le nombre de points nécessaires pour passer au niveau suivant
+var nbrQuestions = 22 ; //indique ici le nombre de questions posees par essai (il y a deux essais)
+var ptsNecessaires = 18 ; //indique ici le nombre de points necessaires pour passer au niveau suivant
 var essai = 0 ; //ne pas toucher à ça !
 var score = 0 ;
 var reponsesBonnes = 0 ;
 var reponsesMauvaises = 0 ;
 var nbrBonus = 0 ;
 var bonusReponsesBonnes = 0 ;
-var bonusDelai = 12 ; //délai du bonus en secondes
+var bonusDelai = 12 ; //delai du bonus en secondes
 var bonusTimeout = false ;
 var message = '' ;
 var n = 0 ;
 var delai = 0 ;
 var tempsRestant = 0 ;
-messageBon = new Array() ; //tu peux ajouter des messages de félicitation
+messageBon = new Array() ; //tu peux ajouter des messages de felicitation
 messageBon[0] = 'Bravo !' ;
-messageBon[1] = 'Bien joué !' ;
+messageBon[1] = 'Bien joue !' ;
 messageBon[2] = 'Très fort !' ;
 messageFaux = new Array() ; //et la aussi
 messageFaux[0] = 'Dommage !' ;
@@ -79,65 +79,65 @@ function objetQuestion(verbe,forme,solution,pointVrai,pointFaux){
 }
 
 function faireQuestions(){
-	questions = new Array() ; //le nombre de questions n'est absolument pas limité
+	questions = new Array() ; //le nombre de questions n'est absolument pas limite
 	questions[0] = new objetQuestion('causa, ae (f) = la cause','Nominatif SINGULIER','causa',1,.5) ;
 	questions[1] = new objetQuestion('causa, ae (f) = la cause','Vocatif SINGULIER','causa',1,.5) ;
 	questions[2] = new objetQuestion('causa, ae (f) = la cause','Accusatif SINGULIER','causam',1,.5) ;
-	questions[3] = new objetQuestion('causa, ae (f) = la cause','Génitif SINGULIER','causae',1,.5) ;
+	questions[3] = new objetQuestion('causa, ae (f) = la cause','Genitif SINGULIER','causae',1,.5) ;
 	questions[4] = new objetQuestion('causa, ae (f) = la cause','Datif SINGULIER','causae',1,.5) ;
 	questions[5] = new objetQuestion('causa, ae (f) = la cause','Ablatif SINGULIER','causa',1,.5) ;
 	questions[6] = new objetQuestion('causa, ae (f) = la cause','Nominatif PLURIEL','causae',1,.5) ;
 	questions[7] = new objetQuestion('causa, ae (f) = la cause','Vocatif PLURIEL','causae',1,.5) ;
 	questions[8] = new objetQuestion('causa, ae (f) = la cause','Accusatif PLURIEL','causas',1,.5) ;
-	questions[9] = new objetQuestion('causa, ae (f) = la cause','Génitif PLURIEL','causarum',1,.5) ;
+	questions[9] = new objetQuestion('causa, ae (f) = la cause','Genitif PLURIEL','causarum',1,.5) ;
 	questions[10] = new objetQuestion('causa, ae (f) = la cause','Datif PLURIEL','causis',1,.5) ;
 	questions[11] = new objetQuestion('causa, ae (f) = la cause','Ablatif PLURIEL','causis',1,.5) ;
 	questions[12] = new objetQuestion('vita, ae (f) = la vie','Nominatif SINGULIER','vita',1,.5) ;
 	questions[13] = new objetQuestion('vita, ae (f) = la vie','Vocatif SINGULIER','vita',1,.5) ;
 	questions[14] = new objetQuestion('vita, ae (f) = la vie','Accusatif SINGULIER','vitam',1,.5) ;
-	questions[15] = new objetQuestion('vita, ae (f) = la vie','Génitif SINGULIER','vitae',1,.5) ;
+	questions[15] = new objetQuestion('vita, ae (f) = la vie','Genitif SINGULIER','vitae',1,.5) ;
 	questions[16] = new objetQuestion('vita, ae (f) = la vie','Datif SINGULIER','vitae',1,.5) ;
 	questions[17] = new objetQuestion('vita, ae (f) = la vie','Ablatif SINGULIER','vita',1,.5) ;
 	questions[18] = new objetQuestion('vita, ae (f) = la vie','Nominatif PLURIEL','vitae',1,.5) ;
 	questions[19] = new objetQuestion('vita, ae (f) = la vie','Vocatif PLURIEL','vitae',1,.5) ;
 	questions[20] = new objetQuestion('vita, ae (f) = la vie','Accusatif PLURIEL','vitas',1,.5) ;
-	questions[21] = new objetQuestion('vita, ae (f) = la vie','Génitif PLURIEL','vitarum',1,.5) ;
+	questions[21] = new objetQuestion('vita, ae (f) = la vie','Genitif PLURIEL','vitarum',1,.5) ;
 	questions[22] = new objetQuestion('vita, ae (f) = la vie','Datif PLURIEL','vitis',1,.5) ;
 	questions[23] = new objetQuestion('vita, ae (f) = la vie','Ablatif PLURIEL','vitis',1,.5) ;
 	questions[24] = new objetQuestion('via, ae (f) = la route','Nominatif SINGULIER','via',1,.5) ;
 	questions[25] = new objetQuestion('via, ae (f) = la route','Vocatif SINGULIER','via',1,.5) ;
 	questions[26] = new objetQuestion('via, ae (f) = la route','Accusatif SINGULIER','viam',1,.5) ;
-	questions[27] = new objetQuestion('via, ae (f) = la route','Génitif SINGULIER','viae',1,.5) ;
+	questions[27] = new objetQuestion('via, ae (f) = la route','Genitif SINGULIER','viae',1,.5) ;
 	questions[28] = new objetQuestion('via, ae (f) = la route','Datif SINGULIER','viae',1,.5) ;
 	questions[29] = new objetQuestion('via, ae (f) = la route','Ablatif SINGULIER','via',1,.5) ;
 	questions[30] = new objetQuestion('via, ae (f) = la route','Nominatif PLURIEL','viae',1,.5) ;
 	questions[31] = new objetQuestion('via, ae (f) = la route','Vocatif PLURIEL','viae',1,.5) ;
 	questions[32] = new objetQuestion('via, ae (f) = la route','Accusatif PLURIEL','vias',1,.5) ;
-	questions[33] = new objetQuestion('via, ae (f) = la route','Génitif PLURIEL','viarum',1,.5) ;
+	questions[33] = new objetQuestion('via, ae (f) = la route','Genitif PLURIEL','viarum',1,.5) ;
 	questions[34] = new objetQuestion('via, ae (f) = la route','Datif PLURIEL','viis',1,.5) ;
 	questions[35] = new objetQuestion('via, ae (f) = la route','Ablatif PLURIEL','viis',1,.5) ;
 	questions[36] = new objetQuestion('agricola, ae (m) = le paysan','Nominatif SINGULIER','agricola',1,.5) ;
 	questions[37] = new objetQuestion('agricola, ae (m) = le paysan','Vocatif SINGULIER','agricola',1,.5) ;
 	questions[38] = new objetQuestion('agricola, ae (m) = le paysan','Accusatif SINGULIER','agricolam',1,.5) ;
-	questions[39] = new objetQuestion('agricola, ae (m) = le paysan','Génitif SINGULIER','agricolae',1,.5) ;
+	questions[39] = new objetQuestion('agricola, ae (m) = le paysan','Genitif SINGULIER','agricolae',1,.5) ;
 	questions[40] = new objetQuestion('agricola, ae (m) = le paysan','Datif SINGULIER','agricolae',1,.5) ;
 	questions[41] = new objetQuestion('agricola, ae (m) = le paysan','Ablatif SINGULIER','agricola',1,.5) ;
 	questions[42] = new objetQuestion('agricola, ae (m) = le paysan','Nominatif PLURIEL','agricolae',1,.5) ;
 	questions[43] = new objetQuestion('agricola, ae (m) = le paysan','Vocatif PLURIEL','agricolae',1,.5) ;
 	questions[44] = new objetQuestion('agricola, ae (m) = le paysan','Accusatif PLURIEL','agricolas',1,.5) ;
-	questions[45] = new objetQuestion('agricola, ae (m) = le paysan','Génitif PLURIEL','agricolarum',1,.5) ;
+	questions[45] = new objetQuestion('agricola, ae (m) = le paysan','Genitif PLURIEL','agricolarum',1,.5) ;
 	questions[46] = new objetQuestion('agricola, ae (m) = le paysan','Datif PLURIEL','agricolis',1,.5) ;
 	questions[47] = new objetQuestion('agricola, ae (m) = le paysan','Ablatif PLURIEL','agricolis',1,.5) ;
 	questions[48] = new objetQuestion('pecunia, ae (f) = l\'argent','Nominatif SINGULIER','pecunia',1,.5) ;
 	questions[49] = new objetQuestion('pecunia, ae (f) = l\'argent','Vocatif SINGULIER','pecunia',1,.5) ;
 	questions[50] = new objetQuestion('pecunia, ae (f) = l\'argent','Accusatif SINGULIER','pecuniam',1,.5) ;
-	questions[51] = new objetQuestion('pecunia, ae (f) = l\'argent','Génitif SINGULIER','pecuniae',1,.5) ;
+	questions[51] = new objetQuestion('pecunia, ae (f) = l\'argent','Genitif SINGULIER','pecuniae',1,.5) ;
 	questions[52] = new objetQuestion('pecunia, ae (f) = l\'argent','Datif SINGULIER','pecuniae',1,.5) ;
 	questions[53] = new objetQuestion('pecunia, ae (f) = l\'argent','Ablatif SINGULIER','pecunia',1,.5) ;
 	questions[54] = new objetQuestion('pecunia, ae (f) = l\'argent','Nominatif PLURIEL','pecuniae',1,.5) ;
 	questions[55] = new objetQuestion('pecunia, ae (f) = l\'argent','Vocatif PLURIEL','pecuniae',1,.5) ;
 	questions[56] = new objetQuestion('pecunia, ae (f) = l\'argent','Accusatif PLURIEL','pecunias',1,.5) ;
-	questions[57] = new objetQuestion('pecunia, ae (f) = l\'argent','Génitif PLURIEL','pecuniarum',1,.5) ;
+	questions[57] = new objetQuestion('pecunia, ae (f) = l\'argent','Genitif PLURIEL','pecuniarum',1,.5) ;
 	questions[58] = new objetQuestion('pecunia, ae (f) = l\'argent','Datif PLURIEL','pecuniis',1,.5) ;
 	questions[59] = new objetQuestion('pecunia, ae (f) = l\'argent','Ablatif PLURIEL','pecuniis',1,.5) ;
 }
@@ -164,7 +164,7 @@ function repondre(){
 		}
 	}
 	else{
-		message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;		message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'était pas "'+reponseTxt+'" mais '):'était ') ;
+		message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;		message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'etait pas "'+reponseTxt+'" mais '):'etait ') ;
 for(i=0;i<solutionTxt.length;i++){
 			message += ((i != 0)?' ou ':'')+solutionTxt[i] ;
 		}
@@ -260,7 +260,7 @@ function bilan(){
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
 	contenu += 'bonnes rep. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
 	contenu += 'mauvaises rep. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
-	contenu += 'bonus gagnés : <span class="blanc">' + nbrBonus + '</span><br>' ;
+	contenu += 'bonus gagnes : <span class="blanc">' + nbrBonus + '</span><br>' ;
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
 	contenu += '<span style="font-size:20px">temps restant : <span class="blanc">' + Math.floor(tempsRestant) + '</span></span>' ;
 	document.all.bilan.innerHTML = contenu ;
