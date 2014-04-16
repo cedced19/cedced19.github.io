@@ -31,7 +31,7 @@ messageBon[1] = 'Bien joué !' ;
 messageBon[2] = 'Très fort !' ;
 messageFaux = new Array() ; //et la aussi
 messageFaux[0] = 'Dommage !' ;
-messageFaux[1] = 'Mauvaise réponse !' ;
+messageFaux[1] = 'Mauvaise reponse !' ;
 messageFaux[2] = 'Et non !' ;
 
 function commencer(){
@@ -258,8 +258,8 @@ function bilan(){
 	var contenu = '' ;
 	contenu += '<span style="font-size:20px">score actuel : <span class="blanc">' + Math.ceil(score) + '</span></span><br>' ;
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
-	contenu += 'bonnes rép. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
-	contenu += 'mauvaises rép. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
+	contenu += 'bonnes rep. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
+	contenu += 'mauvaises rep. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
 	contenu += 'bonus gagnés : <span class="blanc">' + nbrBonus + '</span><br>' ;
 	contenu += '<hr align="center" width="20" color="white" size="1">' ;
 	contenu += '<span style="font-size:20px">temps restant : <span class="blanc">' + Math.floor(tempsRestant) + '</span></span>' ;
@@ -278,7 +278,7 @@ function niveauSuivant(){
 	}
 	else{
 		if(essai == 1){
-			autreEssai = confirm('Vous n\'avez pas suffisamment de points pour revenir au sommaire.\n\nSouhaitez-vous réessayer ?') ;
+			autreEssai = confirm('Vous n\'avez pas suffisamment de points pour revenir au sommaire.\n\nSouhaitez-vous reessayer ?') ;
 			if(autreEssai) reessayer() ;
 		}
 		else{
@@ -385,7 +385,7 @@ color: rgb(83,169,255);
   <div id="commencer" style="display:block;">
     <div align="center"> 
             <div align="center"><span class="blanc"><font size="1">Choisissez 
-              en cliquant dessus un temps pour répondre (en secondes) :</font></span> 
+              en cliquant dessus un temps pour repondre (en secondes) :</font></span> 
               <font size="2"><span class="main btn btn-danger" id="tmps10" onClick="temps(10);">10</span> 
                <span class="main btn btn-warning" id="tmps15" onClick="temps(15);">15</span> 
                <span class="main btn btn-info" id="tmps20" onClick="temps(20);">20</span> 
