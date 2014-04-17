@@ -1,0 +1,18 @@
+* { margin:0; padding:0; }
+#center { 
+	height:100%; 
+	width:100%;
+/*	float: left;*/
+	background-image:url('background.png'); 
+	background-position: center;
+	font-family: "Candara", serif; 
+	color:#fff;
+	text-align:center;
+	display:table;
+	font-size:50px;
+	padding:15px;
+}
+div { text-align:center; }
+
+
+.cache{ background-color:#000; position:absolute; cursor:pointer; width:100%; }
