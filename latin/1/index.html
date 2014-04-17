@@ -30,7 +30,7 @@ var tempsRestant = 0 ;
 messageBon = new Array() ; //tu peux ajouter des messages de felicitation
 messageBon[0] = 'Bravo !' ;
 messageBon[1] = 'Bien joue !' ;
-messageBon[2] = 'Très fort !' ;
+messageBon[2] = 'Tres fort !' ;
 messageFaux = new Array() ; //et la aussi
 messageFaux[0] = 'Dommage !' ;
 messageFaux[1] = 'Mauvaise reponse !' ;
@@ -293,12 +293,6 @@ function bonus(){
 		clearTimeout(btmt) ;
 		bonusTimeout = false ;
 		score += 1.5 ;
-		setTimeout('document.body.style.backgroundColor="rgb(51,102,102)"',0) ;
-		setTimeout('document.body.style.backgroundColor="rgb(171,145,255)"',50) ;
-		setTimeout('document.body.style.backgroundColor="rgb(255,255,255)"',100) ;
-		setTimeout('document.body.style.backgroundColor="rgb(171,145,255)"',150) ;
-		setTimeout('document.body.style.backgroundColor="rgb(18,00,102)"',200) ;
-		setTimeout('document.body.style.backgroundColor="rgb(51,102,102)"',250) ;
 	}
 }
 
@@ -366,7 +360,7 @@ function bonus(){
 </div>
 
 <div class="rollbox">
-	<h2>À propos...</h2>
+	<h2>A propos...</h2>
 	<div>
 		Je pense que la version 2001 de Gratum Studium est un peu veille alors j’en est crée une nouvelle.
 		Allez voir le projet d'origine Gratum Studium. 
