@@ -32,7 +32,7 @@ Une mise à jour de logiciel par semaine.
 [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP,          
 [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire,            
 [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour,            
-[Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014.         
+[Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin).         
 
 ###Design
 
