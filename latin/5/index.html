@@ -1,18 +1,18 @@
 <html>
 
 <head>
-<link href="../bootstrap.css" rel="stylesheet"> 
+<link href="../bootstrap.css" rel="stylesheet">
+<link href="../s.css" rel="stylesheet"> 
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /> 
 <link rel="icon" type="image/x-icon" href="../favicon.ico" /> 
-<script src="../jquery.js"></script> 
+<script src="../jquery.js"></script>
+<script src="../rollbox.js"></script> 
 <script src="../bootstrap.min.js"></script>
 <title>5&egrave;me D&eacute;clinaison</title>
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script>
-
-/* script realise par Maxime Bochon,& scenario de Jean-Louis Pinon le 31.03.2001, */
 
 var nbrQuestions = 22 ; //indique ici le nombre de questions posees par essai (il y a deux essais)
 var ptsNecessaires = 18 ; //indique ici le nombre de points necessaires pour passer au niveau suivant
@@ -275,21 +275,6 @@ function bilanPosition(){
 	document.all.bilan.style.top = (document.body.scrollTop+5)+'px' ;
 }
 
-function niveauSuivant(){
-	if(Math.ceil(score) >= ptsNecessaires){
-		self.location = 'menu_latin.asp' ;
-	}
-	else{
-		if(essai == 1){
-			autreEssai = confirm('Vous n\'avez pas suffisamment de points pour revenir au sommaire.\n\nSouhaitez-vous reessayer ?') ;
-			if(autreEssai) reessayer() ;
-		}
-		else{
-			alert('Impossible de revenir au sommaire sans avoir un minimum de ' + ptsNecessaires + ' points.') ;
-		}
-	}
-}
-
 function reessayer(){
 	score = 0 ;
 	reponsesBonnes = 0 ;
@@ -318,59 +303,6 @@ function bonus(){
 }
 
 </script>
-
-<style type="text/css">
-
-BODY {
-	font-family: Verdana;
-	font-size: 13px;
-	color: rgb(255,255,255);
-	background-image:url('../background.png');
-	text-align:center;
-	}
-
-
-INPUT {
-	background: rgb(0,0,0);
-	font-family: Verdana;
-	font-size: 13px;
-	color: rgb(83,169,255);
-	}
-
-SELECT {
-background: rgb(0,0,0);
-font-family: Verdana;
-font-size: 13px;
-color: rgb(83,169,255);
-}
-
-.blanc {
-	color: rgba(255, 255, 255, 1);
-}
-
-.rouge {
-	color: rgb(255,0,0);
-}
-
-.noir {
-	color: rgb(0,0,0);
-}
-.main {
-	cursor: hand;
-}
-
-#bilan {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	border: solid 1px white;
-	padding: 5px;
-	text-align: left;
-	font-size: 20px;
-	background: rgba(25, 144, 64, 1);
-}
-
-</style>
 
 </head>
 
@@ -414,7 +346,7 @@ color: rgb(83,169,255);
     <div id="mesErreurs" align="center"><br>
       <br>
     </div>
-    <input type="button" class="bouton btn btn-success" onclick="niveauSuivant();" value="Revenir au sommaire !">
+    <a href="http://cedced19.github.io/latin/" class="bouton btn btn-success">Revenir au sommaire !</a>
   </div>
 
 </form>
@@ -432,6 +364,21 @@ color: rgb(83,169,255);
     </div>
   </div>
 </div>
+
+
+<div class="rollbox">
+	<h2>À propos...</h2>
+	<div>
+		Je pense que la version 2001 de Gratum Studium est un peu veille alors j’en est crée une nouvelle.
+		Allez voir le projet d'origine Gratum Studium. 
+	</div>
+	<a href="http://cedced19.github.io/latin/">Menu principal</a>
+</div>
+<script>
+		$(document).ready(function(){
+			$('.rollbox').rollBox();
+		});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
