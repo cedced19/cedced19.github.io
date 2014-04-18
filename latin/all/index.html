@@ -1,40 +1,24 @@
 <html>
 
 <head>
-<meta charset="utf-8"> 
+<meta charset="utf-8">
 <link href="../bootstrap.css" rel="stylesheet">
-<link href="../s.css" rel="stylesheet">  
-<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" /> 
-<link rel="icon" type="image/x-icon" href="../favicon.ico" /> 
-<script src="../jquery.js"></script> 
-<script src="../rollbox.js"></script> 
+<link href="../s.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="icon" type="image/x-icon" href="../favicon.ico" />
+<script src="../jquery.js"></script>
+<script src="../rollbox.js"></script>
 <script src="../bootstrap.min.js"></script>
-<title>Toutes D&eacute;clinaisons</title>
+<title>4&egrave;me D&eacute;clinaison</title>
 <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<meta name="twitter:cars" content="summary" />
-<meta name="twitter:title" content="Toutes D&eacute;clinaisons" />
-<meta name="twitter:image" content="http://cedced19.github.io/profile.png" />
-<meta name="twitter:site" content="@cedced19" />
-<meta name="twitter:author" content="@cedced19" />
-<meta name="twitter:description" content="Un site pour apprendre le latin !" />
-
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Toutes D&eacute;clinaisons" />
-<meta property="og:image" content="http://cedced19.github.io/profile.png" />
-<meta property="og:language" content="fr_FR">
-<meta property="og:url" content="http://cedced19.github.io/latin/all/" />
-<meta property="og:description" content="Un site pour apprendre le latin !" />
-        
-<link href="https://plus.google.com/104855167193751168501/" rel="publisher" />
-<meta name="description" content="Un site pour apprendre le latin !" />
 <script>
 
 
 var nbrQuestions = 22 ; //indique ici le nombre de questions posees par essai (il y a deux essais)
 var ptsNecessaires = 18 ; //indique ici le nombre de points necessaires pour passer au niveau suivant
-var essai = 0 ; //ne pas toucher � �a !
+var essai = 0 ; //ne pas toucher à ça !
 var score = 0 ;
 var reponsesBonnes = 0 ;
 var reponsesMauvaises = 0 ;
@@ -56,59 +40,351 @@ messageFaux[1] = 'Mauvaise reponse !' ;
 messageFaux[2] = 'Et non !' ;
 
 function commencer(){
-	erreurs = new Array() ;
-	nombre = new Array() ;
-	for(i=0;i<questions.length;i++){
-		nombre[i] = Math.floor(Math.random()*questions.length) ;
-		for(j=0;j<nombre.length;j++){
-			if((nombre[i] == nombre[j]) && (j != i)){
-				i-- ;
-				break;
-			}
-		}
-	}
-	document.all.commencer.style.display = 'none' ;
-	document.all.contenu.style.display = 'block' ;
-	document.quizz.boutonErreurs.disabled = true ;
-	verbeSuivant() ;
+erreurs = new Array() ;
+nombre = new Array() ;
+for(i=0;i<questions.length;i++){
+nombre[i] = Math.floor(Math.random()*questions.length) ;
+for(j=0;j<nombre.length;j++){
+if((nombre[i] == nombre[j]) && (j != i)){
+i-- ;
+break;
+}
+}
+}
+document.all.commencer.style.display = 'none' ;
+document.all.contenu.style.display = 'block' ;
+document.quizz.boutonErreurs.disabled = true ;
+verbeSuivant() ;
 }
 
 function verbeSuivant(){
-	if((n < nbrQuestions)&&(essai == 0)||(n < nbrQuestions*2)&&(essai == 1)){
-		document.all.numero.innerHTML = (((essai == 0)?n:(n-nbrQuestions)) + 1) + '/' + nbrQuestions ;
-		document.all.verbe.innerHTML = questions[nombre[n]].verbe ;
-		document.all.forme.innerHTML = questions[nombre[n]].forme ;
-		document.quizz.reset() ;
-		document.quizz.r.focus() ;
-		chrono('debut') ;
-	}
-	else{
-		document.all.contenu.style.display = 'none' ;
-		document.all.bas.style.display = 'block' ;
-		tempsRestant = 0 ;
-		essai++ ;
-		bilan() ;
-	}
+if((n < nbrQuestions)&&(essai == 0)||(n < nbrQuestions*2)&&(essai == 1)){
+document.all.numero.innerHTML = (((essai == 0)?n:(n-nbrQuestions)) + 1) + '/' + nbrQuestions ;
+document.all.verbe.innerHTML = questions[nombre[n]].verbe ;
+document.all.forme.innerHTML = questions[nombre[n]].forme ;
+document.quizz.reset() ;
+document.quizz.r.focus() ;
+chrono('debut') ;
+}
+else{
+document.all.contenu.style.display = 'none' ;
+document.all.bas.style.display = 'block' ;
+tempsRestant = 0 ;
+essai++ ;
+bilan() ;
+}
 }
 
 function objetQuestion(verbe,forme,solution,pointVrai,pointFaux){
-	this.verbe = verbe ;
-	this.forme = forme ;
-	this.solution = solution ;
-	this.pointVrai = pointVrai ;
-	this.pointFaux = pointFaux ;
+this.verbe = verbe ;
+this.forme = forme ;
+this.solution = solution ;
+this.pointVrai = pointVrai ;
+this.pointFaux = pointFaux ;
 }
 
 function faireQuestions(){
-	questions = new Array() ; //le nombre de questions n'est absolument pas limit�
-	questions[0] = new objetQuestion('causa, ae (f) = la cause','Nominatif SINGULIER','causa',1,.5) ;
-	questions[1] = new objetQuestion('causa, ae (f) = la cause','Vocatif SINGULIER','causa',1,.5) ;
-	questions[2] = new objetQuestion('causa, ae (f) = la cause','Accusatif SINGULIER','causam',1,.5) ;
-	questions[3] = new objetQuestion('causa, ae (f) = la cause','G�nitif SINGULIER','causae',1,.5) ;
-	questions[4] = new objetQuestion('causa, ae (f) = la cause','Datif SINGULIER','causae',1,.5) ;
-	questions[5] = new objetQuestion('causa, ae (f) = la cause','Ablatif SINGULIER','causa',1,.5) ;
-	questions[6] = new objetQuestion('manus, us (f) = la main','Nominatif SINGULIER','manus',1,.5) ;
-	questions[7] = new objetQuestion('manus, us (f) = la main','Vocatif SINGULIER','manus',1,.5) ;
-	questions[8] = new objetQuestion('manus, us (f) = la main','Accusatif SINGULIER','manum',1,.5) ;
-	questions[9] = new objetQuestion('manus, us (f) = la main','G�nitif SINGULIER','manus',1,.5) ;
-	questions[10] = new objetQuestion('manus, us (f) = la main','Datif SINGULIER','
+questions = new Array() ; //le nombre de questions n'est absolument pas limite
+questions[0] = new objetQuestion('manus, us (f) = la main','Nominatif SINGULIER','manus',1,.5) ;
+questions[1] = new objetQuestion('manus, us (f) = la main','Vocatif SINGULIER','manus',1,.5) ;
+questions[2] = new objetQuestion('manus, us (f) = la main','Accusatif SINGULIER','manum',1,.5) ;
+questions[3] = new objetQuestion('manus, us (f) = la main','Genitif SINGULIER','manus',1,.5) ;
+questions[4] = new objetQuestion('manus, us (f) = la main','Datif SINGULIER','manui',1,.5) ;
+questions[5] = new objetQuestion('manus, us (f) = la main','Ablatif SINGULIER','manu',1,.5) ;
+questions[6] = new objetQuestion('manus, us (f) = la main','Nominatif PLURIEL','manus',1,.5) ;
+questions[7] = new objetQuestion('manus, us (f) = la main','Vocatif PLURIEL','manus',1,.5) ;
+questions[8] = new objetQuestion('manus, us (f) = la main','Accusatif PLURIEL','manus',1,.5) ;
+questions[9] = new objetQuestion('manus, us (f) = la main','Genitif PLURIEL','manuum',1,.5) ;
+questions[10] = new objetQuestion('manus, us (f) = la main','Datif PLURIEL','manibus',1,.5) ;
+questions[11] = new objetQuestion('manus, us (f) = la main','Ablatif PLURIEL','manibus',1,.5) ;
+questions[12] = new objetQuestion('metus, us (m) = la crainte','Nominatif SINGULIER','metus',1,.5) ;
+questions[13] = new objetQuestion('metus, us (m) = la crainte','Vocatif SINGULIER','metus',1,.5) ;
+questions[14] = new objetQuestion('metus, us (m) = la crainte','Accusatif SINGULIER','metum',1,.5) ;
+questions[15] = new objetQuestion('metus, us (m) = la crainte','Genitif SINGULIER','metus',1,.5) ;
+questions[16] = new objetQuestion('metus, us (m) = la crainte','Datif SINGULIER','metui',1,.5) ;
+questions[17] = new objetQuestion('metus, us (m) = la crainte','Ablatif SINGULIER','metu',1,.5) ;
+questions[18] = new objetQuestion('metus, us (m) = la crainte','Nominatif PLURIEL','metus',1,.5) ;
+questions[19] = new objetQuestion('metus, us (m) = la crainte','Vocatif PLURIEL','metus',1,.5) ;
+questions[20] = new objetQuestion('metus, us (m) = la crainte','Accusatif PLURIEL','metus',1,.5) ;
+questions[21] = new objetQuestion('metus, us (m) = la crainte','Genitif PLURIEL','metuum',1,.5) ;
+questions[22] = new objetQuestion('metus, us (m) = la crainte','Datif PLURIEL','metibus',1,.5) ;
+questions[23] = new objetQuestion('metus, us (m) = la crainte','Ablatif PLURIEL','metibus',1,.5) ;
+questions[24] = new objetQuestion('exercitus, us (m) = l\'armee','Nominatif SINGULIER','exercitus',1,.5) ;
+questions[25] = new objetQuestion('exercitus, us (m) = l\'armee','Vocatif SINGULIER','exercitus',1,.5) ;
+questions[26] = new objetQuestion('exercitus, us (m) = l\'armee','Accusatif SINGULIER','exercitum',1,.5) ;
+questions[27] = new objetQuestion('exercitus, us (m) = l\'armee','Genitif SINGULIER','exercitus',1,.5) ;
+questions[28] = new objetQuestion('exercitus, us (m) = l\'armee','Datif SINGULIER','exercitui',1,.5) ;
+questions[29] = new objetQuestion('exercitus, us (m) = l\'armee','Ablatif SINGULIER','exercitu',1,.5) ;
+questions[30] = new objetQuestion('exercitus, us (m) = l\'armee','Nominatif PLURIEL','exercitus',1,.5) ;
+questions[31] = new objetQuestion('exercitus, us (m) = l\'armee','Vocatif PLURIEL','exercitus',1,.5) ;
+questions[32] = new objetQuestion('exercitus, us (m) = l\'armee','Accusatif PLURIEL','exercitus',1,.5) ;
+questions[33] = new objetQuestion('exercitus, us (m) = l\'armee','Genitif PLURIEL','exercituum',1,.5) ;
+questions[34] = new objetQuestion('exercitus, us (m) = l\'armee','Datif PLURIEL','exercitibus',1,.5) ;
+questions[35] = new objetQuestion('exercitus, us (m) = l\'armee','Ablatif PLURIEL','exercitibus',1,.5) ;
+questions[36] = new objetQuestion('cornu, us (n) = la corne','Nominatif SINGULIER','cornu',1,.5) ;
+questions[37] = new objetQuestion('cornu, us (n) = la corne','Vocatif SINGULIER','cornu',1,.5) ;
+questions[38] = new objetQuestion('cornu, us (n) = la corne','Accusatif SINGULIER','cornu',1,.5) ;
+questions[39] = new objetQuestion('cornu, us (n) = la corne','Genitif SINGULIER','cornus',1,.5) ;
+questions[40] = new objetQuestion('cornu, us (n) = la corne','Datif SINGULIER','cornui',1,.5) ;
+questions[41] = new objetQuestion('cornu, us (n) = la corne','Ablatif SINGULIER','cornu',1,.5) ;
+questions[42] = new objetQuestion('cornu, us (n) = la corne','Nominatif PLURIEL','cornua',1,.5) ;
+questions[43] = new objetQuestion('cornu, us (n) = la corne','Vocatif PLURIEL','cornua',1,.5) ;
+questions[44] = new objetQuestion('cornu, us (n) = la corne','Accusatif PLURIEL','cornua',1,.5) ;
+questions[45] = new objetQuestion('cornu, us (n) = la corne','Genitif PLURIEL','cornuum',1,.5) ;
+questions[46] = new objetQuestion('cornu, us (n) = la corne','Datif PLURIEL','cornibus',1,.5) ;
+questions[47] = new objetQuestion('cornu, us (n) = la corne','Ablatif PLURIEL','cornibus',1,.5) ;
+}
+
+function repondre(){
+clearInterval(chronoIntervale) ;
+var solution = questions[nombre[n]].solution ;
+var solutionTxt = solution.split(/,/) ;
+var reponseTxt = document.quizz.r.value ;
+var reponse = false ;
+for(i=0;i<solutionTxt.length;i++){
+if(reponseTxt == solutionTxt[i]){
+reponse = true ;
+}
+}
+if(reponse){
+message = messageBon[Math.floor(Math.random()*messageBon.length)] ;
+score += questions[nombre[n]].pointVrai ;
+reponsesBonnes++ ;
+bonusReponsesBonnes++ ;
+if(!(bonusTimeout)){
+btmt = setTimeout('bonusTimeout=false;bonusReponsesBonnes=0;',bonusDelai*1000) ;
+bonusTimeout = true ;
+}
+}
+else{
+message = (tempsRestant > 0)?messageFaux[Math.floor(Math.random()*messageFaux.length)]:'Il faut être plus rapide !' ;	message += '\n\nLa solution ' + ((tempsRestant > 0)?('n\'etait pas "'+reponseTxt+'" mais '):'etait ') ;
+for(i=0;i<solutionTxt.length;i++){
+message += ((i != 0)?' ou ':'')+solutionTxt[i] ;
+}
+message += '.' ;
+score -= questions[nombre[n]].pointFaux ;
+score = (score < 0)?0:score ;
+reponsesMauvaises++ ;
+bonusReponsesBonnes = 0 ;
+if(bonusTimeout){
+clearTimeout(btmt) ;
+bonusTimeout = false ;
+}
+erreurs[erreurs.length] = new objetErreur(questions[nombre[n]].verbe,questions[nombre[n]].forme,questions[nombre[n]].solution,document.quizz.r.value)
+}
+alert(message+'\n\nVotre score est de ' + Math.ceil(score) + ' point' + ((score>1)?'s.':'.')) ;
+bonus() ;
+bilan() ;
+n++ ;
+verbeSuivant() ;
+}
+
+function temps(combien){
+delai = combien ;
+document.all.tmps10.style.fontWeight = (combien == 10)?'bold':'' ;
+document.all.tmps15.style.fontWeight = (combien == 15)?'bold':'' ;
+document.all.tmps20.style.fontWeight = (combien == 20)?'bold':'' ;
+document.all.tmps25.style.fontWeight = (combien == 25)?'bold':'' ;
+}
+
+function chrono(fonction) {
+switch(fonction){
+case 'debut' :
+tempsRestant = delai ;
+chronoIntervale = setInterval('chrono(\'decompte\')',250) ;
+bilan() ;
+break ;
+case 'decompte' :
+if(tempsRestant > 0){
+tempsRestant -= .25 ;
+bilan() ;
+}
+else{
+chrono('fin') ;
+}
+break ;
+case 'fin' :
+repondre() ;
+break ;
+}
+}
+
+function objetErreur(verbe,forme,solution,reponseFausse){
+this.verbe = new String(verbe) ;
+this.forme = new String(forme) ;
+this.solution = new String(solution) ;
+this.reponseFausse = new String(reponseFausse) ;
+this.essai = new String(essai) ;
+document.quizz.boutonErreurs.disabled = false ;
+}
+
+function voirErreurs(){
+var contenu = '' ;
+var message = '' ;
+var hr = false ;
+if(document.all.mesErreurs.innerHTML.toLowerCase() == '<br><br>'){
+contenu += '<br><br>' ;
+for(i=0;i<erreurs.length;i++){
+contenu += '<span class="blanc">' + erreurs[i].verbe + '</span>' ;
+contenu += ' ==> <span class="blanc">' + erreurs[i].forme + '</span>' ;
+contenu += ' donne <span class="blanc">' + erreurs[i].solution + '</span>' ;
+contenu += (erreurs[i].reponseFausse != '')?(' et non <span class="blanc">' + erreurs[i].reponseFausse + '</span>.'):'.' ;
+contenu += '<br>' ;
+if((hr == false)&&(erreurs[i].essai == 1)){
+contenu += '<br><hr class="blanc" noshade size="1">' ;
+hr = true ;
+}
+contenu += '<br>' ;
+}
+contenu += '<br>' ;
+message += 'Cacher les erreurs' ;
+}
+else{
+contenu += '<br><br>' ;
+message += 'Voir les erreurs' ;
+}
+document.all.mesErreurs.innerHTML = contenu ;
+document.quizz.boutonErreurs.value = message ;
+}
+
+function bilan(){
+var contenu = '' ;
+contenu += '<span style="font-size:20px">score actuel : <span class="blanc">' + Math.ceil(score) + '</span></span><br>' ;
+contenu += '<hr align="center" width="20" color="white" size="1">' ;
+contenu += 'bonnes rep. : <span class="blanc">' + reponsesBonnes + '</span><br>' ;
+contenu += 'mauvaises rep. : <span class="blanc">' + reponsesMauvaises + '</span><br>' ;
+contenu += 'bonus gagnes : <span class="blanc">' + nbrBonus + '</span><br>' ;
+contenu += '<hr align="center" width="20" color="white" size="1">' ;
+contenu += '<span style="font-size:20px">temps restant : <span class="blanc">' + Math.floor(tempsRestant) + '</span></span>' ;
+document.all.bilan.innerHTML = contenu ;
+document.all.decompte.style.width = (Math.floor(tempsRestant*(70/delai))) + 'px';
+document.all.decompte.style.visibility = ((tempsRestant<5)&&((tempsRestant*10) != parseInt(tempsRestant*10)))?'hidden':'visible' ;
+}
+
+function bilanPosition(){
+document.all.bilan.style.top = (document.body.scrollTop+5)+'px' ;
+}
+
+
+function reessayer(){
+score = 0 ;
+reponsesBonnes = 0 ;
+bonusReponsesBonnes = 0 ;
+reponsesMauvaises = 0 ;
+document.all.contenu.style.display = 'block' ;
+document.all.bas.style.display = 'none' ;
+if(document.all.mesErreurs.innerHTML.toLowerCase() != '<br><br>') document.quizz.boutonErreurs.click() ;
+verbeSuivant() ;
+}
+
+function bonus(){
+if(bonusReponsesBonnes == 3){
+nbrBonus++ ;
+bonusReponsesBonnes = 0 ;
+clearTimeout(btmt) ;
+bonusTimeout = false ;
+score += 1.5 ;
+}
+}
+
+</script>
+
+</head>
+
+<body onload="faireQuestions();temps(15);bilan();" onscroll="bilanPosition();">
+<div id="bilan"></div>
+
+<div id="haut">
+<br>
+         <button align="center" data-toggle="modal" href="#aide" class="btn btn-primary">Auxilium (aide)</button>
+</div>
+<form name="quizz" action="javascript:repondre();">
+  <div align="center">
+    <p>&nbsp; </p>
+  </div>
+  <div id="commencer" style="display:block;">
+    <div align="center">
+            <div align="center"><span class="blanc"><font size="1">Choisissez
+              en cliquant dessus un temps pour repondre (en secondes) :</font></span>
+              <font size="2"><span class="main btn btn-danger" id="tmps10" onClick="temps(10);">10</span>
+               <span class="main btn btn-warning" id="tmps15" onClick="temps(15);">15</span>
+               <span class="main btn btn-info" id="tmps20" onClick="temps(20);">20</span>
+               <span class="main btn btn-success" id="tmps25" onClick="temps(25);">25</span></font></div>
+      <div align="center"><br>
+        <input type="button" value="Incipe ! (commencer)" onclick="commencer();" class="btn btn-success">
+      </div>
+    </div>
+  </div>
+  <div id="contenu" style="display:none;" align="center"> <span class="blanc"><span id="numero"></span>&nbsp;<b><span id="verbe"></span>&nbsp;&nbsp;==>&nbsp;&nbsp;<u><span id="forme"></span></u></b></span><br>
+    <br>
+    <br>
+    <div class="input-group">
+     <input type="text" name="r" style="width: 250px;" class="form-control">
+     <input type="submit" value="OK" class="btn btn-success">
+    </div>
+
+    &nbsp;&nbsp;&nbsp;<span id="barreTemps"><span id="decompte"></span></span>
+  </div>
+  <div id="bas" style="display: none;" align="center">
+    <input type="button" class="bouton btn btn-success" onclick="self.location=self.location;" value="Recommencer">
+    <input type="button" class="bouton btn btn-success" onclick="voirErreurs();" value="Voir les erreurs" name="boutonErreurs">
+    <div id="mesErreurs" align="center"><br>
+      <br>
+    </div>
+    <a href="http://cedced19.github.io/latin/" class="bouton btn btn-success">Revenir au sommaire !</a>
+  </div>
+
+</form>
+
+<footer>
+	<div class="island social">
+		<a data-tip="&hearts;" class="bttnt tweet" href="http://twitter.com/share?url=http://cedced19.github.io/latin/all/&text=Latin by @cedced19 :"><img src="../birdy.png" width="50" height="50" /></a>
+		<a data-tip="&hearts;" class="bttng google" href="https://plus.google.com/share?url=http%3A%2F%2Fcedced19.github.io%2Flatin%2Fall%2F&hl=fr"><img src="../google.png" width="50" height="50" /></a>
+		<a data-tip="&hearts;" class="bttnf facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcedced19.github.io%2Flatin%2Fall%2F"><img src="../facebook.png" width="50" height="50" /></a>
+	</div>
+</footer>
+
+<div class="modal" id="aide">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">x</button>
+        <h4 class="modal-title" style="color:#000;">Aide</h4>
+      </div>
+      <div class="modal-body">
+        <img src="aide.png" height="180" width="250">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="rollbox">
+<h2>A propos...</h2>
+<div>
+Objectif : decliner le plus rapidement un mot !
+</div>
+<div>
+Je pense que la version 2001 de Gratum Studium est un peu veille alors il y en a une nouvelle.
+Allez voir le projet d'origine Gratum Studium.
+</div>
+<a href="http://cedced19.github.io/latin/">Menu principal</a>
+</div>
+<script>
+$(document).ready(function(){
+$('.rollbox').rollBox();
+});
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49736522-1', 'cedced19.github.io');
+  ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

@@ -55,22 +55,22 @@ color: rgb(83,169,255);
 			left: 0;
 			z-index:999;
 		}
-		
+
 		.rollbox > div {
 			padding: 10px;
 			background: #eee;
 			color: #888;
 			margin: 10px;
 		}
-		
+
 		.rollbox > div:first-of-type {
 			border-radius: 3px 3px 0 0;
 		}
-		
+
 		.rollbox > div:last-of-type {
 			border-radius: 0 0 3px 3px;
 		}
-		
+
 		.rollbox > h2, .rollbox > a {
 			text-align: center;
 			font: bold 20px Segoe UI, Arial, Helvetica, sans-serif;
@@ -79,16 +79,16 @@ color: rgb(83,169,255);
 			display: block;
 			text-decoration: none;
 		}
-		
+
 		.rollbox > h2 {
 			font-size: 30px;
 		}
-		
+
 		.rollbox > a:hover {
 			color: #777;
 			text-shadow: 0 -1px rgba(255,255,255,.2);
 		}
-		
+
 		.rb-control {
 			position: absolute;
 			right: -70px;
@@ -111,12 +111,12 @@ color: rgb(83,169,255);
 			left: inherit;
 			border-radius: 5px 0 0 5px;
 		}
-		
+
 		.rollbox.rb-bottom {
 			top: inherit;
 			bottom: 10px;
 		}
-		
+
 		.rb-right .rb-control {
 			left: -70px;
 			right: inherit;
@@ -138,14 +138,14 @@ color: rgb(83,169,255);
 	   -moz-transition:background 300ms ease;
 	    -ms-transition:background 300ms ease;
 	     -o-transition:background 300ms ease;
-	        transition:background 300ms ease;	
+	        transition:background 300ms ease;
 }
 .bttnt:hover {
 	background:#00FDEC;
 	text-decoration:none;
 }
 .bttnt:active {
-	background:#2AA198;
+	background:#268BD2;
 }
 .social {
 	text-align:center;
@@ -157,6 +157,10 @@ color: rgb(83,169,255);
 .social .google {
 	padding:0;
 	width:204px;
+}
+.social .facebook {
+    padding:0;
+    width:204px;
 }
 .social img {
 	display:block;
@@ -172,21 +176,46 @@ color: rgb(83,169,255);
 	     -o-border-radius:3px;
 	        border-radius:3px;
 	border-radius:3px;
-	background:#FD0000;
+	background:#C11A01;
 	color:white;
 	text-align:center;
 	-webkit-transition:background 300ms ease;
 	   -moz-transition:background 300ms ease;
 	    -ms-transition:background 300ms ease;
 	     -o-transition:background 300ms ease;
-	        transition:background 300ms ease;	
+	        transition:background 300ms ease;
 }
 .bttng:hover {
-	background:#FB7B67;
+	background:#FD0000;
 	text-decoration:none;
 }
 .bttng:active {
 	background:#C11A01;
+}
+.bttnf {
+    display:inline-block;
+    padding:.5em 4em;
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+        -ms-border-radius:3px;
+         -o-border-radius:3px;
+            border-radius:3px;
+    border-radius:3px;
+    background:#6469EF;
+    color:white;
+    text-align:center;
+    -webkit-transition:background 300ms ease;
+       -moz-transition:background 300ms ease;
+        -ms-transition:background 300ms ease;
+         -o-transition:background 300ms ease;
+            transition:background 300ms ease;
+}
+.bttnf:hover {
+    background:#A1A3F0;
+    text-decoration:none;
+}
+.bttnf:active {
+    background:#6469EF;
 }
 footer {
 position: absolute;
@@ -210,7 +239,7 @@ width: 100%;
 	z-index:9;
 	display:none;
 	margin-left:-102px;
-	padding:.5em 0; 
+	padding:.5em 0;
 	width:204px;
 	height:18px;
 	-webkit-border-radius:3px;
