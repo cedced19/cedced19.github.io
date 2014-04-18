@@ -122,3 +122,117 @@ color: rgb(83,169,255);
 			right: inherit;
 			border-radius: 5px 0 0 5px;
 		}
+.bttnt {
+	display:inline-block;
+	padding:.5em 4em;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+	    -ms-border-radius:3px;
+	     -o-border-radius:3px;
+	        border-radius:3px;
+	border-radius:3px;
+	background:#268BD2;
+	color:white;
+	text-align:center;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;	
+}
+.bttnt:hover {
+	background:#00FDEC;
+	text-decoration:none;
+}
+.bttnt:active {
+	background:#2AA198;
+}
+.social {
+	text-align:center;
+}
+.social .tweet {
+	padding:0;
+	width:204px;
+}
+.social .google {
+	padding:0;
+	width:204px;
+}
+.social img {
+	display:block;
+	margin-left:77px;
+}
+
+.bttng {
+	display:inline-block;
+	padding:.5em 4em;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+	    -ms-border-radius:3px;
+	     -o-border-radius:3px;
+	        border-radius:3px;
+	border-radius:3px;
+	background:#FD0000;
+	color:white;
+	text-align:center;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;	
+}
+.bttng:hover {
+	background:#FB7B67;
+	text-decoration:none;
+}
+.bttng:active {
+	background:#C11A01;
+}
+footer {
+position: absolute;
+padding-top: 2px;
+padding-bottom: 2px;
+clear: both;
+float: none;
+visibility: visible;
+bottom: 20px;
+height: 50px;
+width: 100%;
+}
+[data-tip] {
+	position:relative;
+}
+
+[data-tip]:after {
+	position:absolute;
+	top:-35px;
+	left:50%;
+	z-index:9;
+	display:none;
+	margin-left:-102px;
+	padding:.5em 0; 
+	width:204px;
+	height:18px;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+	    -ms-border-radius:3px;
+	     -o-border-radius:3px;
+	        border-radius:3px;
+	background:rgba(0,0,0,.9);
+	color:#fff;
+	content:attr(data-tip);
+	font-size: 0.75em;
+	line-height:18px;
+}
+
+[data-tip]:hover:after {
+	display:block;
+}
+
+[data-tip]:active:after {
+	content:"Merci !";
+}
+.header {
+	padding:20px 0;
+	text-align:center;
+}
