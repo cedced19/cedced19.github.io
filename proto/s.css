@@ -2,7 +2,7 @@
 --------------------------------------------------
 *	Proto Sandbox by @cedced19
 *	http://cedced19.gitub.io/proto/
--------------------------------------------------- 
+--------------------------------------------------
 ////////////////////////////////////////////////*/
 body,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
 dl,dd,ol,ul,form,fieldset,legend,table,th,td,
@@ -20,7 +20,7 @@ section {
 /*////////////////////////////////////////////////
 --------------------------------------------------
 *	Base
--------------------------------------------------- 
+--------------------------------------------------
 ////////////////////////////////////////////////*/
 html {
 	background:#f6f6f6;
@@ -30,7 +30,7 @@ html {
 	font-family: "proxima-nova",sans-serif;
 	line-height:2em;
 }
-h1 { 
+h1 {
 	color:#575d63;
 	font-weight:300;
 	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -51,7 +51,7 @@ a {
 a:hover {
 	text-decoration:underline;
 }
-.bttn {
+.bttnt {
 	display:inline-block;
 	padding:.5em 4em;
 	-webkit-border-radius:3px;
@@ -67,25 +67,84 @@ a:hover {
 	   -moz-transition:background 300ms ease;
 	    -ms-transition:background 300ms ease;
 	     -o-transition:background 300ms ease;
-	        transition:background 300ms ease;	
+	        transition:background 300ms ease;
 }
-.bttn:hover {
-	background:#9099A3;
+.bttnt:hover {
+	background:#00FDEC;
 	text-decoration:none;
 }
-.bttn:active {
-	background:#2AA198;
+.bttnt:active {
+	background:#268BD2;
 }
-.tweetThis {
+.social {
 	text-align:center;
 }
-.tweetThis .tweet {
+.social .tweet {
 	padding:0;
 	width:204px;
 }
-.tweetThis img {
+.social .google {
+	padding:0;
+	width:204px;
+}
+.social .facebook {
+    padding:0;
+    width:204px;
+}
+.social img {
 	display:block;
 	margin-left:77px;
+}
+
+.bttng {
+	display:inline-block;
+	padding:.5em 4em;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+	    -ms-border-radius:3px;
+	     -o-border-radius:3px;
+	        border-radius:3px;
+	border-radius:3px;
+	background:#C11A01;
+	color:white;
+	text-align:center;
+	-webkit-transition:background 300ms ease;
+	   -moz-transition:background 300ms ease;
+	    -ms-transition:background 300ms ease;
+	     -o-transition:background 300ms ease;
+	        transition:background 300ms ease;
+}
+.bttng:hover {
+	background:#FD0000;
+	text-decoration:none;
+}
+.bttng:active {
+	background:#C11A01;
+}
+.bttnf {
+    display:inline-block;
+    padding:.5em 4em;
+    -webkit-border-radius:3px;
+       -moz-border-radius:3px;
+        -ms-border-radius:3px;
+         -o-border-radius:3px;
+            border-radius:3px;
+    border-radius:3px;
+    background:#6469EF;
+    color:white;
+    text-align:center;
+    -webkit-transition:background 300ms ease;
+       -moz-transition:background 300ms ease;
+        -ms-transition:background 300ms ease;
+         -o-transition:background 300ms ease;
+            transition:background 300ms ease;
+}
+.bttnf:hover {
+    background:#A1A3F0;
+    text-decoration:none;
+}
+.bttnf:active {
+    background:#6469EF;
 }
 /* Adapted from https://github.com/AdamWhitcroft/CSS.Tooltips/blob/master/css-tooltips.css */
 [data-tip] {
@@ -99,7 +158,7 @@ a:hover {
 	z-index:9;
 	display:none;
 	margin-left:-102px;
-	padding:.5em 0; 
+	padding:.5em 0;
 	width:204px;
 	height:18px;
 	-webkit-border-radius:3px;
@@ -119,8 +178,7 @@ a:hover {
 }
 
 [data-tip]:active:after {
-	background:#2AA198;
-	content:"Thanks!";
+	content:"Merci !";
 }
 .header {
 	padding:20px 0;
@@ -129,7 +187,7 @@ a:hover {
 /*////////////////////////////////////////////////
 --------------------------------------------------
 *	Demo iFrame
--------------------------------------------------- 
+--------------------------------------------------
 ////////////////////////////////////////////////*/
 .protoDemo {
 	padding:0 10px;
@@ -148,7 +206,7 @@ iframe {
 /*////////////////////////////////////////////////
 --------------------------------------------------
 *	Builders
--------------------------------------------------- 
+--------------------------------------------------
 ////////////////////////////////////////////////*/
 .protoBuilder {
 	overflow:hidden;
@@ -176,7 +234,7 @@ textarea {
 	background-color:#042029;
 	color:#81899A;
 	font-size:1em;
-	font-family:consolas,monospace;	
+	font-family:consolas,monospace;
 }
 .protoBuilder .input {
 	float:left;
@@ -199,7 +257,7 @@ textarea {
 /*////////////////////////////////////////////////
 --------------------------------------------------
 *	Other
--------------------------------------------------- 
+--------------------------------------------------
 ////////////////////////////////////////////////*/
 .disclaimer {
 	padding:10px;
