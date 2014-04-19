@@ -26,14 +26,14 @@ Une mise à jour de logiciel par semaine.
 
 ###Sites
 
-*[Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,               
-*[HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5,               
-*[Paper-Page](http://cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow,   
-*[Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement,              
-*[Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP,          
-*[Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire,            
-*[Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour,            
-*[Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin),         
+* [Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS,               
+* [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5,               
+* [Paper-Page](http://cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow,   
+* [Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement,              
+* [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP,          
+* [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire,            
+* [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour,            
+* [Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin),         
 
 ###Design
 
