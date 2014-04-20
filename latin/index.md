@@ -19,7 +19,11 @@ Je pense que la version 2001 de [GRATUM STUDIUM](http://www.gratumstudium.com/) 
 
 [Lien](http://cedced19.github.io/latin/1/)
 
-###2ème et 3ème Déclinaison :
+###2ème Déclinaison :
+
+[Lien](http://cedced19.github.io/latin/2/)
+
+###3ème Déclinaison :
 
 En cours de développement.
 
