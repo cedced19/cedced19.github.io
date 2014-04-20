@@ -33,7 +33,7 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 * [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.            
 * [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour.           
 * [Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin).
-* House C une page d'acceuille en cours de création.
+* [House C](/) une page d'acceuille en cours de création.
 
 ###Design
 
