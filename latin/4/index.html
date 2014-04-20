@@ -6,8 +6,57 @@
 <link href="../s.css" rel="stylesheet">
 <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
 <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-<script src="http://cedced19.github.io/scripts/jquery.min.js"></script>
-<script src="http://cedced19.github.io/scripts/rollbox.js"></script>
+<script type="text/javascript" src="http://cedced19.github.io/scripts/jquery.min.js"></script>
+<script type="text/javascript">
+(function($){
+	$.fn.rollBox = function(options){
+		// valeurs par défauts des options
+		var defaut = {
+			'speed': 'slow',
+			'openText': 'Info',
+			'closeText': 'Fermer',
+		};  
+		var params = $.extend(defaut, options);
+
+		return this.each(function(){
+			var conteneur = $(this);
+			var controleur;
+			var alignement = conteneur.hasClass('rb-right') ? true : false;
+			var largeur = parseInt(conteneur.css('width'));
+
+			// Ajouter de controleur d'ouverture/fermeture
+			conteneur.append('<p class="rb-control">' + params.openText + '</p>');
+			controleur = conteneur.children('.rb-control');
+
+			// Masquer la rollBox en appliquant sa largeur en valeur négative
+			if (alignement)
+				conteneur.css({right: -largeur});
+			else
+				conteneur.css({left: -largeur});
+
+			controleur.data('clickState', 1);			
+			// Au clic sur le controleur
+			controleur.on('click', function(){
+				if($(this).data('clickState')){
+					$(this).html(params.closeText);
+					if (alignement)
+						$(this).parent().animate({right: 0}, params.speed);
+					else
+						$(this).parent().animate({left: 0}, params.speed);
+				}
+				else {
+					$(this).html(params.openText);
+					if (alignement)
+						$(this).parent().animate({right: -largeur}, params.speed);
+					else
+						$(this).parent().animate({left: -largeur}, params.speed);
+				}
+				$(this).data('clickState', !$(this).data('clickState'));
+			});
+		});
+	};
+})(jQuery);
+</script>
 <script src="../bootstrap.min.js"></script>
 <title>4&egrave;me D&eacute;clinaison</title>
 <!--[if lt IE 9]>
