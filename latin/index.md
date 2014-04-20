@@ -13,6 +13,8 @@ class: home
 
 Je pense que la version 2001 de [GRATUM STUDIUM](http://www.gratumstudium.com/) est un peu veille alors j'en est crée une.
 
+Attention ! Cette version est déconseiller sur smartphone !!
+
 ##Déclinaisons
 
 ###1ère Déclinaison :
