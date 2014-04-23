@@ -136,6 +136,7 @@ input[type="checkbox"] {
 	text-rendering: optimizeLegibility;
 }
 
+
 #header {
 	padding-top: 15px;
 	border-radius: inherit;
@@ -634,4 +635,8 @@ hr {
 		width: 550px;
 		margin: 130px auto 40px auto;
 	}
+}
+
+a{
+	color: #a6a6a6;
 }
