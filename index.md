@@ -4,7 +4,7 @@ layout: default
 meta-title: Cedced19
 
 title: Cedced19
-subtitle: Developpeur.
+subtitle: Developpeur pour le fun.
 
 contrast:
 
