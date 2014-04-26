@@ -12,6 +12,7 @@ class: home
 ---
 
 [Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true)
+Attendez quelques secondes...
 
 
 
