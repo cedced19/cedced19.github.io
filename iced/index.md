@@ -11,7 +11,7 @@ contrast:
 class: home
 ---
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe)
+[Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true)
 
 
 
