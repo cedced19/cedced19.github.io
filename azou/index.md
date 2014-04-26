@@ -11,7 +11,8 @@ contrast:
 class: home
 ---
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe)
+[Téléchargement](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe)  
+Attendez quelques secondes...
 
 Hello ! Vous voulez apprendre  à utiliser le clavier AZERTY ?
 Apprenez le avec Azou !
