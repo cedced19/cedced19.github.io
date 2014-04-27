@@ -3,7 +3,6 @@ layout: default
 
 meta-title: Cedced19
 
-title: Cedced19
 subtitle: Developpeur pour le fun.
 
 contrast:
@@ -16,22 +15,22 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 
 ###Logiciels
 
-* [ICed](http://cedced19.github.io/iced/) un logiciel. 
-* [Notepad C](http://cedced19.github.io/notepad/) un bloc-note.  
-* [Chat C](http://cedced19.github.io/chat/) un chat. 
-* [Azou](http://cedced19.github.io/azou/) un logiciel pour utiliser AZERTY.  
+* [ICed](http://cedced19.github.io/iced/) un logiciel.
+* [Notepad C](http://cedced19.github.io/notepad/) un bloc-note.
+* [Chat C](http://cedced19.github.io/chat/) un chat.
+* [Azou](http://cedced19.github.io/azou/) un logiciel pour utiliser AZERTY.
 * [Hub Shutdown](http://cedced19.github.io/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.
 
 
 ###Sites
 
-* [Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS.               
-* [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5.               
-* [Paper-Page](http://cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow.   
-* [Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement.              
-* [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.          
-* [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.            
-* [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour.           
+* [Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS.
+* [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5.
+* [Paper-Page](http://cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow.
+* [Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement.
+* [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.
+* [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
+* [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour.
 * [Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin).
 * [Home C](http://cedced19.github.io/home/) une page d'acceuille sans pub.
 
