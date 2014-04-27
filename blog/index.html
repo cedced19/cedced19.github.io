@@ -5,7 +5,6 @@ meta-title: Blog
 ---
 
   <h1> Blog Posts</h1>
-  <ul id="blog-posts" class="posts">
     {% for post in site.posts %}
       {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
       {% if year == "2014" %}
@@ -13,4 +12,3 @@ meta-title: Blog
       {{ post.excerpt }}
       {% endif %}
     {% endfor %}
-  </ul>
