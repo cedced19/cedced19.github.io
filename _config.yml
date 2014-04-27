@@ -4,4 +4,4 @@ url: cedced19.github.io
 lsi: false
 exclude: [ README.md]
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /blog/:title/
