@@ -13,7 +13,7 @@ class: home
 Developpeur, j’utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5.
 Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 
-Pour toutes **actuallités sur mes logiciels/sites** regardez mon **[blog](http://cedced19.github.io/blog/)**. 
+**Actuallités** sur mes logiciels/sites regardez mon [blog](http://cedced19.github.io/blog/). 
 
 ###Logiciels
 
