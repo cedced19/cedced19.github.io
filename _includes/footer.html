@@ -1,5 +1,11 @@
 <footer class="footer-wrap" role="complementary">
 	<p>
-	License <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
+	   License <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>
 	</p>
+            {% if page.class == 'post' %}
+            <p>
+           <p>
+                <a href="http://twitter.com/share?url={{ site.url }}&text= {{ page.meta-title }} by @cedced19 :">Partager sur Twitter</a><br>
+            </p>
+            {% endif %}
 </footer>
