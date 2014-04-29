@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Logo</title>
+    <style>body { background: black; } canvas { background: white; }</style>
+  </head>
+
+  <body>
+
+    <canvas id="canvas" width="150" height="150">
+    </canvas>
+
+    <script>
+
+      window.onload = function() {
+          var canvas  = document.querySelector('#canvas');
+          var context = canvas.getContext('2d');
+
+          context.beginPath();
+          context.moveTo(131, 119);
+          context.bezierCurveTo(131, 126, 126, 131, 119, 131);
+          context.lineTo(30, 131);
+          context.bezierCurveTo(23, 131, 18, 126, 18, 119);
+          context.lineTo(18, 30);
+          context.bezierCurveTo(18, 23, 23, 18, 30, 18);
+          context.lineTo(119, 18);
+          context.bezierCurveTo(126, 18, 131, 23, 131, 30);
+          context.lineTo(131, 119);
+          context.closePath();
+          context.fillStyle = "rgba(0, 0, 0, 0.9)";
+          context.fill();
+
+          context.font = "60px Calibri,Geneva,Arial";
+          context.fillStyle = "white";
+          context.fillText("Ced", 25, 105);
+
+          var canvas2 = document.getElementById("mycanvas");
+          var img    = canvas.toDataURL("image/x-icon");
+
+          document.write('<img src="'+img+'"/>');
+      };
+
+    </script>
+  </body>
+</html>
