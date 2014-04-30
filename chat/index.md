@@ -22,8 +22,8 @@ Attendez quelques secondes...
 ![](demo.png)
 
 ###Chat C Version Serveur :
+[Télécharger le Serveur](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe)
 Cliquez.
-[Télécharger le Serveur](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe)  
 Attendez quelques secondes...
 
 Ouvrez juste le port 2000 si vous voulez y accéder depuis l'extèrieur de chez vous.
