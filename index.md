@@ -5,6 +5,8 @@ meta-title: Cedced19
 
 subtitle: Developpeur pour le fun.
 
+title: Cedced19
+
 contrast:
 
 class: home
