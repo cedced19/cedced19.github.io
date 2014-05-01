@@ -35,7 +35,6 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 * [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.
 * [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
 * [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour.
-* [Latin](http://cedced19.github.io/latin/) un Gratum Studium 2014 (site pour apprendre le latin).
 * [Home C](http://cedced19.github.io/home/) une page d'acceuille sans pub.
 * [TMCharly](http://tmcharly.github.io/) site d'un ami.
 
