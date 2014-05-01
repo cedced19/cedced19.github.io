@@ -44,7 +44,7 @@ Calculer votre voyage en fonction de la consommation de votre voiture et du prix
 
 ###Time C :
 
-Affiche l'heure.
+Affiche l'heure.  
 ![](demo/Time.png)
 
 
