@@ -9,4 +9,11 @@
 	            </p>
 	        {% endif %}
             {% endif %}
+            {% if page.class == 'home' %}
+            	{% if page.meta-title != 'Cedced19'%}
+	            <p>
+	                <a href="http://twitter.com/share?text=&ldquo;{{ page.meta-title }}&rdquo; by @cedced19 :">Partager sur Twitter</a><br>
+	            </p>
+	        {% endif %}
+            {% endif %}
 </footer>
