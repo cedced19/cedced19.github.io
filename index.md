@@ -7,6 +7,8 @@ subtitle: Developpeur pour le fun.
 
 title: Cedced19
 
+contrast:
+
 meta: Cedced19, developpeur, il utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
 
 class: home
