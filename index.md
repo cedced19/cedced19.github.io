@@ -10,6 +10,8 @@ title: Cedced19
 contrast:
 
 class: home
+
+meta: Cedced19, developpeur, il utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
 ---
 
 Developpeur, j’utilise quotidiennement : Markdown, C#, C++, C, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
