@@ -81,7 +81,7 @@ Permet d'obtenir des skins minecraft à l'aide d'un pseudo.
 ###Pair it :  
 
 Assenbler des couleurs.  
-![](demo/Pairit.png)
+![Pair It](demo/Pairit.png)
 
 Et bien d'autres!
 
