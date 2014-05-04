@@ -22,9 +22,6 @@ body {
 	/* [disabled]background-color: #4D4D4D; */
 	color: #FFFFFF;
 }
-#hero img {
-	max-width: 100%;
-}
 
 h1 {
 	font-size: 72px;
@@ -71,8 +68,6 @@ figcaption {
 	margin-left: auto;
 	margin-right: auto;
 }
-#mainnav a:hover, #mainnav a:focus, #mainnav a.thispage {
-}
 .floatleft {
 	float: left;
 	margin-left: 0px;
@@ -93,21 +88,6 @@ footer {
 	float: none;
 	visibility: visible;
 }
-a {
-	font-weight: bold;
-	text-decoration: none;
-}
-a:link {
-	color: #FF6600;
-}
-a:visited {
-	color: #FF944C;
-
-}
-a:hover, a:active, a:focus {
-	color: #7F3300;
-	text-decoration: underline;
-}
 h1, h2 {
 	color: #9BD57C;
 	font-family: bad-script;
@@ -115,33 +95,40 @@ h1, h2 {
 	font-weight: 400;
 	width: 100%;
 	padding-top: 100px;
+	marging-right: 6px;
 }
-#mainnav ul {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	list-style-type: none;
-}
-#mainnav a {
-	display: inline-block;
-	float: left;
-	text-align: center;
-	background-color: #4D4D4D;
-	color: #FFFFFF;
-	width: 40%;
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
-#mainnav {
-}
-
 
 #two {
 	padding-bottom: auto;
 
 }
+#center{
+	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 100px;
+}
+@media screen and (max-width:500px){
+body{
+	font-size: 25px;
+}
+#sidebar {
+	width: 100%;
+}
+#wrapper {
+	width: 100%;
+	min-width: 470px;
+	max-width: 470px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFFFFF;
+	font-family: bad-script;
+	font-style: normal;
+	font-weight: 400;
+}
+#center{
+	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 300px;
+}
+}
+
