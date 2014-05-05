@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <!--
         This document is a modified version of http://twitter.github.io
+        Use this api : https://developer.github.com/guides/getting-started/
     -->
     <link href="//cedced19.github.io/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -175,14 +176,18 @@
     </nav>
     <div id="wrapper" class="grid clearfix">
       <div class="grid grid-4">
-        <div id="statistics" class="grid-1 alpha header repo">
+        <div id="statistics" class="grid-1 alpha header">
           <h1>Statistics</h1>
           <p>
             <a href="https://github.com/cedced19/repositories"><span id="num-repos"><img src="spinner.gif" /></span> public repos</a>
           </p>
         </div>
+        <div id="recently-updated" class="grid-1  header">
+          <h1>Avatar </h1>
+          <img src="https://avatars.githubusercontent.com/u/5300939?" alt="avatar" width="80" height="80">
+        </div>
 
-        <div id="recently-updated" class="grid-3 omega header repo">
+        <div id="recently-updated" class="grid-2 omega header">
           <h1>Recently updated <a href="https://github.com/cedced19/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
