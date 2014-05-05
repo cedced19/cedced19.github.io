@@ -28,15 +28,24 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 
 ##Sites
 
+###Pour client
+
+* [TMCharly](http://tmcharly.github.io/) site d'un ami.
+
+###Services
+
 * [Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS.
+* [Home C](http://cedced19.github.io/home/) une page d'acceuille sans pub.
+
+
+###Demo
+
 * [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5.
 * [Paper-Page](http://cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow.
 * [Download-Page](http://cedced19.github.io/demo/download-page/) une page de téléchargement.
 * [Download-Center](https://github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.
 * [Birthday-Page](http://cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
 * [Countdown-Page](http://cedced19.github.io/demo/countdown-page/) un compte à rebour.
-* [Home C](http://cedced19.github.io/home/) une page d'acceuille sans pub.
-* [TMCharly](http://tmcharly.github.io/) site d'un ami.
 
 ##Design
 
