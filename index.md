@@ -17,7 +17,7 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 
 **Actuallités** sur mes logiciels/sites sont sur mon [blog](http://cedced19.github.io/blog/). 
 
-###Logiciels
+##Logiciels
 
 * [ICed](http://cedced19.github.io/iced/) un logiciel.
 * [Notepad C](http://cedced19.github.io/notepad/) un bloc-note.
@@ -26,7 +26,7 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 * [Hub Shutdown](http://cedced19.github.io/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.
 
 
-###Sites
+##Sites
 
 * [Prototype](http://cedced19.github.io/proto/) un site pour coder en HTML/CSS.
 * [HTML5-Page](http://cedced19.github.io/demo/html5-page/) une page en HTML5.
@@ -38,11 +38,11 @@ Tout mes projets sont sur mon [github](https://github.com/cedced19/).
 * [Home C](http://cedced19.github.io/home/) une page d'acceuille sans pub.
 * [TMCharly](http://tmcharly.github.io/) site d'un ami.
 
-###Design
+##Design
 
 Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://www.youtube.com/channel/UCOmStS_lSNYu9iudht0mrwQ) où il fait des vidéos sur TrackMania.
 
-###Contact
+##Contact
 
 Vous pouvez me suivre sur [Twitter](https://twitter.com/cedced19) ou sur [Google+](https://plus.google.com/u/0/b/104855167193751168501/104855167193751168501/posts), [m'envoyer un email](mailto:cedced19@gmail.com?subject=Hello.net&body=Hello).
 
