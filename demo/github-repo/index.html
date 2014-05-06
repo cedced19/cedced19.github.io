@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <!--
         This document is a modified version of http://twitter.github.io
-        Use this api : https://developer.github.com/guides/getting-started/
     -->
     <link href="//cedced19.github.io/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
@@ -150,6 +149,14 @@
       }
       addRepos();
 
+            $.getJSON("https://api.github.com/users/cedced19/followers?callback=?", function (result) {
+        var followers = result.data;
+
+        $(function () {
+          $("#num-followers").text(followers.length);
+        });
+      });
+
 
       var match = (/\blarry(=(\d+))?\b/i).exec(window.location.search);
 
@@ -180,6 +187,8 @@
           <h1>Statistics</h1>
           <p>
             <a href="https://github.com/cedced19/repositories"><span id="num-repos"><img src="spinner.gif" /></span> public repos</a>
+            <br>
+            <a href="https://github.com/cedced19/followers"><span id="num-followers"><img src="spinner.gif" /></span> followers</a>
           </p>
         </div>
         <div id="recently-updated" class="grid-1  header">

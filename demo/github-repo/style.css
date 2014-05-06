@@ -15,7 +15,7 @@ a:hover{text-decoration:underline;}
 div.header{height:130px;}
 div.header h1, div.header p{margin:10px 15px 0;}
 div.header h1{margin-bottom:10px;}
-#num-repos, #num-members{font-size:14px;font-weight:bold;color:#0084b4;line-height:15px;}
+#num-repos, #num-followers{font-size:14px;font-weight:bold;color:#0084b4;line-height:15px;}
 #statistics a:link, #statistics a:visited{color:inherit;}
 #statistics p.email{margin-top:6px;font-size:11px;}
 #recently-updated h1 a{font-weight:normal;font-size:11px;}
