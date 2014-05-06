@@ -1,9 +1,8 @@
 ---
 layout: default
 
-meta-title: Cedced19 | ICed
-
 title: ICed
+
 subtitle: Un logiciel.
 
 contrast:
