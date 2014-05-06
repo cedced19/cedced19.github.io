@@ -1,8 +1,6 @@
 ---
 layout: default
 
-meta-title: Cedced19
-
 subtitle: Developpeur pour le fun.
 
 title: Cedced19
