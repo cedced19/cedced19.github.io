@@ -3,7 +3,7 @@ layout: default
 
 class: post
 
-meta-title: Nouvelle version ICed
+title: Nouvelle version ICed
 ---
 
 Elle inclue "Pair It" un petit jeu ou il faut faire des paires !  
