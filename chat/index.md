@@ -1,9 +1,8 @@
 ---
 layout: default
 
-meta-title: Cedced19 | Chat  
-
 title: Chat C
+
 subtitle: Un Chat.
 
 contrast:
