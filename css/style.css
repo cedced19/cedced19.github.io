@@ -19,5 +19,4 @@
   .btn:hover {
     background-color: #3498db;
     border-color: #3498db;
-    color: #000; }
-  btn:focus{outline:none}
+    color: #FFF !important; }
