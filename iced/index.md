@@ -10,7 +10,7 @@ contrast:
 class: home
 ---
 
-<a href=​"https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class=​"btn btn-primary">​Téléchargement​</a>  
+[Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true)   
 ​
 Attendez quelques secondes...
 
