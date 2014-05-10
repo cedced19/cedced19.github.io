@@ -4,9 +4,7 @@
   display: inline-block;
   padding: 0 40px;
   font-size: 15px;
-  color: #000;
-  font-weight: bold;
-  text-transform: uppercase;
+  color: #FFF;
   line-height: 40px;
   background-color: transparent;
   background-color: rgba(52, 152, 219,1.0);
@@ -17,6 +15,6 @@
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s; }
   .btn:hover {
-    background-color: #3498db;
-    border-color: #3498db;
-    color: #FFF; }
+    background-color: #FFF;
+    border-color: #FFF;
+    color: #000; }
