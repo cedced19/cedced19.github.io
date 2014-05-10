@@ -10,7 +10,7 @@ contrast:
 class: home
 ---
 
-<a href="https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe" class="btn">Téléchargement</a>
+<a href="https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe" class="btn">Téléchargement</a>  
 Attendez quelques secondes...
 
 Hello ! Vous voulez apprendre  à utiliser le clavier AZERTY ?
