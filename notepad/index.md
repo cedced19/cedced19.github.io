@@ -10,9 +10,7 @@ contrast:
 class: home
 ---
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe) 
-
-<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class="btn">Téléchargement</a>
+<a href="https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe" class="btn">Téléchargement</a>
 
 
 Attendez quelques secondes...
