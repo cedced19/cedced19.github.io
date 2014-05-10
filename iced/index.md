@@ -11,7 +11,6 @@ class: home
 ---
 
 [Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true) 
-<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class=​"btn">​Téléchargement​</a>
 ​
 Attendez quelques secondes...
 
