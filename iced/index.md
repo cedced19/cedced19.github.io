@@ -86,4 +86,5 @@ Assenbler des couleurs.
 Et bien d'autres!
 
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe)
+<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class="btn">Téléchargement</a>
+
