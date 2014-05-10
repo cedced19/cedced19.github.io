@@ -10,7 +10,11 @@ contrast:
 class: home
 ---
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe)  
+[Téléchargement](https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe) 
+
+<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class="btn">Téléchargement</a>
+
+
 Attendez quelques secondes...
 
 Sur une idée de Charly mon designer, Notepad C a été crée.
