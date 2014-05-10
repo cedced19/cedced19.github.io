@@ -10,8 +10,7 @@ contrast:
 class: home
 ---
 
-<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class="btn">Téléchargement</a>
- [Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true){:.btn}
+[Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true){:.btn}
 
 Attendez quelques secondes...
 
@@ -87,5 +86,5 @@ Assenbler des couleurs.
 Et bien d'autres!
 
 
-<a href="https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true" class="btn">Téléchargement</a>
+[Téléchargement](https://github.com/cedced19/iced/blob/master/setup/iced-setup.exe?raw=true){:.btn}
 
