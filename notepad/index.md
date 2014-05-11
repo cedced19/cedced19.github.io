@@ -10,7 +10,7 @@ contrast:
 class: home
 ---
 
-<a href="https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe" class="btn">Téléchargement</a>
+[Téléchargement](https://raw.githubusercontent.com/cedced19/NotepadC/master/setup/NotePadC.exe){:.btn}
 
 
 Attendez quelques secondes...
@@ -20,7 +20,7 @@ Notepad C est un logiciel  qui permet de prendre des notes.
 Enregistrement du fichier diponible.
 Gère maintenant le DragDrop (glisser-deposer).
 
-![](demo.png)
+![Demo](demo.png)
 
 It's the extension of the brain.
 
