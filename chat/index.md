@@ -15,13 +15,13 @@ Le chat est basique pour le moment.
 ###Chat C Version Client :
 Connectez vous a un serveur via une ip.    
 
-<a href="https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe" class="btn">Télécharger le Client</a>   
+[Télécharger le Client](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe){:.btn} 
 Attendez quelques secondes...  
 
 ![](demo.png)
 
 ###Chat C Version Serveur :
-<a href="https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe" class="btn">Télécharger le Serveur</a>  
+[Télécharger le Serveur](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ServeurChat.exe){:.btn}
 Attendez quelques secondes...    
 
 Cliquez.  
