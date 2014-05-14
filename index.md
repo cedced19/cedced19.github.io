@@ -41,7 +41,7 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/).
 
 ##Design
 
-Charly est skinner de TrackMania. Il a une chaine youtube [Charly25873](https://www.youtube.com/channel/UCOmStS_lSNYu9iudht0mrwQ) où il fait des vidéos sur TrackMania.
+Je m'occupe des design CSS mais pour le reste Charly est mon designer, aller sur son [site](https://tmcharly.github.io/).
 
 ##Contact
 
