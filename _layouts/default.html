@@ -10,9 +10,13 @@
         {% endif %}
 
         {% if page.class != 'fourOhfour' %}
-            {% include content.html %}
-            {% include footer.html %}
+            {% if page.class != 'soon' %}
+                {% include content.html %}
+                {% include footer.html %}
+            {% endif %}
         {% endif %}
+        
+        
 
         {% include scripts.html %}
     </body>
