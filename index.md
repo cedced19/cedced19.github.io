@@ -15,7 +15,7 @@ Tout mes projets sont sur mon [github](//github.com/cedced19/).
 
 Ce site est écrit avec [Jekyll](http://jekyllrb.com/).  
 
-**Actuallités** sur mes logiciels/sites sont sur mon [blog](//cedced19.github.io/blog/). 
+**Actuallités** sur mes logiciels/sites sont sur mon [blog](blog). 
 
 ##Logiciels
 
