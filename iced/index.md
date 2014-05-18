@@ -34,7 +34,7 @@ Un player de vidéos/musiques.
 
 ###Chrono C :
 
-C'est un chronomètre car il y en a pas par default dans Windows !
+C'est un chronomètre car il y en a pas par default dans Windows !  
 ![Chrono](demo/Chrono.png)
 
 ###Calcules ton voyage :
@@ -60,7 +60,7 @@ Vous pouvez éteindre votre pc quand le téléchargement est fini !
 
 ###Cliqueur :
 
-Permet de cliquer beaucoup de fois à la seconde.
+Permet de cliquer beaucoup de fois à la seconde.  
 ![Cliqueur](demo/Clic.png)
 
 ###Tic Tac Boum :
