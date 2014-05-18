@@ -13,7 +13,7 @@ class: home
 Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
 Tout mes projets sont sur mon [github](//github.com/cedced19/).
 
-Ce site est écrit avec [Jekyll](//jekyllrb.com/).  
+Ce site est écrit avec [Jekyll](http://jekyllrb.com/).  
 
 **Actuallités** sur mes logiciels/sites sont sur mon [blog](//cedced19.github.io/blog/). 
 
