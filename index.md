@@ -13,9 +13,11 @@ class: home
 Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
 Tout mes projets sont sur mon [github](//github.com/cedced19/).
 
-Ce site est écrit avec [Jekyll](http://jekyllrb.com/).  
-
 **Actuallités** sur mes logiciels/sites sont sur mon [blog](blog). 
+
+Je m'occupe des design CSS mais pour le reste Charly qui me donne un coup de main, aller sur son [site](//tmcharly.github.io/).
+
+Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource). 
 
 ##Logiciels
 
@@ -38,10 +40,6 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/).
 * [Download-Center](//github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.
 * [Birthday-Page](//cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
 * [Countdown-Page](//cedced19.github.io/demo/countdown-page/) un compte à rebour.
-
-##Design
-
-Je m'occupe des design CSS mais pour le reste Charly est mon designer, aller sur son [site](//tmcharly.github.io/).
 
 ##Contact
 
