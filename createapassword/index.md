@@ -15,6 +15,3 @@ class: home
 Permet de crée un  mot de passe différent pour chaque site.
 
 ![Demo](demo.png)
-
-## License
-[CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)
