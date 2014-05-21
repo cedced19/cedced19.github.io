@@ -12,6 +12,6 @@ class: home
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/CreateAPassword/master/setup/CreateAPassword.exe){:.btn}
 
-Permet de crée un  mot de passe différent pour chaque site.
+Permet de créer un  mot de passe différent pour chaque site.
 
 ![Demo](demo.png)
