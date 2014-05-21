@@ -18,19 +18,18 @@
 <meta property="og:language" content="fr_FR">
 <meta property="og:url" content="http://cedced19.github.io/demo/countdown-page/" />
 <meta property="og:description" content="Un site avec un compte à rebour." />
-        
-<link href="https://plus.google.com/104855167193751168501/" rel="publisher" />
+
+<link href="//plus.google.com/104855167193751168501/" rel="publisher" />
 <meta name="description" content="Un site avec un compte à rebour." />
 
 <style>
 * { margin:0; padding:0; }
-#center { 
-	height:100%; 
+#center {
+	height:100%;
 	width:100%;
-/*	float: left;*/
-	background-image:url('background.png'); 
+	background-image:url('background.png');
 	background-position: center;
-	font-family: "Candara", serif; 
+	font-family: "Candara", serif;
 	color:#fff;
 	text-align:center;
 	display:table;
@@ -42,34 +41,47 @@ div { text-align:center; }
 
 .cache{ background-color:#000; position:absolute; cursor:pointer; width:100%; }
 </style>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="countdown.js"></script>
-<script type="text/javascript">
-$(function () {
-$('#countdown').countdown({until: new Date(2014, 10, 19, 1, 0, 0), format: 'DHMS',
-layout: ''+
-'{dnn} jour, {hnn} heures, {mnn} minutes et {snn} secondes avant mon anniversaire !'
-/*, layout:
-'<div id="timer">'+
-	'<div id="timer_days" class="timer_numbers">{dnn}</div>'+
-	'<div id="timer_hours" class="timer_numbers">{hnn}</div>'+
-	'<div id="timer_mins" class="timer_numbers">{mnn}</div>'+
-	'<div id="timer_seconds" class="timer_numbers">{snn}</div>'+
-'<div id="timer_labels">'+
-	'<div id="timer_days_label" class="timer_labels">jours</div>'+
-	'<div id="timer_hours_label" class="timer_labels">heures</div>'+
-	'<div id="timer_mins_label" class="timer_labels">minutes</div>'+
-	'<div id="timer_seconds_label" class="timer_labels">secondes</div>'+
-'</div>'+
-'</div>'
-*/});
-});
-</script>
 </head>
 <body>
 	<div class="block" id="center">
-		<span style="display:table-cell; vertical-align:middle; text-align:center;"><div id="countdown" style="text-align:center;"></div></span>
+		<span style="display:table-cell; vertical-align:middle; text-align:center;">
+                                <span id="countdown" style="text-align:center;">
+                                <span class="bloc" id="days"></span>, <span class="bloc" id="hours"></span>,<span class="bloc" id="minutes"></span> et <span class="bloc" id="seconds"></span> avant mon anniversaire !
+                                </span>
+                        </span>
 	</div>
+            <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <script type="text/javascript">
+                (function($){
+                    var launch = new Date(2014,10,19,00,00,00); // en UTC
+                    var days = $('#days')
+                    var hours = $('#hours')
+                    var minutes = $('#minutes')
+                    var seconds = $('#seconds')
+                    setDate()
+                    function setDate(){
+                        var now = new Date();
+                        var s = (launch.getTime() - now.getTime())/1000 - now.getTimezoneOffset()*60;
+                        var d = Math.floor(s/86400);
+
+                        days.html(d+' jour'+(d>1?'s' : ''));
+                        s-= d*86400;
+
+                        var h = Math.floor(s/3600);
+                        hours.html(h+' heure'+(d>1?'s' : ''));
+                        s -= h*3600;
+
+                        var m = Math.floor(s/60);
+                        minutes.html(m+' minute'+(d>1?'s' : ''));
+                        s -= m*60;
+
+                        s = Math.floor(s);
+                        seconds.html(s+' seconde'+(d>1?'s' : ''));
+
+                        setTimeout(setDate, 1000);
+                    }
+                })(jQuery);
+            </script>
 	<script type="text/javascript" >
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
