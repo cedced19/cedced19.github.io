@@ -25,7 +25,8 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 * [Notepad C](//cedced19.github.io/notepad/) un bloc-note.
 * [Chat C](//cedced19.github.io/chat/) un chat.
 * [Azou](//cedced19.github.io/azou/) un logiciel pour utiliser AZERTY.
-* [Hub Shutdown](//cedced19.github.io/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.
+* [Hub Shutdown](//cedced19.github.io/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.  
+* [Create A Password](//cedced19.github.io/createapassword/) Un logiciel pour créer simplemen des mots de passe.  
 
 
 ##Sites
