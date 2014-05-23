@@ -40,7 +40,8 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 * [Github-Repo](//cedced19.github.io/demo/github-repo/) un portefolio utilisant l'API Github.
 * [Download-Center](//github.com/cedced19/Download-Center/) un centre de téléchargement en PHP.
 * [Birthday-Page](//cedced19.github.io/demo/birthday-page/) une page pour les anniversaire.
-* [Countdown-Page](//cedced19.github.io/demo/countdown-page/) un compte à rebour.
+* [Countdown](//cedced19.github.io/demo/countdown-page/) un compte à rebour.
+* [Greeting Birth](//cedced19.github.io/demo/greeting-birth/) une page pour ma petite cousine.
 
 ##Contact
 
