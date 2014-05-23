@@ -21,19 +21,19 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 
 ##Logiciels
 
-* [ICed](//cedced19.github.io/iced/) un logiciel.
-* [Notepad C](//cedced19.github.io/notepad/) un bloc-note.
-* [Chat C](//cedced19.github.io/chat/) un chat.
-* [Azou](//cedced19.github.io/azou/) un logiciel pour utiliser AZERTY.
-* [Hub Shutdown](//cedced19.github.io/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.  
-* [Create A Password](//cedced19.github.io/createapassword/) un logiciel pour créer simplement des mots de passe.  
+* [ICed](//cedced19.github.io/soft/iced/) un logiciel.
+* [Notepad C](//cedced19.github.io/soft/notepad/) un bloc-note.
+* [Chat C](//cedced19.github.io/soft/chat/) un chat.
+* [Azou](//cedced19.github.io/soft/azou/) un logiciel pour utiliser AZERTY.
+* [Hub Shutdown](//cedced19.github.io/soft/hubshutdown/) un logiciel pour éteintre son ordinateur plus rapidement.  
+* [Create A Password](//cedced19.github.io/soft/createapassword/) un logiciel pour créer simplement des mots de passe.
+* [Prototype](//cedced19.github.io/soft/proto/) un site pour coder en HTML/CSS.
+* [Home C](//cedced19.github.io/soft/home/) une page d'acceuille sans pub.
 
 
 ##Sites
 
 * [TMCharly](//tmcharly.github.io/) site d'un ami.
-* [Prototype](//cedced19.github.io/proto/) un site pour coder en HTML/CSS.
-* [Home C](//cedced19.github.io/home/) une page d'acceuille sans pub.
 * [HTML5-Page](//cedced19.github.io/demo/html5-page/) une page en HTML5.
 * [Paper-Page](//cedced19.github.io/demo/paper-page/) une page utilisant les box-shadow.
 * [Download-Page](//cedced19.github.io/demo/download-page/) une page de téléchargement.
