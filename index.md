@@ -1,7 +1,7 @@
 ---
 layout: default
 
-subtitle:    <div id="claim-container"><div id="claim"></div></div>
+subtitle: <div id="claim-container"><div id="claim"></div></div>
 
 title: Cedced19
 
