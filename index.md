@@ -1,7 +1,7 @@
 ---
 layout: default
 
-subtitle: Developeur pour le fun.
+subtitle:    <div id="claim-container"><div id="claim"></div></div>
 
 title: Cedced19
 
