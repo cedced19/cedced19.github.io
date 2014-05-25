@@ -86,6 +86,12 @@ html {
   text-align: center;
 }
 
+::selection{
+  color:#FFF; 
+  background:#FF0000; 
+  }
+
+
 @media (min-width: 650px) {
   html {
     height: 100%;
