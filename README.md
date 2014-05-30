@@ -5,6 +5,10 @@ Hi ! It's my blog with jekyll !
 Salut ! C'est mon blog avec jekyll !
 Ici tout est bien rangé.
 
+##Note à soi-même
+
+Mieux commenter le code et les commits.
+
 ##JS
 
 Replacer éventuellement `<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
