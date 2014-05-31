@@ -1,22 +1,20 @@
 ---
 ---
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<rss version="2.0">
-    <channel>
- 
- <title>Cedced19</title>
- <link>http://cedced19.github.io/</link>
- <description>new's des applications de Cedced19</description>
-
- {% for post in site.posts %}
- <item>
-   <title>{{ post.title }}</title>
-   <link>{{site.url}}{{ post.url }}</link>
-   <guid isPermaLink="true">{{site.url}}{{ post.url }}</guid>
-   <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
-   <description>{{ post.content | xml_escape }}</description>
- <item>
- {% endfor %}
- 
-    </channel>
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}{{ site.baseurl }}/</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    {% for post in site.posts %}
+      <item>
+        <title>{{ post.title | xml_escape }}</title>
+        <description>{{ post.content | xml_escape }}</description>
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
+        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
+      </item>
+    {% endfor %}
+  </channel>
 </rss>
