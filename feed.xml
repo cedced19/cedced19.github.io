@@ -5,14 +5,8 @@
     <channel>
  
  <title>Cedced19</title>
- <link href="{{ site.url }}/feed.xml" rel="self"/>
- <link href="{{ site.url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
- <author>
-   <name>Cedced19</name>
-   <email>cedced19@gmail.com</email>
- </author>
+ <link>http://cedced19.github.io/</link>
+ <description>new's des applications de Cedced19</description>
 
  {% for post in site.posts %}
  <item>
