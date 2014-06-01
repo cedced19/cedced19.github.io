@@ -17,6 +17,7 @@ Hello ! Vous voulez apprendre  à utiliser le clavier AZERTY ?
 Apprenez le avec Azou !
 Tapez 60 lettre en un minimum de temps.
 Moins vous metez de temps plus vous êtes rapide.
+Fonctionne sous windows et gratuit.
 
 ![](demo.png)
 
