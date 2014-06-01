@@ -18,6 +18,7 @@ Attendez quelques secondes...
 
 ICed est un logiciel crée par cedced19 qui permet tous et rien !
 Il est avant tout GRATUIT.
+Fonctionne sous windows.
 
 Il contient :
 
