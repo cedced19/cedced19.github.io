@@ -11,6 +11,7 @@ class: home
 ---
 
 Le chat est basique pour le moment.
+Fonctionne sous windows et gratuit.
 
 ###Chat C Version Client :
 [Télécharger le Client](https://raw.githubusercontent.com/cedced19/ChatC/master/setup/ChatC.exe){:.btn}    
