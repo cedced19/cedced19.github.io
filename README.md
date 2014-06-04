@@ -14,9 +14,9 @@ Mieux commenter le code et les commits.
 Replacer éventuellement `<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
 par `<script type="text/javascript" src="/scripts/jquery.min.js"></script>`
 
-##CSS
+##CSS / SCSSS
 
-Le CSS décompressé est ici : *http://cedced19.github.io/uncompress.css*
+Le SCSS est ici : *http://cedced19.github.io/uncompress.scss*
 
 ## License
 [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)
