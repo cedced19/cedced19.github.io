@@ -4,7 +4,7 @@ C'est une page de téléchargement !
 
 Il y a pas de php mais l'intégration avec du php ,pour un achat de produit , serai interssante.
 
-[Demo](https://github.com/cedced19/cedced19.github.io/tree/master/demo/download-page)
+[Demo](http://cedced19.github.io/demo/download-page/)
 
 ##Grunt
 
