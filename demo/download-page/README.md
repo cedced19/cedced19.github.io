@@ -8,7 +8,7 @@ Il y a pas de php mais l'intégration avec du php ,pour un achat de produit , se
 
 ##Grunt
 
-1. `npm install` (dans le répertoire, avec node.js d'installé)
+1. `npm install` (dans le répertoire, avec node.js d'installé, en mode administrateur)
 2. `grunt watch`  
  
 Et CSS, JS sont compressé !
