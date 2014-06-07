@@ -9,4 +9,4 @@ sass:
     style: compressed
 stylus:
   compress: true
-  path: uncompress.styl
+  path: .compress/styl/
