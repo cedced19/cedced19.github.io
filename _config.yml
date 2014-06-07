@@ -5,3 +5,6 @@ lsi: false
 exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
+
+#Other
+title: Cedced19
