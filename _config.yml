@@ -6,4 +6,7 @@ exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
 sass:
-    style: :compressed
+    style: compressed
+stylus:
+  compress: true
+  path: uncompress.styl
