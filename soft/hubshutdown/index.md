@@ -18,8 +18,8 @@ Télécharge ça ici !
 
 Fonctionne sous windows et gratuit.
 
-[Téléchargement](https://raw.githubusercontent.com/cedced19/Hub-Shutdown/master/setup/Hub%20Shutdown.exe){:.btn}
-Attendez quelques secondes...
+[Téléchargement](https://raw.githubusercontent.com/cedced19/Hub-Shutdown/master/setup/Hub%20Shutdown.exe){:.btn}  
+Attendez quelques secondes...  
 
 
 ![](demo.png)
