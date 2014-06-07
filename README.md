@@ -15,9 +15,12 @@ Replacer éventuellement
 `<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
 par `<script type="text/javascript" src="/scripts/jquery.min.js"></script>`
 
-##CSS / SCSS
+##CSS
 
-Le SCSS est ici : *http://cedced19.github.io/uncompress.scss*
+Ici vous pouvez ou avoir du SCSS ou du CSS ou du Stylus ! 
+Le SCSS est ici : *http://cedced19.github.io/uncompress.scss*  
+Le CSS est ici : *http://cedced19.github.io/uncompress.css*  
+Le Stylus est ici : *http://cedced19.github.io/uncompress.styl*  
 
 ## License
 [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)
