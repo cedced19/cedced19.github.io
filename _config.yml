@@ -5,6 +5,7 @@ lsi: false
 exclude: [ README.md]
 markdown: kramdown
 permalink: /blog/:year/:title/
+timezone: Europe/Paris
 
 #Other
 title: Cedced19
