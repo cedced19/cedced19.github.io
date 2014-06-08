@@ -21,6 +21,3 @@ Ici vous pouvez ou avoir du SCSS ou du CSS ou du Stylus !
 Le SCSS est ici : *http://cedced19.github.io/uncompress.scss*  
 Le CSS est ici : *http://cedced19.github.io/uncompress.css*  
 Le Stylus est ici : *http://cedced19.github.io/uncompress.styl*  
-
-## License
-[CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/)
