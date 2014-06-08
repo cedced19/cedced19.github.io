@@ -5,9 +5,7 @@
     </head>
     <body{% if page.class %} class="{{ page.class }}"{% endif %}>
 
-        {% if page.class != 'post' %}
             {% include header.html %}
-        {% endif %}
 
         {% if page.class != 'fourOhfour' %}
             {% if page.class != 'soon' %}
