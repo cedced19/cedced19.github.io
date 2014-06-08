@@ -7,11 +7,7 @@
         
         {% if page.class == "post" %}
         <nav>
-                <ul class="menu">
-                    <li class="menu"><a href="//cedced19.github.io" class="menu">Acceuil</a></li>
-                    <li class="menu {% if page.title == "Blog" %}active{% endif %}"><a href="//cedced19.github.io/blog/" class="menu">Blog</a></li>
-                    {% if page.title != "Blog" %}<li class="menu active"><a href="#" class="menu">{{ page.title }}</a></li>{% endif %}
-                </ul>
+            <a href="//cedced19.github.io/blog"><< Blog</a>
         </nav>
         {% endif %}
     
