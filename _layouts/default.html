@@ -10,11 +10,11 @@
             <nav>
                 <a class="nav" href="//cedced19.github.io/blog"><< Blog</a>
             </nav>
-            
+            {% endif %}
         {% endif %}
     
         {% if page.class != "post" %}
-        {% include header.html %}
+            {% include header.html %}
         {% endif %}
 
         {% if page.class != 'fourOhfour' %}
