@@ -35,10 +35,9 @@ $(function(){
 	});
 	
 	body.on('keydown', function(e){
-		if($('.scroll-notice').css('opacity') == 1){
+		if(scrollNotice.css('opacity') == 1){
 			if(e.keyCode === 13 ){
 				scrollNotice.trigger('click');
-				e.stopPropagation();
 			};
 		};
 	});
