@@ -12,7 +12,9 @@
         {% if page.class != 'fourOhfour' %}
             {% if page.class != 'soon' %}
                 {% include content.html %}
-                {% include footer.html %}
+                {% if page.title != 'Licence'%}
+                    {% include footer.html %}
+                {% endif %}
             {% endif %}
         {% endif %}
         
