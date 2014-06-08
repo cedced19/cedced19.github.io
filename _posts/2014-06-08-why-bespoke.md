@@ -14,4 +14,5 @@ Elle montre l'utilité de Bespoke.js.
 
 Il y a un générateur yeoman où j'ai modifier le Gruntfile.js à ma façon :  
 
-
+{% tweet https://twitter.com/cedced19/status/475267346949353472 %}
+{% gist bbed55390377e34949dc %}
