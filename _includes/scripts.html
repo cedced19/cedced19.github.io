@@ -35,10 +35,12 @@ $(function(){
 	});
 	
 	body.on('keydown', function(e){
-		if(e.keyCode === 13 ){
-			scrollNotice.trigger('click');
-			e.stopPropagation();
-		}
+		if(1 - (scrollDist / 600) != 100){
+			if(e.keyCode === 13 ){
+				scrollNotice.trigger('click');
+				e.stopPropagation();
+			};
+		};
 	});
 	
 });
