@@ -1,0 +1,10 @@
+nav {
+  padding: 15px 0 0 15px;
+}
+a.nav{
+  border-bottom: 0px dotted #fff;
+}
+hr.blog {
+  width: 160px;
+  border-bottom: 3px solid #000;
+}
