@@ -1,12 +1,14 @@
+{% if page.title != 'License'%}
 <footer class="footer-wrap" role="complementary">
 	<p class="footer">
 	   Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a>
             {% if page.title != site.title %}
             	{% if page.title != 'Blog'%}
-	            		<br>
-	            		<br>
-		                <a href="http://twitter.com/share?text=&ldquo;{{ page.title }}&rdquo; by @cedced19 :">Partager sur Twitter</a><br>
+	            	<br>
+	            	<br>
+		        <a href="http://twitter.com/share?text=&ldquo;{{ page.title }}&rdquo; by @cedced19 :">Partager sur Twitter</a><br>
 	        {% endif %}
             {% endif %}
         </p>
 </footer>
+{% endif %}
