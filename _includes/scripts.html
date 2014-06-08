@@ -5,8 +5,7 @@ $(function(){
 	var header = $('.header'),
 		masthead = $('.masthead'),
 		scrollNotice = $('.scroll-notice'),
-		body = $('body'),
-		scrollDist = $(window).scrollTop();
+		body = $('body');
 		
 		
 	function centerMasthead(){
@@ -23,6 +22,7 @@ $(function(){
 	});
 
 	$(window).scroll(function(){
+		var scrollDist = $(window).scrollTop();
 		scrollNotice.css({
 			"opacity" : 1 - (scrollDist / 600)
 		});
@@ -35,6 +35,7 @@ $(function(){
 	});
 	
 	body.on('keydown', function(e){
+		var scrollDist = $(window).scrollTop();
 		if(1 - (scrollDist / 600) != 100){
 			if(e.keyCode === 13 ){
 				scrollNotice.trigger('click');
