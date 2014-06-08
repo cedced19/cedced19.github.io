@@ -1,0 +1,12 @@
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+    
+        {% include content.html %}
+        {% include footer.html %}
+
+        {% include analytics.html %}
+    </body>
+</html>
