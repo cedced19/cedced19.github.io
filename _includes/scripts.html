@@ -4,7 +4,9 @@
 $(function(){
 	var header = $('.header'),
 		masthead = $('.masthead'),
-		scrollNotice = $('.scroll-notice');
+		scrollNotice = $('.scroll-notice'),
+		body = $('body');
+		
 		
 	function centerMasthead(){
 		var mastheadHeight = masthead.height();
@@ -32,9 +34,9 @@ $(function(){
 		centerMasthead();
 	});
 	
-	$('body').on('keydown', function(e){
+	body.on('keydown', function(e){
 		if(e.keyCode === 13 ){
-			scrollNotice.trigger('click')
+			scrollNotice.trigger('click');
 		}
 	});
 	
