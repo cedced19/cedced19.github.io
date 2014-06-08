@@ -29,6 +29,7 @@ li.menu:hover {
 a.menu {
   color: inherit !important;
   text-decoration: none !important;
+  border-bottom: 1px dotted #FFF !important;
 }
 
 li.active {
