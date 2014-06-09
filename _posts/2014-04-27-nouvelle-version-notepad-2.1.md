@@ -4,6 +4,8 @@ layout: default
 class: post
 
 title: Nouvelle version Notepad C
+
+tweeter: true
 ---
 
 Ce matin j'ai fais une nouvelle version de Notepad C !  
