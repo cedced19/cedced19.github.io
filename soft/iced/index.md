@@ -8,6 +8,8 @@ subtitle: Un logiciel.
 contrast:
 
 class: home
+
+tweeter: true
 ---
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe){:.btn}
