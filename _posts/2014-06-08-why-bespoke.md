@@ -4,6 +4,8 @@ layout: default
 class: post
 
 title: Why Bespoke.js
+
+tweeter: true
 ---
 
 
