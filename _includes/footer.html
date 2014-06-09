@@ -1,15 +1,13 @@
-{% if page.tweeter == 'true'%}
+{% if page.tiltle != 'License'%}
 <hr class="rule">
 <footer class="footer-wrap" role="complementary">
 	<p class="footer">
 	   Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a>
-            {% if page.title != site.title %}
-            	{% if page.title != 'Blog'%}
+            	{% if page.tweeter == 'true'%}
 	            	<br>
 	            	<br>
 		        <a href="http://twitter.com/share?text=&ldquo;{{ page.title }}&rdquo; by @cedced19 :">Partager sur Twitter</a><br>
 	        {% endif %}
-            {% endif %}
         </p>
 </footer>
 {% endif %}
