@@ -8,6 +8,8 @@ title: Cedced19
 contrast:
 
 class: home
+
+tweeter: false
 ---
 
 Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
