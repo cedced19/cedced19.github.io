@@ -8,6 +8,8 @@ subtitle: Un Chat.
 contrast:
 
 class: home
+
+tweeter: true
 ---
 
 Le chat est basique pour le moment.
