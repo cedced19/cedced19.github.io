@@ -8,6 +8,8 @@ subtitle: Un logiciel pour les enfants. Beta 1.3
 contrast:
 
 class: home
+
+tweeter: true
 ---
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/Azou/master/setup/Azou.exe){:.btn}  
