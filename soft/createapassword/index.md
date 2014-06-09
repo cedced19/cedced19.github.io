@@ -8,6 +8,8 @@ subtitle: Un logiciel pour créer simplement des mots de passe.
 contrast:
 
 class: home
+
+tweeter: true
 ---
 
 [Téléchargement](https://raw.githubusercontent.com/cedced19/CreateAPassword/master/setup/CreateAPassword.exe){:.btn}
