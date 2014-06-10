@@ -21,7 +21,7 @@ Toutes les options grunt dans `Gruntfile.js`
 * `concat` : pour réunir les js.
 * `uglify` : pour minifier les js.
 * `cssmin` : pour réunir et minifié les css.
-* `watch`  : faire `jshint`, `concat`, `uglify` ou `cssmin` à chaque modifications.
+* `watch`  : faire `concat`, `uglify` ou `cssmin` à chaque modifications.
 * `default`: faire `concat`, `uglify`, `cssmin` à la commande `grunt default`.
 * `true`: faire `jshint`, `concat`, `uglify`, `cssmin` à la commande `grunt true`.
 
