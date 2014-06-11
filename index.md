@@ -3,7 +3,7 @@ layout: default
 
 subtitle: Developpeur pour le fun.
 
-title: Cedced19
+title: Cédric
 
 contrast:
 
