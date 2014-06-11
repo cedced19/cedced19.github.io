@@ -49,8 +49,8 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 
 ##Yeoman
 
-* [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour crée un projet jade et stylus rapidement.
-* [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour crée un projet php et stylus rapidement.
+* [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour créer un projet jade et stylus rapidement.
+* [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour créer un projet php et stylus rapidement.
 
 
 ##Contact
