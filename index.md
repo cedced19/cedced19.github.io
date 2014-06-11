@@ -45,6 +45,13 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 * [Countdown](//cedced19.github.io/demo/countdown-page/) un compte à rebour.
 * [Greeting Birth](//cedced19.github.io/demo/greeting-birth/) une page pour ma petite cousine.
 * [Mother's day](//cedced19.github.io/demo/mothers-day/) une page pour toutes les mères du monde.
+* 
+
+##Yeoman
+
+* [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour crée un projet jade et stylus rapidement.
+* [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour crée un projet php et stylus rapidement.
+
 
 ##Contact
 
