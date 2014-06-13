@@ -12,14 +12,17 @@ class: home
 tweeter: false
 ---
 
-Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5, SCSS.
-Tout mes projets sont sur mon [github](//github.com/cedced19/).
+Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5.  
+Tout mes projets sont sur mon [github](//github.com/cedced19/). 
+J'aime bien Stylus et Jade.
 
-**Actuallités** sur mes logiciels/sites sont sur mon [blog](blog). 
+**Actuallités** sur mes logiciels/sites sont sur mon [blog](blog).  
 
-Je m'occupe des design CSS mais pour le reste Charly qui me donne un coup de main, aller sur son [site](//tmcharly.github.io/).
+Je m'occupe des design CSS mais pour le reste Charly qui me donne un coup de main, aller sur son [site](//tmcharly.github.io/).  
 
-Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource). 
+Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).   
+
+
 
 ##Logiciels
 
@@ -31,6 +34,12 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 * [Create A Password](//cedced19.github.io/soft/createapassword/) un logiciel pour créer simplement des mots de passe.
 * [Prototype](//cedced19.github.io/soft/proto/) un site pour coder en HTML/CSS.
 * [Home C](//cedced19.github.io/soft/home/) une page d'acceuille sans pub.
+
+###Yeoman
+
+* [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour créer un projet jade et stylus rapidement.
+* [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour créer un projet php et stylus rapidement.
+
 
 
 ##Sites
@@ -45,11 +54,6 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 * [Countdown](//cedced19.github.io/demo/countdown-page/) un compte à rebour.
 * [Greeting Birth](//cedced19.github.io/demo/greeting-birth/) une page pour ma petite cousine.
 * [Mother's day](//cedced19.github.io/demo/mothers-day/) une page pour toutes les mères du monde.
-
-##Yeoman
-
-* [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour créer un projet jade et stylus rapidement.
-* [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour créer un projet php et stylus rapidement.
 
 
 ##Contact
