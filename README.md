@@ -25,4 +25,4 @@ Le Stylus est ici : *http://cedced19.github.io/uncompress.styl*
 ##Special thanks
 
 Thanks to :
-* [Troy swanson](//github.com/troyswanson)
+* [Troy Swanson](//github.com/troyswanson)
