@@ -6,11 +6,13 @@
     <body{% if page.class %} class="{{ page.class }}"{% endif %}>
         
         {% if page.class == "post" %}
-            {% if page.title != "Blog" %}
             <nav>
+            {% if page.title == "Blog" %}
+                <a class="nav" href="//cedced19.github.io"><< Home</a>
+            {% else %}
                 <a class="nav" href="//cedced19.github.io/blog"><< Blog</a>
-            </nav>
             {% endif %}
+            </nav>
         {% endif %}
     
         {% if page.class != "post" %}
