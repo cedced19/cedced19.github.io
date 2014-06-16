@@ -9,5 +9,9 @@ timezone: Europe/Paris
 
 #Other
 title: Cedced19
+
+#CSS Color
 color: 27ae60
 progressbar: acf3ca
+link: 2ecc71
+btn: 2ecc71
