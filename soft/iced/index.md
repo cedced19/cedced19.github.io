@@ -27,7 +27,6 @@ Il contient :
 ###Notepad C :
 
 C'est un bloc-note.[Sa page.](http://cedced19.github.io/notepad/)
-
 ![Notepad C](demo/Notepad C.PNG)
 
 ###Player :
