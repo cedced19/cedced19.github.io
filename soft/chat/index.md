@@ -3,7 +3,7 @@ layout: default
 
 title: Chat C
 
-subtitle: Un Chat.
+subtitle: Un Chat. En version web et logiciel.
 
 contrast:
 
