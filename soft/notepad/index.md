@@ -23,7 +23,7 @@ Enregistrement du fichier diponible.
 Gère maintenant le DragDrop (glisser-deposer).
 Fonctionne sous windows et gratuit.
 
-![Demo](demo.png)
+![Demo](//raw.githubusercontent.com/cedced19/NotepadC/master/demo.png)
 
 It's the extension of the brain.
 
