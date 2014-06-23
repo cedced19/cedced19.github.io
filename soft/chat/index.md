@@ -22,7 +22,7 @@ Connectez vous a un serveur via votre navigateur préféré.
 
 ###Version web Serveur :
 
-[Documentation Github](https://github.com/cedced19/ChatC-Web)
+[Documentation Github](https://github.com/cedced19/ChatC-Web){:.btn} 
 
 ###Version logiciel Client :
 
