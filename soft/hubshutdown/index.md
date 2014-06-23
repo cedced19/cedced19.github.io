@@ -24,7 +24,7 @@ Fonctionne sous windows et gratuit.
 Attendez quelques secondes...  
 
 
-![](demo.png)
+![](https://github.com/cedced19/Hub-Shutdown/raw/master/demo.png)
 
 Eteint ton ordinateur plus rapidement !
 
