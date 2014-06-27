@@ -39,6 +39,7 @@ Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 
 * [jadestyl](//github.com/cedced19/generator-jadestyl) générateur pour créer un projet jade et stylus rapidement.
 * [phpstyl](//github.com/cedced19/generator-phpstyl) générateur pour créer un projet php et stylus rapidement.
+* [chat](//github.com/cedced19/generator-chat) générateur pour créer un chat basé sur Chat C verion Web.
 
 
 
