@@ -6,5 +6,23 @@
 	<p class="post-time"><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
 	{% endif %}
 
+            {% if page.title == site.title %}
+            <h2 id="depots">Dépôts</h2>
+            <ol id="repos">
+            <li>
+                <a href="http://cedced19.github.io/soft/home/">Home C</a>
+                <p>Une page d'acceuil sans pub.</p>
+                <span class="language">JavaScript</span>
+            </li>
+            </ol>
+            <li>
+                <a href="http://cedced19.github.io/soft/proto/">Prototype</a>
+                <p>Une page pour créer des petites page HTML</p>
+                <span class="language">JavaScript</span>
+            </li>
+            </ol>
+            {% endif %}
+
+
 	{{ content }}
 </main>
