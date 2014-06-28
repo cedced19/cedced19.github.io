@@ -9,18 +9,18 @@ contrast:
 
 class: home
 
-tweeter: false
+tweet: false
 ---
 
-Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5.  
-Tout mes projets sont sur mon [github](//github.com/cedced19/). 
+Developpeur, j’utilise quotidiennement : Ruby, Markdown, C#, PHP, JS, CSS3, VB.net, Java, HTML5.
+Tout mes projets sont sur mon [github](//github.com/cedced19/).
 J'aime bien Stylus et Jade.
 
-**Actuallités** sur mes logiciels/sites sont sur mon [blog](blog).  
+**Actuallités** sur mes logiciels/sites sont sur mon [blog](blog).
 
-Je m'occupe des design CSS mais pour le reste Charly qui me donne un coup de main, aller sur son [site](//tmcharly.github.io/).  
+Je m'occupe des design CSS mais pour le reste Charly qui me donne un coup de main, aller sur son [site](//tmcharly.github.io/).
 
-Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).   
+Ce site est écrit avec [Jekyll](http://jekyllrb.com/) (opensource).
 
 
 ##Contact

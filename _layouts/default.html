@@ -4,17 +4,13 @@
         {% include head.html %}
     </head>
     <body{% if page.class %} class="{{ page.class }}"{% endif %}>
-        
+
         {% if page.class == "post" %}
             <nav>
-            {% if page.title == "Blog" %}
-                <a class="nav" href="//cedced19.github.io"><< Home</a>
-            {% else %}
                 <a class="nav" href="//cedced19.github.io/blog"><< Blog</a>
-            {% endif %}
             </nav>
         {% endif %}
-    
+
         {% if page.class != "post" %}
             {% include header.html %}
         {% endif %}
@@ -25,7 +21,6 @@
                 {% include footer.html %}
             {% endif %}
         {% endif %}
-        
 
         {% include scripts.html %}
     </body>

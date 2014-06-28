@@ -9,7 +9,7 @@ contrast:
 
 class: home
 
-tweeter: false
+tweet: false
 ---
 
 ##The MIT License (MIT)

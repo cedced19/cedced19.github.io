@@ -5,15 +5,10 @@ class: post
 
 title: Why Bespoke.js
 
-tweeter: true
+tweet: true
 ---
 
 
 
-J'ai créé une [présentation](//cedced19.github.io/presentation/why-bespoke/) a partir de [Bespoke.js](http://markdalgleish.com/projects/bespoke.js/) de [@markdalgleish](https://twitter.com/markdalgleish).
-Elle montre l'utilité de Bespoke.js.  
-
-
-Il y a un générateur yeoman où j'ai modifier le Gruntfile.js à ma façon :  
-
-[Gruntfile.js](https://gist.github.com/cedced19/bbed55390377e34949dc){:.btn}
+J'ai créé une [présentation](//cedced19.github.io/demo/why-bespoke/) a partir de [Bespoke.js](http://markdalgleish.com/projects/bespoke.js/) de [@markdalgleish](https://twitter.com/markdalgleish).
+Elle montre l'utilité de Bespoke.js.
