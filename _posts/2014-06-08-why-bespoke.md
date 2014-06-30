@@ -4,8 +4,6 @@ layout: default
 class: post
 
 title: Why Bespoke.js
-
-tweet: true
 ---
 
 

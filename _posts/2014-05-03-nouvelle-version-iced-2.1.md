@@ -4,8 +4,6 @@ layout: default
 class: post
 
 title: Nouvelle version ICed
-
-tweet: true
 ---
 
 Elle inclue "Pair It" un petit jeu ou il faut faire des paires !
