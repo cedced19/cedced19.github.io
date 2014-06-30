@@ -1,9 +1,4 @@
 <main class="content-wrap" role="main">
-	{% if page.class == 'post' %}
-		{% if page.title != 'Blog' %}
-                        <p class="post-time"><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-	           {% endif %}
-           {% endif %}
 
 	{{ content }}
 
