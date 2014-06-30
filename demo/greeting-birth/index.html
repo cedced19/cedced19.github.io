@@ -8,7 +8,7 @@
             <script type="text/javascript" src="/scripts/ie.js"></script>
   <![endif]-->
   <meta name="twitter:cars" content="summary" />
-  <meta name="twitter:title" content="Hello Anaé !" />	
+  <meta name="twitter:title" content="Hello Anaé !" />
   <meta name="twitter:image" content="http://cedced19.github.io/demo/greeting-birth/" />
   <meta name="twitter:site" content="@cedced19" />
   <meta name="twitter:author" content="@cedced19" />
@@ -44,7 +44,7 @@
   (function() {
     jQuery(function($) {
       var $characters, $claim, $claimCursor, claimIndex, claims, createElements, cursorTimeoutHandler, drawClaim, setClaimHeight, startBlinkingCursor;
-  
+
       claims = ['Welcome to the world !', 'Be nice with your sister !', 'Good luck Salomé !'];
       claimIndex = Math.floor(Math.random() * claims.length);
       claims.sort(function(a, b) {
@@ -56,7 +56,7 @@
       cursorTimeoutHandler = null;
       setClaimHeight = function() {
         var $tmpClaim, backup, c, _i, _len, _ref;
-  
+
         $tmpClaim = $('<div class="tmpClaim"></div>');
         $claim.css('height', 'auto');
         _ref = claims[0];
@@ -76,7 +76,7 @@
       });
       createElements = function() {
         var c, _i, _len, _ref;
-  
+
         $claim.empty();
         _ref = claims[claimIndex].split('');
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -89,7 +89,7 @@
       drawClaim = function() {
         var character, characterIndex, timeout, _i, _len, _results,
           _this = this;
-  
+
         createElements();
         timeout = 0;
         $claimCursor.addClass('off');
@@ -124,18 +124,8 @@
       setClaimHeight();
       return drawClaim();
     });
-  
+
   }).call(this);
-  </script>
-  <script type="text/javascript">
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-49736522-1', 'cedced19.github.io');
-  ga('send', 'pageview');
-
   </script>
 </body>
 </html>
