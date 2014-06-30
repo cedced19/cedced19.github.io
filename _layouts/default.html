@@ -5,14 +5,10 @@
     </head>
     <body{% if page.class %} class="{{ page.class }}"{% endif %}>
 
-        {% if page.class == "post" %}
-            <nav>
-                <a class="nav" href="//cedced19.github.io/blog"><< Blog</a>
-            </nav>
-        {% endif %}
-
         {% if page.class != "post" %}
             {% include header.html %}
+        {% else %}
+            {% include headerpost.html %}
         {% endif %}
 
         {% if page.class != 'fourOhfour' %}
