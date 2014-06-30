@@ -3,7 +3,7 @@
     <head>
         {% include head.html %}
     </head>
-    <body{% if page.class %} class="{{ page.class }}"{% endif %}>
+    <body{% if page.class != 'post' %} class="{{ page.class }}"{% endif %}>
 
         {% if page.class != "post" %}
             {% include header.html %}
