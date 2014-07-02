@@ -20,7 +20,8 @@
 
       function addRepo(repo) {
         var $item = $("<li>").addClass("repo");
-        $("<a>").text(repo.name).attr("href", repoUrl(repo)).addClass("name-repo").appendTo($item);
+        var name = repo.name
+        $("<a>").text(name.charAt(0).toUpperCase() + name.substring(1).toLowerCase()).attr("href", repoUrl(repo)).addClass("name-repo").appendTo($item);
         $("<p>").text(repoDescription(repo)).appendTo($item);
         $("<span>").addClass("language").text(repo.language).appendTo($item);
         var $br = $("<br>")
