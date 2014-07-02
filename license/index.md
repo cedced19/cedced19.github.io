@@ -8,6 +8,8 @@ title: License
 contrast:
 
 class: home
+
+img: false
 ---
 
 ##The MIT License (MIT)

@@ -4,6 +4,8 @@ layout: default
 class: post
 
 title: Nouvelle version Notepad C
+
+img: false
 ---
 
 Ce matin j'ai fais une nouvelle version de Notepad C !

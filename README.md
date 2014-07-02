@@ -15,15 +15,9 @@ Ici tout est bien rangé.
 * [Greeting Birth](//cedced19.github.io/demo/greeting-birth/) une page pour ma petite cousine.
 * [Mother's day](//cedced19.github.io/demo/mothers-day/) une page pour toutes les mères du monde.
 
-##JS
-
-Replacer éventuellement    
-`<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>` 
-par `<script type="text/javascript" src="/scripts/jquery.min.js"></script>`
-
 ##CSS
 
-Le CSS décompressé est ici : *http://cedced19.github.io/uncompress.css*  
+Le CSS décompressé est ici : *http://cedced19.github.io/styles/uncompress.css*
 
 ##Special thanks
 

@@ -4,6 +4,8 @@ layout: default
 class: post
 
 title: Nouvelle version ICed
+
+img: false
 ---
 
 Elle inclue "Pair It" un petit jeu ou il faut faire des paires !

@@ -3,9 +3,11 @@
         <title>{{ page.title }}{% if page.title != site.title %} | {{ site.title }} {% endif %}</title>
         <meta name="viewport" content="width=device-width">
         <link href="//cedced19.github.io/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <style>
-        {% include style.css %}
-        </style>
+        <link rel=stylesheet type="text/css" href="//cedced19.github.io/styles/style.css">
+
+        {% if page.img == true %}
+        <link rel=stylesheet type="text/css" href="//cedced19.github.io/styles/imgprogress.min.css">
+        {% endif %}
 
         <meta name="author" content="Cedced19">
 
