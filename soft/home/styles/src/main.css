@@ -121,7 +121,7 @@ h3 {
 }
 .social {
   font-size: 3em;
-  padding-left: 15%;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   h1,
