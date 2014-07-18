@@ -22,12 +22,11 @@
         var $item = $("<li>").addClass("repo");
         var name = repo.name
         $("<a>").text(name.charAt(0).toUpperCase() + name.substring(1).toLowerCase()).attr("href", repoUrl(repo)).addClass("name-repo").appendTo($item);
-        $("<p>").text(repoDescription(repo)).appendTo($item);
+        $("<p>").text(repoDescription(repo)).addClass("desc-repo").appendTo($item);
         $("<span>").addClass("language").text(repo.language).appendTo($item);
-        var $br = $("<br>")
 
         if (repo.fork == true) {
-          $br.appendTo($item)
+          $("<br>").appendTo($item)
           $("<span>").addClass("fork").text("Forked").appendTo($item);
         };
 
