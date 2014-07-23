@@ -16,7 +16,7 @@ Developer, I use daily: Ruby, Markdown, C #, PHP, JS, CSS3, Node.JS, Java, HTML5
 All my projects are on my [github](//github.com/cedced19/).
 I like Jade, Stylus and Grunt.
 
-[My blog](./blog){.btn}
+[My blog](./blog){:.btn}
 
 This site is written with [Jekyll](http://jekyllrb.com/) (opensource).
 
