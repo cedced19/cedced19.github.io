@@ -10,5 +10,5 @@ img: false
 
 
 
-J'ai créé une [présentation](//cedced19.github.io/demo/why-bespoke/) a partir de [Bespoke.js](http://markdalgleish.com/projects/bespoke.js/) de [@markdalgleish](https://twitter.com/markdalgleish).
-Elle montre l'utilité de Bespoke.js.
+I created [a presentation](//cedced19.github.io/demo/why-bespoke/) from [Bespoke.js](http://markdalgleish.com/projects/bespoke.js/) of [@markdalgleish](https://twitter.com/markdalgleish).
+It shows the usefulness of Bespoke.js..

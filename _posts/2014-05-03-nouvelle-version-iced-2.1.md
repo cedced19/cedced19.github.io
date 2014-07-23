@@ -8,9 +8,10 @@ title: Nouvelle version ICed
 img: false
 ---
 
-Elle inclue "Pair It" un petit jeu ou il faut faire des paires !
-[Téléchargement](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe){:.btn}
+It includes "Pair It" a little game where you make pairs!
 
-Je traivaille en ce moment sur [ce projet](http://fr.openclassrooms.com/forum/sujet/site-web-virtualisocial-com)
+[Download](https://raw.githubusercontent.com/cedced19/iced/master/setup/iced-setup.exe){:.btn}
 
-Bonne journée !
+I work currently on [this project](http://fr.openclassrooms.com/forum/sujet/site-web-virtualisocial-com)
+
+Have a nice day!
