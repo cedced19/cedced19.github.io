@@ -3,7 +3,7 @@ layout: default
 
 class: post
 
-title: Nouvelle version ICed
+title: New Iced Version
 
 img: false
 ---

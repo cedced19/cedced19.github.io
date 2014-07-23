@@ -1,7 +1,7 @@
 ---
 layout: default
 
-subtitle: Developpeur pour le fun.
+subtitle: Developper.
 
 title: Cedced19
 

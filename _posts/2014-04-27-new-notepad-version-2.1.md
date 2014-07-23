@@ -3,7 +3,7 @@ layout: default
 
 class: post
 
-title: Nouvelle version Notepad C
+title: New Notepad Version
 
 img: false
 ---
