@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   var config = {
     useminPrepare: {
-      html: 'dev/index.html',
+      html: 'dev/*.html',
       options: {
         dest: './'
       }
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       }
     },
   usemin: {
-    html: '**/*.html'
+    html: ['license/index.html', 'index.html', '404.html']
   },
   htmlmin: {
         dist: {
