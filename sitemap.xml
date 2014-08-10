@@ -5,9 +5,6 @@
 <changefreq>monthly</changefreq>
 </url>
 <url>
-<loc>http://cedced19.github.io/blog/index.html</loc>
-<changefreq>monthly</changefreq>
-</url>
 <url>
 <loc>http://cedced19.github.io/license/index.html</loc>
 <changefreq>monthly</changefreq>
@@ -66,10 +63,6 @@ http://cedced19.github.io/demo/mothers-day/index.html
 <loc>
 http://cedced19.github.io/demo/paper-page/index.html
 </loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>http://cedced19.github.io/demo/logo.html</loc>
 <changefreq>monthly</changefreq>
 </url>
 </urlset>
