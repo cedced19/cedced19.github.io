@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       }
     },
   usemin: {
-    html: '*.html'
+    html: '**/*.html'
   },
   htmlmin: {
         dist: {
