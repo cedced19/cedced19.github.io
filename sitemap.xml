@@ -1,66 +1,75 @@
----
----
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    {% for post in site.posts %}
-        {% if page.layout %}
-            {% include sitemap-entry.xml entry=post %}
-        {% endif %}
-    {% endfor %}
-
-    {% for page in site.pages %}
-        {% if page.layout %}
-            {% include sitemap-entry.xml entry=page %}
-        {% endif %}
-    {% endfor %}
-    <url>
-        <loc>http://cedced19.github.io/soft/home/index.html</loc>
-        <changefreq>monthly</changefreq>
+<url>
+<loc>http://cedced19.github.io/404.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/soft/proto/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>http://cedced19.github.io/blog/index.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/2048/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>http://cedced19.github.io/license/index.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/birthday-page/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>http://cedced19.github.io/index.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/countdown-page/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>http://cedced19.github.io/soft/home/index.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/download-page/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/birthday-page/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/github-repo/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/countdown-page/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/greeting-birth/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/download-page/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/html5-page/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/github-repo/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/mothers-day/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/greeting-birth/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/paper-page/index.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/html5-page/index.html
+</loc>
+<changefreq>monthly</changefreq>
 </url>
 <url>
-        <loc>http://cedced19.github.io/demo/logo.html</loc>
-        <changefreq>monthly</changefreq>
+<loc>
+http://cedced19.github.io/demo/mothers-day/index.html
+</loc>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>
+http://cedced19.github.io/demo/paper-page/index.html
+</loc>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>http://cedced19.github.io/demo/logo.html</loc>
+<changefreq>monthly</changefreq>
 </url>
 </urlset>

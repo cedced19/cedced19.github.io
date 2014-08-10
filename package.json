@@ -1,0 +1,22 @@
+{
+  "name": "cedced19.github.io",
+  "version": "0.0.1",
+  "description": "Cedced19's site",
+  "main": "server.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "matchdep": "~0.3.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-usemin": "^2.2.0",
+    "grunt-contrib-htmlmin": "^0.3.0",
+    "grunt-contrib-concat": "^0.5.0"
+  },
+  "author": {
+    "name": "Cédric",
+    "email": "cedced19@gmail.com",
+    "url": "https://github.com/cedced19"
+  },
+  "license": "MIT"
+}
