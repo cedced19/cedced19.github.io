@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   var config = {
     useminPrepare: {
-      html: 'dev/*.html',
+      html: 'dev/index.html',
       options: {
         dest: './'
       }
