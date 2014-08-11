@@ -1,4 +1,2 @@
-User-Agent: Googlebot    
-Disallow :    
-User-Agent: *    
-Disallow: /
+User-Agent: *
+Disallow :  /dev/
