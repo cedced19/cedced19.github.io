@@ -1,6 +1,11 @@
 module.exports = function(grunt) {
 
   var config = {
+    shell: {
+        ungit: {
+            command: 'ungit'
+        }
+    },
     useminPrepare: {
       html: 'dev/index.html',
       options: {
@@ -37,5 +42,5 @@ module.exports = function(grunt) {
 
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 'htmlmin']);
+  grunt.registerTask('default', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 'htmlmin', 'shell:ungit']);
 };
