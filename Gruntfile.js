@@ -23,6 +23,13 @@ module.exports = function(grunt) {
   usemin: {
     html: ['license/index.html', 'index.html', '404.html']
   },
+  uncss: {
+    dist: {
+      files: {
+        'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html']
+      }
+    }
+  },
   htmlmin: {
         dist: {
           options: {
@@ -42,5 +49,5 @@ module.exports = function(grunt) {
 
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 'htmlmin', 'shell:ungit']);
+  grunt.registerTask('default', ['useminPrepare', 'concat', 'cssmin', 'uglify', 'copy', 'usemin', 'htmlmin',  'uncss', 'shell:ungit']);
 };
