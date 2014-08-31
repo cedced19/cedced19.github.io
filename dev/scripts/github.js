@@ -10,7 +10,7 @@
         if (repo.fork) {
           $("<br>").appendTo($item)
           $("<span>").addClass("fork").text("Forked").appendTo($item);
-        };
+        }
 
         $item.appendTo("#repos");
       }
@@ -28,11 +28,36 @@
             repos = repos.concat(result.data);
             addRepos(repos, page + 1);
           }else {
+            $(function () {
+              // Convert pushed_at to Date.
+              $.each(repos, function (i, repo) {
+                repo.pushed_at = new Date(repo.pushed_at);
+
+                var weekHalfLife  = 1.146 * Math.pow(10, -9);
+
+                var pushDelta    = (new Date) - Date.parse(repo.pushed_at);
+                var createdDelta = (new Date) - Date.parse(repo.created_at);
+
+                var weightForPush = 1;
+                var weightForWatchers = 1.314 * Math.pow(10, 7);
+
+                repo.hotness = weightForPush * Math.pow(Math.E, -1 * weekHalfLife * pushDelta);
+                repo.hotness += weightForWatchers * repo.watchers / createdDelta;
+              });
+
+              repos.sort(function (a, b) {
+                if (a.hotness < b.hotness) return 1;
+                if (b.hotness < a.hotness) return -1;
+                return 0;
+              });
+
               $.each(repos, function (i, repo) {
                 addRepo(repo);
               });
+            });
           }
         });
       }
       addRepos();
-})(jQuery);
+
+    })(jQuery);
