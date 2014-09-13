@@ -37,9 +37,7 @@ html, body {
     animation-fill-mode:backwards;
 }
 
-pre {
-    white-space: normal;
-}
+
 input[type="text"], input[type="email"], textarea, select {
     color: #888;
     width: 70%;
