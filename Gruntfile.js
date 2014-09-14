@@ -4,10 +4,13 @@ module.exports = function(grunt) {
     shell: {
         ungit: {
             command: 'ungit'
+        },
+        server: {
+            command: 'fast-http 80'
         }
     },
     useminPrepare: {
-      html: ['dev/index.html', 'dev/soft/calculs/index.html', 'dev/soft/home/index.html'],
+      html: ['dev/index.html', 'dev/soft/home/index.html'],
       options: {
         dest: './'
       }
@@ -16,25 +19,24 @@ module.exports = function(grunt) {
       main: {
           expand: true,
           cwd: 'dev/',
-          src: '**/*.html',
+          src: ['**/*.html'],
           dest: ''
       }
     },
-     cssmin: {
+    concat: {
+        calculs: { // Because this use Angular.
+          src: ['dev/scripts/angular.min.js', 'dev/scripts/calculs.js'],
+          dest: 'scripts/calculs.min.js'
+        }
+      },
+    cssmin: {
       main: {
         files: {
           'styles/styles.css': ['styles/styles.css']
         }
       },
       calculs: {
-        files: {
-          'styles/calculs.min.css': ['styles/calculs.min.css']
-        }
-      },
-      home: {
-        files: {
-          'styles/home.min.css': ['styles/home.min.css']
-        }
+        'styles/calculs.min.css': ['dev/styles/calculs.css']
       }
     },
   usemin: {
@@ -45,21 +47,6 @@ module.exports = function(grunt) {
       files: {
         'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html']
       }
-    },
-    calculs: {
-      files: {
-        'styles/calculs.min.css': ['dev/soft/calculs/index.html']
-      }
-    },
-    home: {
-      files: {
-        'styles/home.min.css': ['dev/soft/home/index.html']
-      }
-    }
-  },
-  uglify: {
-    options: {
-          mangle: false
     }
   },
   htmlmin: {
@@ -83,5 +70,7 @@ module.exports = function(grunt) {
 
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['useminPrepare', 'concat', 'uglify', 'copy', 'usemin', 'htmlmin',  'uncss', 'cssmin:main', 'cssmin:calculs', 'cssmin:home', 'shell:ungit']);
+  grunt.registerTask('default', ['useminPrepare', 'concat', 'uglify', 'copy', 'usemin', 'htmlmin','cssmin:generated',  'uncss', 'cssmin:main', 'cssmin:calculs']);
+  grunt.registerTask('test', ['default', 'shell:server']);
+  grunt.registerTask('commit', ['default', 'shell:ungit']);
 };
