@@ -36,7 +36,9 @@ module.exports = function(grunt) {
         }
       },
       calculs: {
-        'styles/calculs.min.css': ['dev/styles/calculs.css']
+          files: {
+          'styles/calculs.min.css': ['dev/styles/calculs.css']
+        }
       }
     },
   usemin: {
