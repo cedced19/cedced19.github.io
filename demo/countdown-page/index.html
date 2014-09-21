@@ -48,17 +48,17 @@ body {
             <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script type="text/javascript">
                 (function($){
-                    var launch = new Date(2014,10,19,00,00,00); // en UTC
-                    var days = $('#days')
-                    var hours = $('#hours')
-                    var minutes = $('#minutes')
-                    var seconds = $('#seconds')
-                    setDate()
+                    var launch = new Date(2014,9,19), // en UTC
+                     days = $('#days'),
+                     hours = $('#hours'),
+                     minutes = $('#minutes'),
+                     seconds = $('#seconds');
+                    setDate();
                     function setDate(){
                         var now = new Date();
-                        var s = (launch.getTime() - now.getTime())/1000 - now.getTimezoneOffset()*60;
-                        var d = Math.floor(s/86400);
+                        var s = (launch - now)/1000 + now.getTimezoneOffset()*60;
 
+                        var d = Math.floor(s/86400);
                         days.html(d+' jour'+(d>1?'s' : ''));
                         s-= d*86400;
 
