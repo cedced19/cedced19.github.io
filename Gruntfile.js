@@ -9,11 +9,23 @@ module.exports = function(grunt) {
             command: 'fast-http 80'
         }
     },
-    useminPrepare: {
-      html: ['dev/index.html', 'dev/soft/home/index.html'],
-      options: {
-        dest: './'
-      }
+    usemin: {
+        html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html']
+    },
+    htmlmin: {
+            dist: {
+              options: {
+                removeComments: true,
+                collapseWhitespace: true
+              },
+              files: {
+                'index.html': 'index.html',
+                '404.html': '404.html',
+                'license/index.html': 'license/index.html',
+                'soft/calculs/index.html' : 'soft/calculs/index.html',
+                'soft/home/index.html' : 'soft/home/index.html'
+              }
+          }
     },
     copy: {
       main: {
@@ -24,50 +36,66 @@ module.exports = function(grunt) {
       }
     },
     concat: {
-        calculs: { // Because this use Angular.
-          src: ['dev/scripts/angular.min.js', 'dev/scripts/calculs.js'],
-          dest: 'scripts/calculs.min.js'
+        main:{
+          files:[
+            // Header
+            { dest: 'scripts/scripts.js',
+                src: [ 'dev/scripts/jquery.min.js', 'dev/scripts/header.js' ] },
+            // GitHub API
+            { dest: 'scripts/github.min.js',
+                src: [ 'dev/scripts/github.js' ] },
+            // Calculs
+            { dest: 'scripts/calculs.min.js',
+                src: [ 'dev/scripts/angular.min.js', 'dev/scripts/calculs.js' ]}
+             ]
+        }
+    },
+    uglify:{
+      main: {
+        files: [
+              // Header
+              { dest: 'scripts/scripts.js',
+                  src: [ 'scripts/scripts.js' ] },
+              // Github API
+              { dest: 'scripts/github.min.js',
+                 src: [ 'scripts/github.min.js' ] }
+               ]
+             }
+       },
+      uncss: {
+        main: {
+          files: {
+            'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html', 'dev/soft/calculs/index.html']
+          }
         }
       },
-    cssmin: {
-      main: {
-        files: {
-          'styles/styles.css': ['styles/styles.css']
-        }
-      }
-    },
-  usemin: {
-    html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html']
-  },
-  uncss: {
-    main: {
-      files: {
-        'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html', 'dev/soft/calculs/index.html']
-      }
-    }
-  },
-  htmlmin: {
-        dist: {
-          options: {
-            removeComments: true,
-            collapseWhitespace: true
-          },
+      cssmin: {
+        main: {
           files: {
-            'index.html': 'index.html',
-            '404.html': '404.html',
-            'license/index.html': 'license/index.html',
-            'soft/calculs/index.html' : 'soft/calculs/index.html',
-            'soft/home/index.html' : 'soft/home/index.html'
+            'styles/styles.css': ['styles/styles.css']
+          },
+         home: {
+          files: {
+            'styles/home.min.css': ['dev/styles/home.css']
+          }
+         }
+        }
+      },
+      autoprefixer: {
+          main: {
+            expand: true,
+            flatten: true,
+            src: 'styles/*.css',
+            dest: 'styles/'
           }
       }
-  }
 };
 
   grunt.initConfig(config);
 
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['useminPrepare', 'concat', 'uglify', 'copy', 'cssmin:generated',  'uncss', 'cssmin:main', 'usemin', 'htmlmin']);
+  grunt.registerTask('default', ['copy', 'usemin', 'htmlmin', 'concat', 'uglify', 'uncss', 'cssmin', 'autoprefixer']);
   grunt.registerTask('test', ['default', 'shell:server']);
   grunt.registerTask('commit', ['default', 'shell:ungit']);
 };
