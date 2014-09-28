@@ -5,17 +5,15 @@
         <title>Calculs</title>
         <meta name="viewport" content="width=device-width">
         <link href="//cedced19.github.io/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
-        <!-- build:css /styles/calculs.min.css -->
-        <link rel="stylesheet" href="../../styles/calculs.css">
+        <!-- build:css /styles/styles.css -->
+        <link rel="stylesheet" href="../../styles/main.css">
         <!-- endbuild -->
     </head>
     <body ng-app="Calculs" ng-controller="CalculsCtrl">
 
-        <main class="content-warp">
-
+        <main class="content-wrap animate" role="main">
             <h1>Calculs</h1>
 
-            <br>
             <h2>Data:</h2>
             <p>Number of hours (in H)</p>
             <input type="text" ng-model="hours">
@@ -28,23 +26,23 @@
             <p>Cost of the kWh (in €)</p>
             <input type="text" ng-model="costKwh">
 
-            <br>
             <h2>Cost of consumption:</h2>
             <p>{{ ((( watt * hours) / 1000) * costKwh ) }}</p>
 
-            <br>
             <h2>Cost of running:</h2>
             <p>{{ ((( watt * hours) / 1000) * costKwh ) + ((hours / lifetime) * costBulb) }}</p>
 
-            <br>
             <h2>How this work ?</h2>
-            <h3>Cost of consumption:</h3>
+            <p>Cost of consumption:</p>
             <p>( {{watt}} * {{hours}}) / 1000) * {{costKwh}}</p>
-            <h3>Cost of running:</h3>
+            <p>Cost of running:</p>
             <p>((( {{watt}} * {{hours}}) / 1000) * {{costKwh}} ) + (({{hours}} / {{lifetime}}) * {{costBulb}})</p>
-            <p class="warning">I had to do a calculs for a excel grid.</p>
 
         </main>
+        <hr class="rule animate">
+        <footer class="footer-wrap animate" role="complementary">
+            <p class="footer">Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a></p>
+        </footer>
 
             <!-- build:js /scripts/calculs.min.js -->
             <script type="text/javascript" src="../../scripts/angular.min.js"></script>
