@@ -37,12 +37,12 @@ module.exports = function(grunt) {
       }
     },
   usemin: {
-    html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html', 'soft/calculs/index.html']
+    html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html']
   },
   uncss: {
     main: {
       files: {
-        'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html']
+        'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html', 'dev/soft/calculs/index.html']
       }
     }
   },
@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  grunt.registerTask('default', ['useminPrepare', 'concat', 'uglify', 'copy', 'usemin', 'htmlmin','cssmin:generated',  'uncss', 'cssmin:main']);
+  grunt.registerTask('default', ['useminPrepare', 'concat', 'uglify', 'copy', 'cssmin:generated',  'uncss', 'cssmin:main', 'usemin', 'htmlmin']);
   grunt.registerTask('test', ['default', 'shell:server']);
   grunt.registerTask('commit', ['default', 'shell:ungit']);
 };
