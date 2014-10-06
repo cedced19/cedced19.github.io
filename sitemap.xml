@@ -41,4 +41,16 @@ http://cedced19.github.io/demo/mothers-day/index.html
 </loc>
 <changefreq>monthly</changefreq>
 </url>
+<url>
+<loc>
+http://cedced19.github.io/Azou/index.html
+</loc>
+<changefreq>monthly</changefreq>
+</url>
+<url>
+<loc>
+http://cedced19.github.io/Azou/game.html
+</loc>
+<changefreq>monthly</changefreq>
+</url>
 </urlset>
