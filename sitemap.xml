@@ -1,56 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://cedced19.github.io/404.html</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<url>
-<loc>http://cedced19.github.io/license/index.html</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>http://cedced19.github.io/index.html</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>http://cedced19.github.io/soft/home/index.html</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/demo/birthday-page/index.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/demo/countdown-page/index.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/demo/greeting-birth/index.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/demo/mothers-day/index.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/Azou/index.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
-<url>
-<loc>
-http://cedced19.github.io/Azou/game.html
-</loc>
-<changefreq>monthly</changefreq>
-</url>
+    <url>
+        <loc>
+        http://cedced19.github.io/404.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/license/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/soft/home/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/demo/birthday-page/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/demo/countdown-page/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/demo/greeting-birth/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/demo/mothers-day/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/Azou/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/Azou/game.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/CLaunch/game.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
