@@ -1,3 +1,4 @@
 User-Agent: *
 Disallow :  /dev/
-Disallow :  Azou/dev/
+Disallow :  /Azou/dev/
+Disallow :  /bespoke-theme-greeny/
