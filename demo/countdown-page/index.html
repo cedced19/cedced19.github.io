@@ -10,7 +10,7 @@
 <meta name="twitter:image" content="http://cedced19.github.io/profile.png">
 <meta name="twitter:site" content="@cedced19">
 <meta name="twitter:author" content="@cedced19">
-<meta name="twitter:description" content="Un site avec un compte à rebour.">
+<meta name="twitter:description" content="A countdown.">
 
 <meta name="author" content="Cedced19">
 <meta name="description" content="A countdown.">
@@ -18,9 +18,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Countdown">
 <meta property="og:image" content="http://cedced19.github.io/profile.png">
-<meta property="og:language" content="fr_FR">
+<meta property="og:language" content="en_US">
 <meta property="og:url" content="http://cedced19.github.io/demo/countdown-page/">
-<meta property="og:description" content="Un site avec un compte à rebour.">
+<meta property="og:description" content="A countdown.">
 
 <link href="//plus.google.com/104855167193751168501/" rel="publisher">
 
@@ -38,12 +38,12 @@ body {
 	font-size:65px;
 	padding:15px;
 	text-align:center;
-      overflow:hidden;
+            overflow:hidden;
 }
 </style>
 </head>
 <body>
-	   <div style="display:table-cell; vertical-align:middle;">
+	<div style="display:table-cell; vertical-align:middle;">
                   <span id="countdown">
                        <span id="days"></span>, <span id="hours"></span>, <span id="minutes"></span> and <span id="seconds"></span><br>before my birthday!
                   </span>
@@ -51,7 +51,7 @@ body {
             <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script type="text/javascript">
                 (function($){
-                    var launch = new Date(2014,9,19,3), // en UTC
+                    var launch = new Date(2015,9,19,3),
                      days = $('#days'),
                      hours = $('#hours'),
                      minutes = $('#minutes'),
@@ -60,6 +60,7 @@ body {
                     function setDate(){
                         var now = new Date();
                         var s = (launch - now)/1000 + now.getTimezoneOffset()*60;
+
 
                         var d = Math.floor(s/86400);
                         days.html(d+' day'+(d>1?'s' : ''));
