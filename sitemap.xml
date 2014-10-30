@@ -62,7 +62,13 @@
     </url>
     <url>
         <loc>
-        http://cedced19.github.io/CLaunch/game.html
+        http://cedced19.github.io/CLaunch/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+     <url>
+        <loc>
+        http://cedced19.github.io/irregular-verbs/index.html
         </loc>
         <changefreq>monthly</changefreq>
     </url>
