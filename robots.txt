@@ -2,4 +2,4 @@ User-Agent: *
 Disallow :  /dev/
 Disallow :  /Azou/dev/
 Disallow :  /bespoke-theme-greeny/
-Disallow :  /irrefuler-verbs/dev/
+Disallow :  /irregular-verbs/dev/
