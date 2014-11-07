@@ -1,14 +1,6 @@
 module.exports = function(grunt) {
   require('time-grunt')(grunt);
   var config = {
-    shell: {
-        ungit: {
-            command: 'ungit'
-        },
-        server: {
-            command: 'fast-http 80'
-        }
-    },
     usemin: {
         html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html']
     },
@@ -53,6 +45,9 @@ module.exports = function(grunt) {
     uglify:{
       main: {
         files: [
+              // Calculs
+              { dest: 'scripts/calculs.min.js',
+              src: [ 'scripts/calculs.min.js' ] },
               // Header
               { dest: 'scripts/scripts.js',
                   src: [ 'scripts/scripts.js' ] },
@@ -96,6 +91,4 @@ module.exports = function(grunt) {
   // Load all Grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
   grunt.registerTask('default', ['copy', 'usemin', 'htmlmin', 'concat', 'uglify', 'uncss', 'cssmin', 'autoprefixer']);
-  grunt.registerTask('test', ['default', 'shell:server']);
-  grunt.registerTask('commit', ['default', 'shell:ungit']);
 };
