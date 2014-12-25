@@ -3,3 +3,5 @@ Disallow :  /dev/
 Disallow :  /Azou/dev/
 Disallow :  /bespoke-theme-greeny/
 Disallow :  /irregular-verbs/dev/
+Disallow :  /fork-label/dev/
+Disallow :  /greeting-cards/dev/
