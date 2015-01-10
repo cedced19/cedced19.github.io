@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
   var config = {
     usemin: {
-        html: ['license/index.html', 'index.html', '404.html', 'soft/calculs/index.html', 'soft/home/index.html']
+        html: ['license/index.html', 'index.html', '404.html']
     },
     htmlmin: {
             dist: {
@@ -13,9 +13,7 @@ module.exports = function(grunt) {
               files: {
                 'index.html': 'index.html',
                 '404.html': '404.html',
-                'license/index.html': 'license/index.html',
-                'soft/calculs/index.html' : 'soft/calculs/index.html',
-                'soft/home/index.html' : 'soft/home/index.html'
+                'license/index.html': 'license/index.html'
               }
           }
     },
@@ -35,19 +33,13 @@ module.exports = function(grunt) {
                 src: [ 'dev/scripts/jquery.min.js', 'dev/scripts/header.js' ] },
             // GitHub API
             { dest: 'scripts/github.min.js',
-                src: [ 'dev/scripts/github.js' ] },
-            // Calculs
-            { dest: 'scripts/calculs.min.js',
-                src: [ 'dev/scripts/angular.min.js', 'dev/scripts/calculs.js' ]}
+                src: [ 'dev/scripts/github.js' ] }
              ]
         }
     },
     uglify:{
       main: {
         files: [
-              // Calculs
-              { dest: 'scripts/calculs.min.js',
-              src: [ 'scripts/calculs.min.js' ] },
               // Header
               { dest: 'scripts/scripts.js',
                   src: [ 'scripts/scripts.js' ] },
@@ -60,7 +52,7 @@ module.exports = function(grunt) {
       uncss: {
         main: {
           files: {
-            'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html', 'dev/soft/calculs/index.html']
+            'styles/styles.css': ['dev/index.html', 'dev/license/index.html', 'dev/404.html']
           }
         }
       },
@@ -68,12 +60,7 @@ module.exports = function(grunt) {
         main: {
           files: {
             'styles/styles.css': ['styles/styles.css']
-          },
-         home: {
-          files: {
-            'styles/home.min.css': ['dev/styles/home.css']
           }
-         }
         }
       },
       autoprefixer: {
