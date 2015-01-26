@@ -5,7 +5,10 @@
         var name = repo.name
         $('<a>').text(name.charAt(0).toUpperCase() + name.substring(1).toLowerCase()).attr('href', repo.html_url).addClass('name-repo').appendTo($item);
         $('<p>').text(repo.description).addClass('desc-repo').appendTo($item);
-        $('<span>').addClass('gray').text(repo.language).appendTo($item);
+          
+        if (repo.language) {
+          $('<span>').addClass('gray').text(repo.language).appendTo($item);
+        }
 
         if (repo.fork) {
           $('<br>').appendTo($item)
