@@ -1,6 +1,6 @@
 User-Agent: *
 Disallow :  /dev/
-Disallow :  /Azou/dev/
+Disallow :  /azou/dev/
 Disallow :  /bespoke-theme-greeny/
 Disallow :  /irregular-verbs/dev/
 Disallow :  /fork-label/dev/
