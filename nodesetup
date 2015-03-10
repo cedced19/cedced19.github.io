@@ -6,9 +6,9 @@
 #   or
 # wget -qO- https://cedced19.github.io/nodesetup | bash -
 
-wget http://nodejs.org/dist/v0.10.33/node-v0.10.33.tar.gz
-tar -xzf node-v0.10.33.tar.gz
-cd node-v0.10.33
+wget http://nodejs.org/dist/v0.12.0/node-v0.12.0.tar.gz
+tar -xzf node-v0.12.0.tar.gz
+cd node-v0.12.0
 ./configure
 make
 sudo make install
