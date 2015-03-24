@@ -20,12 +20,6 @@
     </url>
     <url>
         <loc>
-        http://cedced19.github.io/soft/home/index.html
-        </loc>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>
         http://cedced19.github.io/demo/countdown-page/index.html
         </loc>
         <changefreq>monthly</changefreq>
@@ -75,6 +69,24 @@
      <url>
         <loc>
         http://cedced19.github.io/irregular-verbs/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/dinosaurs-extinction/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/dinosaurs-extinction/text.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/dinosaurs-extinction/bibliographie.html
         </loc>
         <changefreq>monthly</changefreq>
     </url>
