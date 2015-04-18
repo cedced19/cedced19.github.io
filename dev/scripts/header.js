@@ -9,7 +9,7 @@ $(function(){
         var mastheadHeight = masthead.height();
         masthead.css({
             "margin-top": "-" + (mastheadHeight / 2) + "px"
-            });
+        });
     };
 
     scrollNotice.click(function(){
