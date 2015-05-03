@@ -5,3 +5,4 @@ Disallow :  /bespoke-theme-greeny/
 Disallow :  /irregular-verbs/dev/
 Disallow :  /fork-label/dev/
 Disallow :  /greeting-cards/dev/
+Disallow :  /condolence-cards/dev/
