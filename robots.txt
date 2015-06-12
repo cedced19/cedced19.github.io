@@ -7,3 +7,4 @@ Disallow :  /fork-label/dev/
 Disallow :  /greeting-cards/dev/
 Disallow :  /condolence-cards/dev/
 Disallow :  /right-amount/dev/
+Disallow :  /grafa/dev/
