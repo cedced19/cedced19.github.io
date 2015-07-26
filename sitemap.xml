@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>
-        http://cedced19.github.io/404.html
-        </loc>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>
         http://cedced19.github.io/license/index.html
         </loc>
         <changefreq>monthly</changefreq>
@@ -75,12 +69,6 @@
     <url>
         <loc>
         http://cedced19.github.io/fork-label/index.html
-        </loc>
-        <changefreq>monthly</changefreq>
-    </url>
-    <url>
-        <loc>
-        http://cedced19.github.io/CLaunch/index.html
         </loc>
         <changefreq>monthly</changefreq>
     </url>
