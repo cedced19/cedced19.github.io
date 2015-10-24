@@ -102,4 +102,10 @@
         </loc>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/hotel-pirate/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
