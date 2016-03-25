@@ -17,6 +17,9 @@
         "email": "cedced19@gmail.com",
         "url": "https://github.com/cedced19"
     },
+    "scripts": {
+      "build": "gulp"
+    },
     "licenses": [
         {
             "type": "MIT",

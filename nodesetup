@@ -6,10 +6,4 @@
 #   or
 # wget -qO- https://cedced19.github.io/nodesetup | bash -
 
-wget http://nodejs.org/dist/v0.12.0/node-v0.12.0.tar.gz
-tar -xzf node-v0.12.0.tar.gz
-cd node-v0.12.0
-./configure
-make
-sudo make install
-echo "Node has just installed!"
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash

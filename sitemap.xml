@@ -108,4 +108,16 @@
         </loc>
         <changefreq>monthly</changefreq>
     </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/learn-memory-static/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>
+        http://cedced19.github.io/derive-genetique/index.html
+        </loc>
+        <changefreq>monthly</changefreq>
+    </url>
 </urlset>
