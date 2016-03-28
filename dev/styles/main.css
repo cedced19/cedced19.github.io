@@ -117,8 +117,6 @@ input[type="checkbox"],input[type="radio"] {
 }
 input[type="search"] {
     -webkit-appearance:textfield;
-    -moz-box-sizing:content-box;
-    -webkit-box-sizing:content-box;
     box-sizing:content-box
 }
 input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
@@ -276,30 +274,10 @@ hr.rule {
     background-size:40px;
     background-repeat:no-repeat;
     cursor:pointer;
-    -webkit-animation-name:fadeInDown;
-    -moz-animation-name:fadeInDown;
-    -ms-animation-name:fadeInDown;
-    -o-animation-name:fadeInDown;
     animation-name:fadeInDown;
-    -webkit-animation-duration:900ms;
-    -moz-animation-duration:900ms;
-    -ms-animation-duration:900ms;
-    -o-animation-duration:900ms;
     animation-duration:900ms;
-    -webkit-animation-delay:1000ms;
-    -moz-animation-delay:1000ms;
-    -ms-animation-delay:1000ms;
-    -o-animation-delay:1000ms;
     animation-delay:1000ms;
-    -webkit-animation-iteration-count:ease;
-    -moz-animation-iteration-count:ease;
-    -ms-animation-iteration-count:ease;
-    -o-animation-iteration-count:ease;
     animation-iteration-count:ease;
-    -webkit-animation-fill-mode:backwards;
-    -moz-animation-fill-mode:backwards;
-    -ms-animation-fill-mode:backwards;
-    -o-animation-fill-mode:backwards;
     animation-fill-mode:backwards
 }
 .header span:hover {
@@ -337,76 +315,7 @@ hr.rule {
     margin-bottom:0
 }
 body.post .footer-wrap {
-    -webkit-columns:1;
-    -moz-columns:1;
-    -ms-columns:1;
-    -o-columns:1;
     columns:1
-}
-.post-time {
-    text-align:center;
-    color:#E7E7E7;
-    margin-bottom:4em;
-    font-style:italic
-}
-.post-time time {
-    font-size:.875em
-}
-@-webkit-keyframes fadeInUp {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -webkit-transform:translateY(20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -webkit-transform:translateY(0)
-    }
-}
-@-moz-keyframes fadeInUp {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -moz-transform:translateY(20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -moz-transform:translateY(0)
-    }
-}
-@-ms-keyframes fadeInUp {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -ms-transform:translateY(20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -ms-transform:translateY(0)
-    }
-}
-@-o-keyframes fadeInUp {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -o-transform:translateY(20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -o-transform:translateY(0)
-    }
 }
 @keyframes fadeInUp {
     from {
@@ -420,102 +329,6 @@ body.post .footer-wrap {
         filter:alpha(opacity=100);
         opacity:1;
         transform:translateY(0)
-    }
-}
-@-webkit-keyframes dubz {
-    from {
-        -webkit-transform:rotate(-270deg)
-    }
-    to {
-        -webkit-transform:rotate(0)
-    }
-}
-@-moz-keyframes dubz {
-    from {
-        -moz-transform:rotate(-270deg)
-    }
-    to {
-        -moz-transform:rotate(0)
-    }
-}
-@-ms-keyframes dubz {
-    from {
-        -ms-transform:rotate(-270deg)
-    }
-    to {
-        -ms-transform:rotate(0)
-    }
-}
-@-o-keyframes dubz {
-    from {
-        -o-transform:rotate(-270deg)
-    }
-    to {
-        -o-transform:rotate(0)
-    }
-}
-@keyframes dubz {
-    from {
-        transform:rotate(-270deg)
-    }
-    to {
-        transform:rotate(0)
-    }
-}
-@-webkit-keyframes fadeInDown {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -webkit-transform:translateY(-20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -webkit-transform:translateY(0)
-    }
-}
-@-moz-keyframes fadeInDown {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -moz-transform:translateY(-20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -moz-transform:translateY(0)
-    }
-}
-@-ms-keyframes fadeInDown {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -ms-transform:translateY(-20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -ms-transform:translateY(0)
-    }
-}
-@-o-keyframes fadeInDown {
-    from {
-        zoom:1;
-        filter:alpha(opacity=0);
-        opacity:0;
-        -o-transform:translateY(-20px)
-    }
-    to {
-        zoom:1;
-        filter:alpha(opacity=100);
-        opacity:1;
-        -o-transform:translateY(0)
     }
 }
 @keyframes fadeInDown {
@@ -550,9 +363,6 @@ body.fourOhfour .header a:hover {
     line-height:40px;
     background-color:rgba(243,156,18,0);
     border:3px solid #2ecc71 !important;
-    -moz-transition-duration:0.3s;
-    -o-transition-duration:0.3s;
-    -webkit-transition-duration:0.3s;
     transition-duration:0.3s;
     text-decoration:none !important;
 }
@@ -588,32 +398,16 @@ ol {
     color:#bdc3c7
 }
 .animate {
-    -webkit-animation-name:fadeInUp;
-    -moz-animation-name:fadeInUp;
-    -ms-animation-name:fadeInUp;
-    -o-animation-name:fadeInUp;
     animation-name:fadeInUp;
-    -webkit-animation-duration:600ms;
-    -moz-animation-duration:600ms;
-    -ms-animation-duration:600ms;
-    -o-animation-duration:600ms;
     animation-duration:600ms;
-    -webkit-animation-delay:500ms;
-    -moz-animation-delay:500ms;
-    -ms-animation-delay:500ms;
-    -o-animation-delay:500ms;
     animation-delay:500ms;
-    -webkit-animation-iteration-count:ease;
-    -moz-animation-iteration-count:ease;
-    -ms-animation-iteration-count:ease;
-    -o-animation-iteration-count:ease;
     animation-iteration-count:ease;
-    -webkit-animation-fill-mode:backwards;
-    -moz-animation-fill-mode:backwards;
-    -ms-animation-fill-mode:backwards;
-    -o-animation-fill-mode:backwards;
     animation-fill-mode:backwards;
 }
 .desc-repo {
     margin-top: 0;
+}
+.profile {
+    max-width: 30%;
+    border-radius: 50%;
 }
