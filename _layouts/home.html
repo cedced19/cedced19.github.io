@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {{ content }}
+
+  {% if site.active_lang == "fr" %}
+    <h1 class="page-heading">Publications</h1>
+  {% endif %}
+  {% if site.active_lang == "en" %}
+    <h1 class="page-heading">Posts</h1>
+  {% endif %}
+
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">
+        {% assign m = post.date | date: "%-m" | minus: 1 %}
+        {% if site.active_lang == "fr" %}
+          {{ post.date | date: "%-d" }}
+          {{ site.data.fr.months[m] }}
+          {{ post.date | date: "%Y" }}
+        {% endif %}
+        {% if site.active_lang == "en" %}
+          {{ site.data.en.months[m] }}
+          {{ post.date | date: "%-d" }},
+          {{ post.date | date: "%Y" }}
+        {% endif %}
+        </span>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if site.active_lang == "fr" %}
+    <p class="rss-subscribe">s'abonner <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {% endif %}
+  {% if site.active_lang == "en" %}
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {% endif %}
+
+
+
+</div>

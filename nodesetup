@@ -1,9 +1,0 @@
-#!/bin/bash
-# Node.js
-# Run as root or insert `sudo` before `bash`:
-#
-# curl -sL https://cedced19.github.io/nodesetup | bash -
-#   or
-# wget -qO- https://cedced19.github.io/nodesetup | bash -
-
-wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
