@@ -1,0 +1,20 @@
+{
+  "name": "cedced19.github.io",
+  "version": "1.0.0",
+  "description": "Hi! Here is the source code of my website!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedced19/cedced19.github.io.git"
+  },
+  "scripts": {
+    "build": "jekyll build && bs --branch master --directory _site --no-yarn --no-cleanup --any-branch",
+    "start": "bundle exec jekyll serve --trace",
+    "add-plugin": "bundle update"
+  },
+  "author": "Cédric JUNG <cedced19@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cedced19/cedced19.github.io/issues"
+  },
+  "homepage": "https://github.com/cedced19/cedced19.github.io#readme"
+}
