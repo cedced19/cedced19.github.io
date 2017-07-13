@@ -50,7 +50,7 @@ plugins:
 
 languages: ["en", "fr"]
 default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css"]
+exclude_from_localization: ["assets"]
 parallel_localization: true
 
 languages_name:
