@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedced19.githug.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedced19.githug.io/" rel="alternate" type="text/html" /><updated>2017-07-18T10:38:05+02:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">The decline of Vosges conifers</title><link href="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="The decline of Vosges conifers" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;During the last year of secondary school in France, students must complete a &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedced19.githug.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedced19.githug.io/" rel="alternate" type="text/html" /><updated>2017-11-26T11:56:58+01:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">How does “Découvrir Phalsbourg” work ?</title><link href="https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html" rel="alternate" type="text/html" title="How does &quot;Découvrir Phalsbourg&quot; work ?" /><published>2017-11-26T11:00:00+01:00</published><updated>2017-11-26T11:00:00+01:00</updated><id>https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg</id><content type="html" xml:base="https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html">&lt;p&gt;In June, I created the application &lt;a href=&quot;https://cedced19.github.io/decouvrir-phalsbourg/&quot;&gt;Découvrir Phalsbourg&lt;/a&gt;, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.&lt;/p&gt;
+
+&lt;p&gt;That’s why, I programmed the application to read a specific file. This file, of which we can see an extract below, contains the information as well as the names of the photographs. Thus, I only need to modify this file to add a place or a photograph.&lt;/p&gt;
+
+&lt;p&gt;It also specifies the GPS coordinates in &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+  ...,
+  {
+      &quot;name&quot;:&quot;Porte d’Allemagne&quot;,
+      &quot;text&quot;: &quot;Elle date de 1680, elle permet l’accès de la forteresse de Phalsbourg par l’Est. Sur le fronton, on distingue l’écu du roi Louis XIV avec une fleur de lis. Une plaque en marbre blanc témoigne du passage de Goethe à Phalsbourg le 23 juin 1770. On peut encore distinguer une partie du fossé qui à l’époque était large de 33m et profond de 10.&quot;,
+      &quot;x&quot;:7.260498,
+      &quot;y&quot;:48.766534,
+      &quot;image&quot;: {
+        &quot;uri&quot;:&quot;porte_de_allemagne&quot;,
+        &quot;height&quot;:341.5,
+        &quot;width&quot;:512
+      },
+      &quot;more&quot;: [
+        {
+          &quot;text&quot;: &quot;La plaque indique « En souvenir de la visite de Goethe à Phalsbourg 25 Juin 1770 »&quot;,
+          &quot;image&quot;: {
+            &quot;uri&quot;:&quot;goethe&quot;,
+            &quot;height&quot;:250,
+            &quot;width&quot;:375
+          }
+        }
+      ]
+   },
+   ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;I proceeded in the same way for the sources.&lt;/p&gt;
+
+&lt;p&gt;In October, I added a button “Learn more”: when you press this button, it displays what is contained in the &lt;code class=&quot;highlighter-rouge&quot;&gt;more&lt;/code&gt;.
+This allows to have several photographs for the same place.&lt;/p&gt;
+
+&lt;p&gt;Now, I continue to add information, Phalsbourg is full of surprises.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">In June, I created the application Découvrir Phalsbourg, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.</summary></entry><entry xml:lang="en"><title type="html">The decline of Vosges conifers</title><link href="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="The decline of Vosges conifers" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;During the last year of secondary school in France, students must complete a &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.&lt;/p&gt;
 
 &lt;p&gt;With two friends, I had to work on the following problematic that you can find in French above on the cover page of our file: &lt;em&gt;“Is the decline of the Vosges conifers still mainly linked to acid rain?”&lt;/em&gt;&lt;/p&gt;
 

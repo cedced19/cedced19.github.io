@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://cedced19.github.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://cedced19.github.io/fr/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
         <loc>http://cedced19.github.io/vosges/2017/07/13/vosges-conifers.html</loc>
         <changefreq>monthly</changefreq>
     </url>

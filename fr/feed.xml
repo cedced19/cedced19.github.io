@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="/fr/feed.xml" rel="self" type="application/atom+xml" /><link href="/fr/" rel="alternate" type="text/html" /><updated>2017-07-18T10:38:05+02:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="fr"><title type="html">Le dépérissement des conifères vosgiens</title><link href="/fr/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="Le dépérissement des conifères vosgiens" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;Lors de l’avant-dernière année du lycée en France, les lycéens doivent réaliser un &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) en groupe de 2 à 4 personnes. Il faut alors choisir un sujet et trouver une problématique.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="/fr/feed.xml" rel="self" type="application/atom+xml" /><link href="/fr/" rel="alternate" type="text/html" /><updated>2017-11-26T11:56:58+01:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="fr"><title type="html">Comment fonctionne “Découvrir Phalsbourg” ?</title><link href="/fr/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html" rel="alternate" type="text/html" title="Comment fonctionne &quot;Découvrir Phalsbourg&quot; ?" /><published>2017-11-26T11:00:00+01:00</published><updated>2017-11-26T11:00:00+01:00</updated><id>https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg</id><content type="html" xml:base="https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html">&lt;p&gt;En juin, j’ai crée l’application &lt;a href=&quot;https://cedced19.github.io/decouvrir-phalsbourg/&quot;&gt;Découvrir Phalsbourg&lt;/a&gt;, elle permet comme son nom l’indique de pouvoir découvrir l’Histoire de la ville de Phalsbourg simplement grâce à son portable. Cela suppose d’avoir des informations et des photographies afin que le visiteur se rende compte de la beauté de la ville ainsi que son importance passé et actuelle.&lt;/p&gt;
+
+&lt;p&gt;Pour cela, j’ai programmé l’application afin qu’elle lise un fichier spécifique. Ce fichier, dont on peut voir un extrait ci-après, contient les informations ainsi que les noms des photographies. Ainsi il suffit uniquement de modifier ce fichier pour ajouter un lieu ou une photographie.&lt;/p&gt;
+
+&lt;p&gt;On y précise aussi les coordonnées GPS dans &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; et &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+  ...,
+  {
+      &quot;name&quot;:&quot;Porte d’Allemagne&quot;,
+      &quot;text&quot;: &quot;Elle date de 1680, elle permet l’accès de la forteresse de Phalsbourg par l’Est. Sur le fronton, on distingue l’écu du roi Louis XIV avec une fleur de lis. Une plaque en marbre blanc témoigne du passage de Goethe à Phalsbourg le 23 juin 1770. On peut encore distinguer une partie du fossé qui à l’époque était large de 33m et profond de 10.&quot;,
+      &quot;x&quot;:7.260498,
+      &quot;y&quot;:48.766534,
+      &quot;image&quot;: {
+        &quot;uri&quot;:&quot;porte_de_allemagne&quot;,
+        &quot;height&quot;:341.5,
+        &quot;width&quot;:512
+      },
+      &quot;more&quot;: [
+        {
+          &quot;text&quot;: &quot;La plaque indique « En souvenir de la visite de Goethe à Phalsbourg 25 Juin 1770 »&quot;,
+          &quot;image&quot;: {
+            &quot;uri&quot;:&quot;goethe&quot;,
+            &quot;height&quot;:250,
+            &quot;width&quot;:375
+          }
+        }
+      ]
+   },
+   ...
+]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;J’ai procédé de la même manière pour les sources.&lt;/p&gt;
+
+&lt;p&gt;En octobre, j’ai ajouté un bouton “En savoir plus”: lorsque l’on appuie sur ce bouton, cela affiche ce qui est contenu dans le &lt;code class=&quot;highlighter-rouge&quot;&gt;more&lt;/code&gt;.
+Cela permet ainsi de pouvoir avoir plusieurs photographies pour un même lieu.&lt;/p&gt;
+
+&lt;p&gt;À présent, je continue à rajouter des informations, Phalsbourg est plein de surprise.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">En juin, j’ai crée l’application Découvrir Phalsbourg, elle permet comme son nom l’indique de pouvoir découvrir l’Histoire de la ville de Phalsbourg simplement grâce à son portable. Cela suppose d’avoir des informations et des photographies afin que le visiteur se rende compte de la beauté de la ville ainsi que son importance passé et actuelle.</summary></entry><entry xml:lang="fr"><title type="html">Le dépérissement des conifères vosgiens</title><link href="/fr/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="Le dépérissement des conifères vosgiens" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;Lors de l’avant-dernière année du lycée en France, les lycéens doivent réaliser un &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) en groupe de 2 à 4 personnes. Il faut alors choisir un sujet et trouver une problématique.&lt;/p&gt;
 
 &lt;p&gt;Avec deux amies, j’ai travaillé sur la problématique suivante que vous pouvez retrouver ci-dessus sur la page de couverture de notre dossier: &lt;em&gt;« Le dépérissement des conifères vosgiens est-il
 encore lié principalement aux pluies acides ? »&lt;/em&gt;&lt;/p&gt;
