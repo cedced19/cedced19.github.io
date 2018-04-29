@@ -19,7 +19,7 @@ Je vis en France, et je suis vraiment jeune en tant que programmateur, 17 ans. J
 J'ai commencé à coder avec Visual Basic, c'était plutôt simple. Quand je jouais à Minecraft, j'ai fait du Java pour modifier le jeu. Pour partager ces modifications, je voulais créer un site Web, donc j'ai utilisé PHP. À première vue, PHP était plutôt cool, mais je me suis rapidement déplacé vers JavaScript. Je suis fan de JavaScript et spécifiquement de Node.js (JavaScript côté serveur). Je l'ai découvert il y a quelques années, je l'utilise dans la plupart de mes applications.
 
 
-J'aime vraiment partager mes passions, c'est pourquoi j'ai publié la plupart de mes logiciels sur [GitHub](//cedced19.github.io) soul la licence [MIT](/license) (J'ai déjà créé environ 110 dépôts).
+J'aime vraiment partager mes passions, c'est pourquoi j'ai publié la plupart de mes logiciels sur [GitHub](//cedced19.github.io) sous la licence [MIT](/license) (J'ai déjà créé environ 110 dépôts).
 
 
 J'ai créé une dizaine d'applications Android. Ils sont tous publiés sur le store [Google Play](https://play.google.com/store/apps/dev?id=8053368172585015347).
