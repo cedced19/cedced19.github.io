@@ -4,7 +4,19 @@ layout: default
 
 <div class="home">
 
-  {{ content }}
+  
+
+  <div class="home-center">
+      <img src="/profile.png" alt="Photo" class="profile">
+      <h1>Cédric JUNG</h1>
+      <a href="https://github.com/cedced19">{% include icon-github.svg %} Github</a>   
+      <a href="https://linkedin.com/in/cédric-jung/" >{% include icon-linkedin.svg %} Linkedin</a>
+  </div>
+  
+  <div class="home-content">
+      {{ content }}
+  </div>
+  
 
   {% if site.active_lang == "fr" %}
     <h1 class="page-heading">Publications</h1>
