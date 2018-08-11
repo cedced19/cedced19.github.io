@@ -115,13 +115,25 @@ pre {
 /**
  * Wrapper
  */
+ @keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
 .wrapper {
   max-width: -webkit-calc(740px);
   max-width: calc(800px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
-  padding-left: 30px; }
+  padding-left: 30px;
+  animation-name: fadeIn;
+  animation-duration: 0.75s;
+  animation-fill-mode: both; }
   @media screen and (max-width: 800px) {
     .wrapper {
       max-width: -webkit-calc(800px - (30px));
