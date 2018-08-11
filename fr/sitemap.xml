@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://cedced19.github.io/talk/js/react/native/2018/07/03/my-first-talk.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://cedced19.github.io/fr/talk/js/react/native/2018/07/03/my-first-talk.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
         <loc>http://cedced19.github.io/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique.html</loc>
         <changefreq>monthly</changefreq>
     </url>
