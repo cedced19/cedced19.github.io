@@ -7,7 +7,7 @@ permalink: /
 lang: en
 ---
 
-I'm living in France, and I'm really young as a programmer, 17 years old. I started to code just for fun in 2013.
+I'm living in France, and I'm really young as a programmer, 18 years old. I started to code just for fun in 2013.
 
 I started to code with Visual Basic, it was pretty easy. When I was playing Minecraft, I did some Java to change the game. To share those changes I wanted to created a website therefore I used PHP. At first sight, PHP was pretty cool, but I quickly moved to JavaScript. I'm a fan of JavaScript and specifically of Node.js (server-side JavaScript). I discovered this one some years ago, I use it in the most of my applications.
 
