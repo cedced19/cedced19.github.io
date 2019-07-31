@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedced19.githug.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedced19.githug.io/" rel="alternate" type="text/html" /><updated>2019-05-07T22:59:15+02:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">My first talk</title><link href="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html" rel="alternate" type="text/html" title="My first talk" /><published>2018-07-03T23:55:40+02:00</published><updated>2018-07-03T23:55:40+02:00</updated><id>https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk</id><content type="html" xml:base="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html">&lt;p&gt;Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said “two thousand and &lt;em&gt;elf&lt;/em&gt;”.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedced19.githug.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedced19.githug.io/" rel="alternate" type="text/html" /><updated>2019-07-31T13:41:33+02:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">New To ESP8266</title><link href="https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html" rel="alternate" type="text/html" title="New To ESP8266" /><published>2019-07-31T12:45:40+02:00</published><updated>2019-07-31T12:45:40+02:00</updated><id>https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266</id><content type="html" xml:base="https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html">&lt;p&gt;&lt;em&gt;This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn’t know.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The ESP8266 is an arduino chip that offers wifi (when there is a problem, it is easier to just search for “esp8266” on google, instead of your chip name: you get more results).&lt;/p&gt;
+
+&lt;p&gt;This chip integrates on different cards to make it more convenient to connect.&lt;/p&gt;
+
+&lt;p&gt;The simplest and most convenient are the nodemcu cards  &lt;a href=&quot;https://amzn.to/2MmnVJW&quot;&gt;https://amzn.to/2MmnVJW&lt;/a&gt; (on AliExpress it’s cheaper).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/nodemcu.jpg&quot; alt=&quot;Nodecmu&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It is necessary to be careful: when programming on Arduino pin 1 corresponds to GPIO1 while here the numbers change: when a cable is connected to D1 then in the code it is necessary to program 5 (see diagram above).&lt;/p&gt;
+
+&lt;p&gt;It is also necessary to be careful to supply it with 3.3V or USB power. What I use for that: &lt;a href=&quot;https://amzn.to/2K0Pqar&quot;&gt;https://amzn.to/2K0Pqar&lt;/a&gt;  (on AliExpress it’s cheaper).&lt;/p&gt;
+
+&lt;p&gt;It is necessary to install a plugin (done in 5 min) on the Arduino editor to compile to the nodemcu or other object.&lt;/p&gt;
+
+&lt;p&gt;Useful links:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://randomnerdtutorials.com/esp8266-web-server/&quot;&gt;https://randomnerdtutorials.com/esp8266-web-server/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.teachmemicro.com/simple-nodemcu-web-server/&quot;&gt;https://www.teachmemicro.com/simple-nodemcu-web-server/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can see my evolution (first I started using the ESP-01 and then the nodemcu)  &lt;a href=&quot;https://github.com/cedced19/garage-doors-opener&quot;&gt;here&lt;/a&gt; 
+I’ve had conversations with people I’ve copied at this link, maybe it can help. There are also my schematics. 
+This is the system to open the garage door. It may be interesting to start by seeing what I did in this project, for the nodemcu look at this file: &lt;a href=&quot;https://github.com/cedced19/garage-doors-opener/blob/master/nodemcu/nodemcu.ino&quot;&gt;nodemcu.ino&lt;/a&gt;.
+You will need to be familiar with the notion of server/client if you want to communicate from a web browser with your nodemcu.&lt;/p&gt;
+
+&lt;p&gt;I respond in JSON format because it is for a software that I created myself after: but we can directly create a web page on the ESP8266 as explained &lt;a href=&quot;https://randomnerdtutorials.com/esp8266-web-server-with-arduino-ide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;We can find other tutorials, there I naively searched, I don’t know your level, things can be omitted in these tutorials, I won’t see it because I know by heart how these machines work.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I have a big project, “Sensorio”, using ESP8266 available here: &lt;a href=&quot;https://github.com/cedced19?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=sensorio&amp;amp;type=&amp;amp;language=&quot;&gt;Sensorio&lt;/a&gt;
+I recommend &lt;a href=&quot;https://www.youtube.com/watch?v=qVMauy5hPhI&quot;&gt;this video&lt;/a&gt; which shows the power of this system, I can &lt;em&gt;in fine&lt;/em&gt; display values of my sensors on a device in the living room, without even knowing themselves.
+I have done very little documentation on it, it is a very big project but it allows me to save time in the end and to have access through the same site to the quantity of water available for my toilets, or to the outside temperature, or even soon to the electricity consumption of my heat pump, and this anywhere in the world. 
+It is a server hosted on a Raspberry that will receive and process all the data from the different ESP8266 sensors I have. Each sensor is accompanied by a diagram and the code to make it.&lt;/p&gt;
+
+&lt;p&gt;My creations are often explained in video &lt;a href=&quot;https://www.youtube.com/channel/UCJHhpW6Za9xWlHZO0i8layw/videos&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you have a lot of time and are experienced enough:
+I recommend the ESP8266-01 if you only have one pin to use it is smaller than one inch (however, no USB plug available, you must use an arduino to program it with the RX TX plugs)&lt;br /&gt;
+Useful links ESP8266-01:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&quot;&gt;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&quot;&gt;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn’t know.</summary></entry><entry xml:lang="en"><title type="html">My first talk</title><link href="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html" rel="alternate" type="text/html" title="My first talk" /><published>2018-07-03T23:55:40+02:00</published><updated>2018-07-03T23:55:40+02:00</updated><id>https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk</id><content type="html" xml:base="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html">&lt;p&gt;Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said “two thousand and &lt;em&gt;elf&lt;/em&gt;”.&lt;/p&gt;
 
 &lt;p&gt;I recommand you to go to the KarlsruheJS conferences. These people are adorable.&lt;/p&gt;
 
