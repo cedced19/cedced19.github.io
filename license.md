@@ -8,7 +8,7 @@ permalink: /license
 
 *The majorty of the Cédric JUNG's softwares are distributed under the MIT license.*
 
-### COPYRIGHT (C) 2014-2019 CÉDRIC JUNG
+### COPYRIGHT (C) 2014-2020 CÉDRIC JUNG
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
