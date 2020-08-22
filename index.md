@@ -7,10 +7,10 @@ permalink: /
 lang: en
 ---
 
-I'm living in France where I was born in 2020. I spare my time between the forest, programming and local culture. 
+I'm living in France where I was born in 2020. I study at the **École Centrale de Lille**. I spare my time between the forest, programming and local culture. 
 
 
-I started to code just for fun in 2013 with Visual Basic, it was pretty easy. When I was playing Minecraft, I did some Java to change the game. To share those changes I wanted to created a website therefore I used PHP. At first sight, PHP was pretty cool, but I quickly moved to JavaScript. I discovered this one some years ago, I use it in the most of my applications. Indeed, I'm a fan of JavaScript and specifically of Node.js (server-side JavaScript). Since then I've been learning a lot of new languages and techniques.
+I started to code just for fun in 2013 with Visual Basic, it was pretty easy. When I was playing Minecraft, I did some Java to change the game. To share those changes I wanted to created a website therefore I used **PHP**. At first sight, PHP was pretty cool, but I quickly moved to **JavaScript**. I discovered this one some years ago, I use it in the most of my applications. Indeed, I'm a fan of JavaScript and specifically of **Node.js** (server-side JavaScript). Since then I've been learning a lot of new languages and techniques.
 
 I really love to share my passions that's why I published the most of my software to [GitHub](https://github.com/cedced19) under the [MIT](/license) license (I've already created about 120 repositories).
 
@@ -18,6 +18,7 @@ I've created about ten Android applications. They are all published on the [Goog
 
 Since 2018, I am part of the organization Découverto, which organizes cultural walks and creates books. With this organization, I created the applications [Bestiaire Héraldique](https://play.google.com/store/apps/details?id=com.bestiaireheraldique) and [Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto) that allows you to have an audio guide on your phone. It's also me who have created the website [decouverto.fr](https://decouverto.fr).
 
-Since September 2018, I have been studying in [MPSI](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE) which stands for *Mathématiques, Physiques, Sciences de l'Ingénieur* ("mathematics, physics, and engineering science"). I learned OCAML and Python languages, all the exercises I have done are available on this repository: [tp-mpsi](https://github.com/cedced19/tp-mpsi).
+Since September 2018, I have been studying in [MPSI](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE) which stands for *Mathématiques, Physiques, Sciences de l'Ingénieur* ("mathematics, physics, and engineering science"). I learned OCAML and Python languages, all the exercises I have done are available on this repository: [tp-mpsi](https://github.com/cedced19/tp-mpsi). 
 
-I ran on a list for the municipal elections in Phalsbourg in 2020.
+I ran on a list for the municipal elections in Phalsbourg in 2020. 
+
