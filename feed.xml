@@ -1,82 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedced19.githug.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedced19.githug.io/" rel="alternate" type="text/html" /><updated>2020-08-22T09:29:58+02:00</updated><id>https://cedced19.githug.io/</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG's developer website. Node.js fan.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG, développeur, fan de node.js.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">New To ESP8266</title><link href="https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html" rel="alternate" type="text/html" title="New To ESP8266" /><published>2019-07-31T12:45:40+02:00</published><updated>2019-07-31T12:45:40+02:00</updated><id>https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266</id><content type="html" xml:base="https://cedced19.githug.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html">&lt;p&gt;&lt;em&gt;This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn’t know.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;The ESP8266 is an arduino chip that offers wifi (when there is a problem, it is easier to just search for “esp8266” on google, instead of your chip name: you get more results).&lt;/p&gt;
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.0">Jekyll</generator><link href="https://cedric-jung.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedric-jung.eu/" rel="alternate" type="text/html" /><updated>2020-11-27T23:36:26+01:00</updated><id>https://cedric-jung.eu/feed.xml</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG website.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">New To ESP8266</title><link href="https://cedric-jung.eu/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html" rel="alternate" type="text/html" title="New To ESP8266" /><published>2019-07-31T12:45:40+02:00</published><updated>2019-07-31T12:45:40+02:00</updated><id>https://cedric-jung.eu/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266</id><content type="html" xml:base="https://cedric-jung.eu/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html">&lt;p&gt;&lt;em&gt;This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn't know.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The ESP8266 is an arduino chip that offers wifi (when there is a problem, it is easier to just search for &amp;quot;esp8266&amp;quot; on google, instead of your chip name: you get more results).&lt;/p&gt;
 &lt;p&gt;This chip integrates on different cards to make it more convenient to connect.&lt;/p&gt;
-
-&lt;p&gt;The simplest and most convenient are the nodemcu cards  &lt;a href=&quot;https://amzn.to/2MmnVJW&quot;&gt;https://amzn.to/2MmnVJW&lt;/a&gt; (on AliExpress it’s cheaper).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/nodemcu.jpg&quot; alt=&quot;Nodecmu&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
+&lt;p&gt;The simplest and most convenient are the nodemcu cards  &lt;a href=&quot;https://amzn.to/2MmnVJW&quot;&gt;https://amzn.to/2MmnVJW&lt;/a&gt; (on AliExpress it's cheaper).&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
 &lt;p&gt;It is necessary to be careful: when programming on Arduino pin 1 corresponds to GPIO1 while here the numbers change: when a cable is connected to D1 then in the code it is necessary to program 5 (see diagram above).&lt;/p&gt;
-
-&lt;p&gt;It is also necessary to be careful to supply it with 3.3V or USB power. What I use for that: &lt;a href=&quot;https://amzn.to/2K0Pqar&quot;&gt;https://amzn.to/2K0Pqar&lt;/a&gt;  (on AliExpress it’s cheaper).&lt;/p&gt;
-
+&lt;p&gt;It is also necessary to be careful to supply it with 3.3V or USB power. What I use for that: &lt;a href=&quot;https://amzn.to/2K0Pqar&quot;&gt;https://amzn.to/2K0Pqar&lt;/a&gt;  (on AliExpress it's cheaper).&lt;/p&gt;
 &lt;p&gt;It is necessary to install a plugin (done in 5 min) on the Arduino editor to compile to the nodemcu or other object.&lt;/p&gt;
-
 &lt;p&gt;Useful links:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://randomnerdtutorials.com/esp8266-web-server/&quot;&gt;https://randomnerdtutorials.com/esp8266-web-server/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.teachmemicro.com/simple-nodemcu-web-server/&quot;&gt;https://www.teachmemicro.com/simple-nodemcu-web-server/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://randomnerdtutorials.com/esp8266-web-server/&quot;&gt;https://randomnerdtutorials.com/esp8266-web-server/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.teachmemicro.com/simple-nodemcu-web-server/&quot;&gt;https://www.teachmemicro.com/simple-nodemcu-web-server/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;You can see my evolution (first I started using the ESP-01 and then the nodemcu)  &lt;a href=&quot;https://github.com/cedced19/garage-doors-opener&quot;&gt;here&lt;/a&gt; 
-I’ve had conversations with people I’ve copied at this link, maybe it can help. There are also my schematics. 
+&lt;p&gt;You can see my evolution (first I started using the ESP-01 and then the nodemcu)  &lt;a href=&quot;https://github.com/cedced19/garage-doors-opener&quot;&gt;here&lt;/a&gt;
+I've had conversations with people I've copied at this link, maybe it can help. There are also my schematics.
 This is the system to open the garage door. It may be interesting to start by seeing what I did in this project, for the nodemcu look at this file: &lt;a href=&quot;https://github.com/cedced19/garage-doors-opener/blob/master/nodemcu/nodemcu.ino&quot;&gt;nodemcu.ino&lt;/a&gt;.
 You will need to be familiar with the notion of server/client if you want to communicate from a web browser with your nodemcu.&lt;/p&gt;
-
 &lt;p&gt;I respond in JSON format because it is for a software that I created myself after: but we can directly create a web page on the ESP8266 as explained &lt;a href=&quot;https://randomnerdtutorials.com/esp8266-web-server-with-arduino-ide/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;We can find other tutorials, there I naively searched, I don’t know your level, things can be omitted in these tutorials, I won’t see it because I know by heart how these machines work.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;I have a big project, “Sensorio”, using ESP8266 available here: &lt;a href=&quot;https://github.com/cedced19?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=sensorio&amp;amp;type=&amp;amp;language=&quot;&gt;Sensorio&lt;/a&gt;
+&lt;p&gt;&lt;em&gt;We can find other tutorials, there I naively searched, I don't know your level, things can be omitted in these tutorials, I won't see it because I know by heart how these machines work.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have a big project, &amp;quot;Sensorio&amp;quot;, using ESP8266 available here: &lt;a href=&quot;https://github.com/cedced19?utf8=%E2%9C%93&amp;amp;tab=repositories&amp;amp;q=sensorio&amp;amp;type=&amp;amp;language=&quot;&gt;Sensorio&lt;/a&gt;
 I recommend &lt;a href=&quot;https://www.youtube.com/watch?v=qVMauy5hPhI&quot;&gt;this video&lt;/a&gt; which shows the power of this system, I can &lt;em&gt;in fine&lt;/em&gt; display values of my sensors on a device in the living room, without even knowing themselves.
-I have done very little documentation on it, it is a very big project but it allows me to save time in the end and to have access through the same site to the quantity of water available for my toilets, or to the outside temperature, or even soon to the electricity consumption of my heat pump, and this anywhere in the world. 
+I have done very little documentation on it, it is a very big project but it allows me to save time in the end and to have access through the same site to the quantity of water available for my toilets, or to the outside temperature, or even soon to the electricity consumption of my heat pump, and this anywhere in the world.
 It is a server hosted on a Raspberry that will receive and process all the data from the different ESP8266 sensors I have. Each sensor is accompanied by a diagram and the code to make it.&lt;/p&gt;
-
 &lt;p&gt;My creations are often explained in video &lt;a href=&quot;https://www.youtube.com/channel/UCJHhpW6Za9xWlHZO0i8layw/videos&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;If you have a lot of time and are experienced enough:
 I recommend the ESP8266-01 if you only have one pin to use it is smaller than one inch (however, no USB plug available, you must use an arduino to program it with the RX TX plugs)&lt;br /&gt;
 Useful links ESP8266-01:&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&quot;&gt;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&quot;&gt;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn’t know.</summary></entry><entry xml:lang="en"><title type="html">My first talk</title><link href="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html" rel="alternate" type="text/html" title="My first talk" /><published>2018-07-03T23:55:40+02:00</published><updated>2018-07-03T23:55:40+02:00</updated><id>https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk</id><content type="html" xml:base="https://cedced19.githug.io/talk/js/react/native/2018/07/03/my-first-talk.html">&lt;p&gt;Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said “two thousand and &lt;em&gt;elf&lt;/em&gt;”.&lt;/p&gt;
-
+&lt;li&gt;&lt;a href=&quot;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&quot;&gt;https://hackaday.com/2014/12/08/compiling-your-own-programs-for-the-esp8266/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&quot;&gt;https://www.instructables.com/id/Definitive-Guide-to-Setting-Up-Your-New-ESP01-Modu/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">This article is an extract of my conversations with a physicist friend who is a novice with the ESP8266 cards. Some parts are therefore not fully detailed in view of our common knowledge, and his ability to find information. I had just told him about the ESP8266 he didn't know.</summary></entry><entry xml:lang="en"><title type="html">My first talk</title><link href="https://cedric-jung.eu/talk/js/react/native/2018/07/03/my-first-talk.html" rel="alternate" type="text/html" title="My first talk" /><published>2018-07-03T23:55:40+02:00</published><updated>2018-07-03T23:55:40+02:00</updated><id>https://cedric-jung.eu/talk/js/react/native/2018/07/03/my-first-talk</id><content type="html" xml:base="https://cedric-jung.eu/talk/js/react/native/2018/07/03/my-first-talk.html">&lt;p&gt;Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said &amp;quot;two thousand and &lt;em&gt;elf&lt;/em&gt;&amp;quot;.&lt;/p&gt;
 &lt;p&gt;I recommand you to go to the KarlsruheJS conferences. These people are adorable.&lt;/p&gt;
-
 &lt;p&gt;This talk was about &lt;em&gt;react-native&lt;/em&gt;, and the slide are &lt;a href=&quot;https://cedced19.github.io/talk-react-native&quot;&gt;there&lt;/a&gt;.&lt;/p&gt;
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/G3paBMXgkUo&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said “two thousand and elf”.</summary></entry><entry xml:lang="en"><title type="html">Bestiaire Héraldique</title><link href="https://cedced19.githug.io/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique.html" rel="alternate" type="text/html" title="Bestiaire Héraldique" /><published>2018-04-29T10:06:40+02:00</published><updated>2018-04-29T10:06:40+02:00</updated><id>https://cedced19.githug.io/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique</id><content type="html" xml:base="https://cedced19.githug.io/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique.html">&lt;p&gt;For two months I have been working with the Découverto organization to create an audioguide system and since yesterday the application &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bestiaireheraldique&quot;&gt;Bestiaire Héraldique&lt;/a&gt; is finally available on Google Play.&lt;/p&gt;
-
+&lt;!-- raw HTML omitted --&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">Today, I did my first talk to an audience other than a classroom during a presentation. It was not easy, not because I was stressed, but because I did it in English, which is not my native language. Moreover the KarlsruheJS conference takes place as its name suggests in Karlsruhe, Germany, so I mixed some English and German words. I even said &amp;quot;two thousand and elf&amp;quot;.</summary></entry><entry xml:lang="en"><title type="html">Bestiaire Héraldique</title><link href="https://cedric-jung.eu/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique.html" rel="alternate" type="text/html" title="Bestiaire Héraldique" /><published>2018-04-29T10:06:40+02:00</published><updated>2018-04-29T10:06:40+02:00</updated><id>https://cedric-jung.eu/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique</id><content type="html" xml:base="https://cedric-jung.eu/decouverto/bestiaire/culture/2018/04/29/bestiaire-heraldique.html">&lt;p&gt;For two months I have been working with the Découverto organization to create an audioguide system and since yesterday the application &lt;a href=&quot;https://play.google.com/store/apps/details?id=com.bestiaireheraldique&quot;&gt;Bestiaire Héraldique&lt;/a&gt; is finally available on Google Play.&lt;/p&gt;
 &lt;p&gt;After reading a newspaper article about me, Découverto contacted me and we met in a bar and I started to develop the application while they were providing me the data I needed: GPS plot, audio explanations and other illustrations.&lt;/p&gt;
-
-&lt;p&gt;We are already developing the next application together.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">For two months I have been working with the Découverto organization to create an audioguide system and since yesterday the application Bestiaire Héraldique is finally available on Google Play.</summary></entry><entry xml:lang="en"><title type="html">How does “Découvrir Phalsbourg” work ?</title><link href="https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html" rel="alternate" type="text/html" title="How does &quot;Découvrir Phalsbourg&quot; work ?" /><published>2017-11-26T11:00:00+01:00</published><updated>2017-11-26T11:00:00+01:00</updated><id>https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg</id><content type="html" xml:base="https://cedced19.githug.io/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html">&lt;p&gt;In June, I created the application &lt;a href=&quot;https://cedced19.github.io/decouvrir-phalsbourg/&quot;&gt;Découvrir Phalsbourg&lt;/a&gt;, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.&lt;/p&gt;
-
-&lt;p&gt;That’s why, I programmed the application to read a specific file. This file, of which we can see an extract below, contains the information as well as the names of the photographs. Thus, I only need to modify this file to add a place or a photograph.&lt;/p&gt;
-
-&lt;p&gt;It also specifies the GPS coordinates in &lt;code class=&quot;highlighter-rouge&quot;&gt;x&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;y&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[
+&lt;p&gt;We are already developing the next application together.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">For two months I have been working with the Découverto organization to create an audioguide system and since yesterday the application Bestiaire Héraldique is finally available on Google Play.</summary></entry><entry xml:lang="en"><title type="html">How does “Découvrir Phalsbourg” work ?</title><link href="https://cedric-jung.eu/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html" rel="alternate" type="text/html" title="How does &quot;Découvrir Phalsbourg&quot; work ?" /><published>2017-11-26T11:00:00+01:00</published><updated>2017-11-26T11:00:00+01:00</updated><id>https://cedric-jung.eu/phalsbourg/code/2017/11/26/decouvrir-phalsbourg</id><content type="html" xml:base="https://cedric-jung.eu/phalsbourg/code/2017/11/26/decouvrir-phalsbourg.html">&lt;p&gt;In June, I created the application &lt;a href=&quot;https://cedced19.github.io/decouvrir-phalsbourg/&quot;&gt;Découvrir Phalsbourg&lt;/a&gt;, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.&lt;/p&gt;
+&lt;p&gt;That's why, I programmed the application to read a specific file. This file, of which we can see an extract below, contains the information as well as the names of the photographs. Thus, I only need to modify this file to add a place or a photograph.&lt;/p&gt;
+&lt;p&gt;It also specifies the GPS coordinates in &lt;code&gt;x&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
   ...,
   {
-      &quot;name&quot;:&quot;Porte d’Allemagne&quot;,
-      &quot;text&quot;: &quot;Elle date de 1680, elle permet l’accès de la forteresse de Phalsbourg par l’Est. Sur le fronton, on distingue l’écu du roi Louis XIV avec une fleur de lis. Une plaque en marbre blanc témoigne du passage de Goethe à Phalsbourg le 23 juin 1770. On peut encore distinguer une partie du fossé qui à l’époque était large de 33m et profond de 10.&quot;,
-      &quot;x&quot;:7.260498,
-      &quot;y&quot;:48.766534,
-      &quot;image&quot;: {
-        &quot;uri&quot;:&quot;porte_de_allemagne&quot;,
-        &quot;height&quot;:341.5,
-        &quot;width&quot;:512
+      &amp;quot;name&amp;quot;:&amp;quot;Porte d’Allemagne&amp;quot;,
+      &amp;quot;text&amp;quot;: &amp;quot;Elle date de 1680, elle permet l’accès de la forteresse de Phalsbourg par l’Est. Sur le fronton, on distingue l’écu du roi Louis XIV avec une fleur de lis. Une plaque en marbre blanc témoigne du passage de Goethe à Phalsbourg le 23 juin 1770. On peut encore distinguer une partie du fossé qui à l’époque était large de 33m et profond de 10.&amp;quot;,
+      &amp;quot;x&amp;quot;:7.260498,
+      &amp;quot;y&amp;quot;:48.766534,
+      &amp;quot;image&amp;quot;: {
+        &amp;quot;uri&amp;quot;:&amp;quot;porte_de_allemagne&amp;quot;,
+        &amp;quot;height&amp;quot;:341.5,
+        &amp;quot;width&amp;quot;:512
       },
-      &quot;more&quot;: [
+      &amp;quot;more&amp;quot;: [
         {
-          &quot;text&quot;: &quot;La plaque indique « En souvenir de la visite de Goethe à Phalsbourg 25 Juin 1770 »&quot;,
-          &quot;image&quot;: {
-            &quot;uri&quot;:&quot;goethe&quot;,
-            &quot;height&quot;:250,
-            &quot;width&quot;:375
+          &amp;quot;text&amp;quot;: &amp;quot;La plaque indique « En souvenir de la visite de Goethe à Phalsbourg 25 Juin 1770 »&amp;quot;,
+          &amp;quot;image&amp;quot;: {
+            &amp;quot;uri&amp;quot;:&amp;quot;goethe&amp;quot;,
+            &amp;quot;height&amp;quot;:250,
+            &amp;quot;width&amp;quot;:375
           }
         }
       ]
@@ -84,21 +62,13 @@ Useful links ESP8266-01:&lt;/p&gt;
    ...
 ]
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
 &lt;p&gt;I proceeded in the same way for the sources.&lt;/p&gt;
-
-&lt;p&gt;In October, I added a button “Learn more”: when you press this button, it displays what is contained in the &lt;code class=&quot;highlighter-rouge&quot;&gt;more&lt;/code&gt;.
+&lt;p&gt;In October, I added a button &amp;quot;Learn more&amp;quot;: when you press this button, it displays what is contained in the &lt;code&gt;more&lt;/code&gt;.
 This allows to have several photographs for the same place.&lt;/p&gt;
-
-&lt;p&gt;Now, I continue to add information, Phalsbourg is full of surprises.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">In June, I created the application Découvrir Phalsbourg, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.</summary></entry><entry xml:lang="en"><title type="html">The decline of Vosges conifers</title><link href="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="The decline of Vosges conifers" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedced19.githug.io/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;During the last year of secondary school in France, students must complete a &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.&lt;/p&gt;
-
-&lt;p&gt;With two friends, I had to work on the following problematic that you can find in French above on the cover page of our file: &lt;em&gt;“Is the decline of the Vosges conifers still mainly linked to acid rain?”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/vosges-conifers-01.jpg&quot; alt=&quot;Cover page&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We were rewarded with a score of 18/20 for this baccalaureate exam. &lt;br /&gt;
-&lt;a href=&quot;/assets/pdf/vosges-conifers-doc.pdf&quot;&gt;Download file&lt;/a&gt;&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">During the last year of secondary school in France, students must complete a Travail Personnel Encadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.</summary></entry><entry xml:lang="en"><title type="html">New website!</title><link href="https://cedced19.githug.io/jekyll/update/2017/07/12/new-website.html" rel="alternate" type="text/html" title="New website!" /><published>2017-07-12T09:09:40+02:00</published><updated>2017-07-12T09:09:40+02:00</updated><id>https://cedced19.githug.io/jekyll/update/2017/07/12/new-website</id><content type="html" xml:base="https://cedced19.githug.io/jekyll/update/2017/07/12/new-website.html">&lt;p&gt;Today, I’ve decided to create a new personal website starting from zero.&lt;/p&gt;
-
-&lt;p&gt;Actually, the old one became quite useless and wasn’t translated.
-Now I’m able to blog, share other passions meanwhile I present myself throught this website.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">Today, I’ve decided to create a new personal website starting from zero.</summary></entry></feed>
+&lt;p&gt;Now, I continue to add information, Phalsbourg is full of surprises.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">In June, I created the application Découvrir Phalsbourg, it allows as its name indicates to discover the History of the city of Phalsbourg simply thanks to your mobile phone. This involves having information and photographs so that the visitor can see the beauty of the city and its past and present importance.</summary></entry><entry xml:lang="en"><title type="html">The decline of Vosges conifers</title><link href="https://cedric-jung.eu/vosges/2017/07/13/vosges-conifers.html" rel="alternate" type="text/html" title="The decline of Vosges conifers" /><published>2017-07-13T08:00:00+02:00</published><updated>2017-07-13T08:00:00+02:00</updated><id>https://cedric-jung.eu/vosges/2017/07/13/vosges-conifers</id><content type="html" xml:base="https://cedric-jung.eu/vosges/2017/07/13/vosges-conifers.html">&lt;p&gt;During the last year of secondary school in France, students must complete a &lt;strong&gt;T&lt;/strong&gt;ravail &lt;strong&gt;P&lt;/strong&gt;ersonnel &lt;strong&gt;E&lt;/strong&gt;ncadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.&lt;/p&gt;
+&lt;p&gt;With two friends, I had to work on the following problematic that you can find in French above on the cover page of our file: &lt;em&gt;&amp;quot;Is the decline of the Vosges conifers still mainly linked to acid rain?&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;We were rewarded with a score of 18/20 for this baccalaureate exam.&lt;br /&gt;
+&lt;a href=&quot;/assets/pdf/vosges-conifers-doc.pdf&quot;&gt;Download file&lt;/a&gt;&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">During the last year of secondary school in France, students must complete a Travail Personnel Encadré (TPE) in groups of 2 to 4 people. You have to choose a topic and find a problematic.</summary></entry><entry xml:lang="en"><title type="html">New website!</title><link href="https://cedric-jung.eu/jekyll/update/2017/07/12/new-website.html" rel="alternate" type="text/html" title="New website!" /><published>2017-07-12T09:09:40+02:00</published><updated>2017-07-12T09:09:40+02:00</updated><id>https://cedric-jung.eu/jekyll/update/2017/07/12/new-website</id><content type="html" xml:base="https://cedric-jung.eu/jekyll/update/2017/07/12/new-website.html">&lt;p&gt;Today, I've decided to create a new personal website starting from zero.&lt;/p&gt;
+&lt;p&gt;Actually, the old one became quite useless and wasn't translated.
+Now I'm able to blog, share other passions meanwhile I present myself throught this website.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><summary type="html">Today, I've decided to create a new personal website starting from zero.</summary></entry></feed>
