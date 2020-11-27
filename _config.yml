@@ -71,7 +71,7 @@ assets:
     - "*.png"
     - "main.css"
   sources:
-    - _assets/css
+    - _assets/css/
   compress:
     js:  true
     css: true
