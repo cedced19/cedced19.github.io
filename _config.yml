@@ -19,28 +19,27 @@ posts:
   fr: Publications
 
 description:
-  en: "Cédric JUNG's developer website. Node.js fan."
-  fr: "Site de Cédric JUNG, développeur, fan de node.js."
+  en: "Cédric JUNG website."
+  fr: "Site de Cédric JUNG."
 
 keywords:
-  en: Cédric, JUNG, Developer, Node, JS, HTML, CSS, JavaScript, Vosges, Phalsbourg, Bike
-  fr: Cédric, JUNG, Developpeur, Node, JS, HTML, CSS, JavaScript, Vosges, Phalsbourg, Vélo, VTT, Cyclisme
+  en: Cédric, JUNG, Developer, Node, JS, HTML, CSS, JavaScript, Vosges, Phalsbourg, Bike, Centrale Lille
+  fr: Cédric, JUNG, Developpeur, Node, JS, HTML, CSS, JavaScript, Vosges, Phalsbourg, Vélo, VTT, Cyclisme, Centrale Lille
 
 footer_description:
-  en:  "I love coding, walking in the forest, running and cross-country cycling."
-  fr:  "J'adore coder, marcher en forêt, courrir et faire du VTT."
+  en:  "I love creating new things, walking in the forest, running and cross-country cycling."
+  fr:  "J'adore inventer, marcher en forêt, courir et faire du VTT."
 
 title: Cédric JUNG
 author: Cédric JUNG
-email: cedced19@gmail.com
+email: cedric@cedric-jung.eu
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://cedced19.githug.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: cedced19
+url: "https://cedric-jung.eu" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  cedced19
 
 # Build settings
-markdown: kramdown
+markdown: CommonMark
 theme: minima
 plugins:
   - jekyll-feed
@@ -61,6 +60,7 @@ exclude:
    - Gemfile
    - Gemfile.lock
    - node_modules
+   - vendor
 
 assets:
   dirname: assets

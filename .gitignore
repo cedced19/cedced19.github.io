@@ -4,3 +4,4 @@ _site
 .asset-cache/
 .branchsite/
 node_modules/
+vendor/
