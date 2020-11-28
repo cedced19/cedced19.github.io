@@ -5,3 +5,4 @@ _site
 .branchsite/
 node_modules/
 vendor/
+.jekyll-cache/
