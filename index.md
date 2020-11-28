@@ -7,18 +7,62 @@ permalink: /
 lang: en
 ---
 
-I'm living in France where I was born in 2020. I study at the **École Centrale de Lille**. I spare my time between the forest, programming and local culture. 
+## Education
+
+* **The École Centrale de Lille 2020-2023**: graduate schools in of multi-disciplinary engineering. One of the top ten graduates schools in France. 
+Now in Final-year bachelor’s Student. 
+* **2-years in advanced undergraduate studies in Maths, Physiscs 2018-2020** preparing for the national competitive examinations for entry to the top engineering schools in France.
+* **Baccalauréat** in 2018: equivalent to High School Diploma (US) / A’ Levels (GB) with upper honors. Major in Science. German-language European section. Coursework in Latin.
+
+## Curriculum Vitae 
+
+#### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany
+*	Ten-minute presentation in English on the new hybrid application Created technology (iOS and Android): React Native
+#### Developer, Association Découverto, Grand-Est, 2017-Present
+*	Developed the website of the organization: [decouverto.fr](https://decouverto.fr)  
+Using Nodejs for the server, MongoDB for the database, and AngularJS for the operation of the administration space. The website had to be simple and easy to understand (Now used by 1000 people in a week in average).
+*	Created the Android application  “[Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto)” using React Native.
+The application had to be adapted for off-line use during "forest audio guide" hikes.
+*	Developed business software using Electron and AngluarJS, backup software for the hikes and the data of the website and software to create hikes in a format compatible with the constraints of public use.
+*	Presented to the press (television, radio, paper) the apps, and got feedback from users
+#### Hiking guide, Association Découverto, Grand-Est, 2017-Présent 
+*	Supervising about 20 adults during 20km treks. 
+*	Supervising about 10 children of 10 years old during 10km hikes. 
+*	Explanations and animations of the hike according to the public and the place 
+*	Engaged in meetings with local tourist offices, leisure centers to improve and propose new activities. 
+*	Animated conferences on nature and local history 
 
 
-I started to code just for fun in 2013 with Visual Basic, it was pretty easy. When I was playing Minecraft, I did some Java to change the game. To share those changes I wanted to created a website therefore I used **PHP**. At first sight, PHP was pretty cool, but I quickly moved to **JavaScript**. I discovered this one some years ago, I use it in the most of my applications. Indeed, I'm a fan of JavaScript and specifically of **Node.js** (server-side JavaScript). Since then I've been learning a lot of new languages and techniques.
+## Skills
 
-I really love to share my passions that's why I published the most of my software to [GitHub](https://github.com/cedced19) under the [MIT](/license) license (I've already created about 120 repositories).
+### Engineering skills
+* SysML and knowledge of Cameo systems modeler
+* Arduino
 
-I've created about ten Android applications. They are all published on the [Google Play](https://play.google.com/store/apps/dev?id=8053368172585015347).
+### Programmation skills ([GitHub](https://github.com/cedced19))
+* Git 
+* JavaScript (Node.js,React, React Native, AngularJS) 
+* [Android App Developement](https://play.google.com/store/apps/dev?id=8053368172585015347)
+* HTML, JSON, CSS 
+* Python
+* OCaml
+* C
+* R
+* SQL, MongoDB
+* Notions of Java, VB, PHP 
+* Linux shell
+* Management of a server on Linux
 
-Since 2018, I am part of the organization Découverto, which organizes cultural walks and creates books. With this organization, I created the applications [Bestiaire Héraldique](https://play.google.com/store/apps/details?id=com.bestiaireheraldique) and [Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto) that allows you to have an audio guide on your phone. It's also me who have created the website [decouverto.fr](https://decouverto.fr).
+### Communication skills
+* Management of a Facebook page, press relations and organization of events
 
-Since September 2018, I have been studying in [MPSI](https://en.wikipedia.org/wiki/Classe_pr%C3%A9paratoire_aux_grandes_%C3%A9coles#Scientific_CPGE) which stands for *Mathématiques, Physiques, Sciences de l'Ingénieur* ("mathematics, physics, and engineering science"). I learned OCAML and Python languages, all the exercises I have done are available on this repository: [tp-mpsi](https://github.com/cedced19/tp-mpsi). 
+### Other
 
-I ran on a list for the municipal elections in Phalsbourg in 2020. 
+* Clean Driving Licence
+
+## Language
+
+* Français (Langue maternelle)
+* Anglais (Compétence professionnelle)
+* Allemand (Courant)
 

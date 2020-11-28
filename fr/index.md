@@ -18,7 +18,7 @@ lang: fr
 À l’aide de Nodejs pour le serveur, MongoDB pour la base de
 données, et AngularJS pour le fonctionnement de l’espace
 d’administration
-Le site internet devait permettre la publication de randonnées.
+Le site internet devait permettre la publication de randonnées et devait être simple à comprendre (Maintenant utilisé par 1000 personnes par semaine en moyenne).
 *  Création de l’application Android [Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto) à l’aide de React Native  
 L’application devait être adaptée à un usage hors ligne lors de randonnées « audioguide forestier »
 *  Création des logiciels métiers à l’aide d’Electron et d’AngluarJS
@@ -27,7 +27,7 @@ L’application devait être adaptée à un usage hors ligne lors de randonnées
 *  Présentation à la presse (télévision, radio, papier) des logiciels, et
 dialogue avec les utilisateurs
 
-### Guide de randonnée, Association Découverto, Grand-Est, 2018-Présent
+### Guide de randonnée, Association Découverto, Grand-Est, 2017-Présent
 *  Encadrement d’une vingtaine de personnes adultes lors derandonnées de 20km
 *  Encadrement d’une dizaine d’enfants de 10ans lors derandonnées de 10km
 *  Explications et animations de la randonnée en fonction du public et du lieu
@@ -49,7 +49,7 @@ React Native
 
 ## Compétences
 
-### Ingénieurie 
+### Ingénierie 
 * SysML et utilisation de Cameo systems modeler
 
 ### Programmation (voir mon [GitHub](https://github.com/cedced19))
@@ -66,7 +66,7 @@ React Native
 * Maîtrise du shell Linux et de la gestion d’un serveur sous Linux
 
 ### Communication 
-* gestion d’une page Facebook, des relations avec la presse et organisation d’évênements
+* Gestion d’une page Facebook, des relations avec la presse et organisation d’évênements
 
 ## Langues
 
