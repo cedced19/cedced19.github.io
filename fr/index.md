@@ -21,6 +21,7 @@ d’administration
 Le site internet devait permettre la publication de randonnées et devait être simple à comprendre (Maintenant utilisé par 1000 personnes par semaine en moyenne).
 *  Création de l’application Android [Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto) à l’aide de React Native  
 L’application devait être adaptée à un usage hors ligne lors de randonnées « audioguide forestier »
+* Portage en 2020 de l'application sur [iOS](https://apps.apple.com/app/id1538334399)
 *  Création des logiciels métiers à l’aide d’Electron et d’AngluarJS
     * Logiciel de sauvegarde des randonnées et des données du site internet
     * Logiciel de création des randonnées dans un format compatible aux contraintes liées à l’utilisation grand publique
@@ -56,6 +57,7 @@ React Native
 * Utilisation de Git 
 * JavaScript (Node.js,React, React Native, AngularJS) 
 * [Création d'applications Android](https://play.google.com/store/apps/dev?id=8053368172585015347)
+* [Création d'applications iOS](https://apps.apple.com/app/id1538334399)
 * HTML, JSON, CSS 
 * Python
 * OCaml

@@ -23,6 +23,7 @@ Now in Final-year bachelor’s Student.
 Using Nodejs for the server, MongoDB for the database, and AngularJS for the operation of the administration space. The website had to be simple and easy to understand (Now used by 1000 people in a week in average).
 *	Created the Android application  “[Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto)” using React Native.
 The application had to be adapted for off-line use during "forest audio guide" hikes.
+* Developed in 2020 the [iOS](https://apps.apple.com/app/id1538334399) version
 *	Developed business software using Electron and AngluarJS, backup software for the hikes and the data of the website and software to create hikes in a format compatible with the constraints of public use.
 *	Presented to the press (television, radio, paper) the apps, and got feedback from users
 #### Hiking guide, Association Découverto, Grand-Est, 2017-Présent 
@@ -43,6 +44,7 @@ The application had to be adapted for off-line use during "forest audio guide" h
 * Git 
 * JavaScript (Node.js,React, React Native, AngularJS) 
 * [Android App Developement](https://play.google.com/store/apps/dev?id=8053368172585015347)
+* [iOS App Developement](https://apps.apple.com/app/id1538334399)
 * HTML, JSON, CSS 
 * Python
 * OCaml
