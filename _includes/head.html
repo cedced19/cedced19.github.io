@@ -30,14 +30,12 @@
   <meta name="twitter:cars" content="summary">
   <meta name="twitter:title" content="{{ site.author }}">
   <meta name="twitter:image" content="http://cedced19.github.io/profile.png">
-  <meta name="twitter:site" content="@{{ site.twitter_username }}">
-  <meta name="twitter:author" content="@{{ site.twitter_username }}">
 
   <meta property="og:type" content="website">
   <meta property="og:image" content="http://cedced19.github.io/profile.png">
   <meta property="og:language" content="{{ site.active_lang }}">
   <meta property="og:url" content="{{ site.url }}">
-
+  <meta property="og:description" content="{% if page.title %}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{% else %}{{ site.description[site.active_lang] }}{% endif %}">
   <meta name="google-site-verification" content="daG8-WfmzTnxEOZ0gvyKhFVPyqGcp_MuANWkyM8THK8">
 
   <meta name="theme-color" content="#27ae60">
