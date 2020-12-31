@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>http://cedced19.github.io/review/2020/12/31/review-2020.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://cedced19.github.io/fr/review/2020/12/31/review-2020.html</loc>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+    <url>
         <loc>http://cedced19.github.io/arduino/nodemcu/esp8266/2019/07/31/new-to-esp8266.html</loc>
         <changefreq>monthly</changefreq>
     </url>
