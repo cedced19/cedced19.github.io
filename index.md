@@ -16,9 +16,10 @@ Now in Final-year bachelor’s Student.
 
 ## Curriculum Vitae 
 
-#### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany
+### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany  
 *	Ten-minute presentation in English on the new hybrid application Created technology (iOS and Android): React Native
-#### Developer, Association Découverto, Grand-Est, 2017-Present
+
+### Developer, Association Découverto, Grand-Est, 2017-Present  
 *	Developed the website of the organization: [decouverto.fr](https://decouverto.fr)  
 Using Nodejs for the server, MongoDB for the database, and AngularJS for the operation of the administration space. The website had to be simple and easy to understand (Now used by 1000 people in a week in average).
 *	Created the Android application  “[Les Balades de Découverto](https://play.google.com/store/apps/details?id=com.lesbaladesdedecouverto)” using React Native.
@@ -26,13 +27,13 @@ The application had to be adapted for off-line use during "forest audio guide" h
 * Developed in 2020 the [iOS](https://apps.apple.com/app/id1538334399) version
 *	Developed business software using Electron and AngluarJS, backup software for the hikes and the data of the website and software to create hikes in a format compatible with the constraints of public use.
 *	Presented to the press (television, radio, paper) the apps, and got feedback from users
-#### Hiking guide, Association Découverto, Grand-Est, 2017-Présent 
+
+### Hiking guide, Association Découverto, Grand-Est, 2017-Présent  
 *	Supervising about 20 adults during 20km treks. 
 *	Supervising about 10 children of 10 years old during 10km hikes. 
 *	Explanations and animations of the hike according to the public and the place 
 *	Engaged in meetings with local tourist offices, leisure centers to improve and propose new activities. 
 *	Animated conferences on nature and local history 
-
 
 ## Skills
 
