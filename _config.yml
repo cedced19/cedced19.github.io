@@ -39,7 +39,7 @@ url: "https://cedric-jung.eu" # the base hostname & protocol for your site, e.g.
 github_username:  cedced19
 
 # Build settings
-markdown: CommonMark
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
