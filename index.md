@@ -76,7 +76,7 @@ The application had to be adapted for off-line use during "forest audio guide" h
 
 ## Language
 
-* Français (Langue maternelle)
-* Anglais (Compétence professionnelle)
-* Allemand (Courant)
+* Français (Native language)
+* Anglais (Professional skill)
+* Allemand (Fluent)
 
