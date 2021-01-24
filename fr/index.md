@@ -5,6 +5,11 @@ lang: fr
 ---
 ## Curriculum Vitae 
 
+### Stage à la DZI NEN SNCF Réseau, 18 Janvier-12 Février 2020
+
+* J'étais responsable de la refonte du SharePoint documentant la procédure d'externalisation au sein de SNCF Réseau. J'avais beaucoup de liberté pour atteindre ce but.
+* Cela nécessitait de comprendre en profondeur l'organigramme et le fonctionnement de SNCF Réseau et les enjeux de l'externalisation.
+
 ### Chargé d'Affaire, Centrale Lille Projets, Octobre 2020-Présent
 
 * Centrale Lille Projets est la junior entreprise de l’École Centrale Lille: association loi 1901 composée d’étudiants au sein d’une école ou d’une université, qui est chargée de réaliser des études commandées par des entreprises.

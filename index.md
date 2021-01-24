@@ -16,8 +16,15 @@ Now in Final-year bachelor’s Student.
 
 ## Curriculum Vitae 
 
+### Internship at the DZI NEN SNCF (*Société Nationale des Chemins de fer Français*) Réseau, January 18th-February 12th, 2021
+
+* I was in charge of redesigning the SharePoint documenting the outsourcing process within SNCF Réseau. I had a lot of freedom to achieve this goal.
+* This required an in-depth understanding of SNCF Réseau's organization and the challenges of outsourcing.
+
+
 #### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany
 *	Ten-minute presentation in English on the new hybrid application Created technology (iOS and Android): React Native
+
 #### Developer, Association Découverto, Grand-Est, 2017-Present
 *	Developed the website of the organization: [decouverto.fr](https://decouverto.fr)  
 Using Nodejs for the server, MongoDB for the database, and AngularJS for the operation of the administration space. The website had to be simple and easy to understand (Now used by 1000 people in a week in average).
