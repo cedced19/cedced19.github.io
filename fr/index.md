@@ -5,15 +5,32 @@ lang: fr
 ---
 ## Curriculum Vitae 
 
-### Chargé d'Affaire, Centrale Lille Projets, Octobre 2020-Présent
+### Data Scientist, Helean, Paris, Août 2021 
+* Responsable de la création de nouveaux modèles pour la start-up
 
-* Centrale Lille Projets est la junior entreprise de l’École Centrale Lille: association loi 1901 composée d’étudiants au sein d’une école ou d’une université, qui est chargée de réaliser des études commandées par des entreprises.
+### Assistant externalisation, SNCF Réseau, Lille, janvier 2021
+* En charge de la conception de nouveaux documents pour les processus d'externalisation
 
-### École Centrale de Lille, Septembre 2020-Présent
+### DSI, Centrale Lille Projets, Février 2021 - Février 2022
+
+* Responsable du processus RGPD
+
+### Chargé d'Affaire, Centrale Lille Projets, Octobre 2020 - Présent
+
+*Centrale Lille Projets est la junior entreprise de l’École Centrale Lille: association loi 1901 composée d’étudiants au sein d’une école ou d’une université, qui est chargée de réaliser des études commandées par des entreprises.*
+
+* Signature de plusieurs contrats
+
+### Lead developer, AnalysR, Octobre 2020 - Janvier 2022 
+
+* Responsable du projet étudiant de création d’un langage de
+requête se rapprochant du langage naturel
+
+### École Centrale de Lille, Septembre 2020 - Présent
 
 * Actuellement étudiant en première année à l'École Centrale de Lille
 
-### Développeur, Association Découverto, Grand-Est, 2017-Présent
+### Développeur, Association Découverto, Grand-Est, 2017 - Présent
 *  Création du site internet de l’association [decouverto.fr](https://decouverto.fr)  
 À l’aide de Nodejs pour le serveur, MongoDB pour la base de
 données, et AngularJS pour le fonctionnement de l’espace
@@ -28,14 +45,14 @@ L’application devait être adaptée à un usage hors ligne lors de randonnées
 *  Présentation à la presse (télévision, radio, papier) des logiciels, et
 dialogue avec les utilisateurs
 
-### Guide de randonnée, Association Découverto, Grand-Est, 2017-Présent
+### Guide de randonnée, Association Découverto, Grand-Est, 2017 - Présent
 *  Encadrement d’une vingtaine de personnes adultes lors derandonnées de 20km
 *  Encadrement d’une dizaine d’enfants de 10ans lors derandonnées de 10km
 *  Explications et animations de la randonnée en fonction du public et du lieu
 *  Participation à des réunions avec les offices de tourisme locaux, centres de loisirs afin d’améliorer et de proposer de nouvelles activités
 *  Animation de conférences sur la nature et l’histoire
 
-### Lycée Kleber, Strasbourg, Classe préparatoire, Maths Physique, 2018-2020
+### Lycée Kleber, Strasbourg, Classe préparatoire, Maths Physique, 2018 - 2020
 
 * Option Informatique, classe étoilée
 

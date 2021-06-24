@@ -16,6 +16,29 @@ Now in Final-year bachelor’s Student.
 
 ## Curriculum Vitae 
 
+### Data Scientist, Helean, Paris, August 2021 
+* In charge of creating new models for the start-up
+
+### Outsourcing assistant, SNCF Réseau, Lille, January 2021 
+* In charge of designing new docs for outsourcing processes
+
+### CIO, Centrale Lille Projects, February 2021 - February 2022
+
+* Responsible for the RGPD process
+
+### Business Manager, Centrale Lille Projects, October 2020 - Present
+
+*Centrale Lille Projets is the junior enterprise of École Centrale Lille: an association under the French law of 1901 composed of students from a school or university, which is responsible for carrying out studies commissioned by companies *
+
+* Signature of several contracts
+
+### Lead developer, AnalysR, October 2020 - January 2022 
+
+* In charge of the student project to create a query language
+language close to natural language
+
+Translated with www.DeepL.com/Translator (free version)
+
 ### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany  
 *	Ten-minute presentation in English on the new hybrid application Created technology (iOS and Android): React Native
 
