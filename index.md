@@ -37,8 +37,6 @@ Now in Final-year bachelor’s Student.
 * In charge of the student project to create a query language
 language close to natural language
 
-Translated with www.DeepL.com/Translator (free version)
-
 ### Talk July 3rd 2018 at KarlsruheJS, Karlsruhe, Germany  
 *	Ten-minute presentation in English on the new hybrid application Created technology (iOS and Android): React Native
 
@@ -88,7 +86,7 @@ The application had to be adapted for off-line use during "forest audio guide" h
 
 ## Language
 
-* Français (Langue maternelle)
-* Anglais (Compétence professionnelle)
-* Allemand (Courant)
+* Français (Native language)
+* Anglais (Professional skill)
+* Allemand (Fluent)
 
