@@ -6,3 +6,9 @@ layout: home
 permalink: /
 lang: en
 ---
+
+<h1 class="page-heading">Major projects</h1>
+* [AnalysR: R-coded query language for time-dependent medical data](/assets/pdf/analysr.pdf)
+* [My experience as junior-entrepreneur](/assets/pdf/JE.pdf)
+* [Implementation of ERTMS 3 standard](/assets/pdf/implementation-of-ERTMS-3-standard.pdf)
+* [Developement of Découverto Application](/assets/pdf/application-decouverto.pdf)
