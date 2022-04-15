@@ -9,3 +9,4 @@ lang: fr
 * [Mon expérience en Junior-Entreprise](/assets/pdf/JE.pdf)
 * [Implémentation de la norme ERTMS 3](/assets/pdf/implementation-of-ERTMS-3-standard.pdf)
 * [Développement de l'application Découverto](/assets/pdf/application-decouverto.pdf)
+* [Conférence Transport et Énergie](/assets/pdf/transport-et-energie.pdf)
