@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "bundle exec jekyll build && minify ./assets/main.css  > ./_site/assets/main.css",
-    "publish": "npm run build && gh-pages -d _site -b master",
+    "publish": "npm run build && gh-pages -d _site -b master -r git+https://github.com/cedced19/cedced19.github.io.git",
     "start": "bundle exec jekyll serve --trace",
     "add-plugin": "bundle update"
   },
