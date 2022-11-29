@@ -6,11 +6,13 @@ categories: solar-panel
 lang: fr
 ---
 
-Dans cet article je vais détailler de manière vulgarisée comment je me suis retrouvé à créer mon propre routeur solaire, système permettant de consommer de l'énergie électrique en fonction de la puissance produite par les panneaux solaires. L'article manque d'une structure, je le réviserai plus tard.
+## Introduction
 
-Suite au début de la crise énergétique en 2022, avec mon père, nous nous sommes demandé si la technologie des panneaux solaire n'était pas mature et si nous ne pouvions pas installer nos propres panneaux solaires sans avoir à passer par un installateur. 
+Dans cet article je vais détailler de manière vulgarisée comment je me suis retrouvé à créer mon propre routeur solaire, système permettant de consommer de l'énergie électrique en fonction de la puissance produite par les panneaux solaires.
 
-C'est ce que nous avons fait et c'est ce qui nous a permis d'économiser 10 000€, le seul problème étant que n'ayant pas les certifications requisent pour vendre notre excédent de production. 
+Suite au début de la crise énergétique en 2022, avec mon père, nous nous sommes demandé si la technologie des panneaux solaire n'était pas mature et si nous ne pouvions pas installer nos propres panneaux solaires sans avoir à passer par un installateur. C'est ce que nous avons fait et c'est ce qui nous a permis d'économiser 10 000€, le seul problème par rapport à une installation par un professionnel étant que n'ayant pas les certifications requisent pour vendre notre excédent de production. Il nous faut donc utiliser au maximum notre poduction pour pouvoir avoir un retour sur investissement plus rapide.
+
+## Système d'affichage
 
 Dans un premier temps j'ai conçu un système d'affichage de la puissance consommée totale, consommée sur le réseau, et produite.
 
@@ -27,6 +29,8 @@ J'ai aussi créé une version simplifiée pour avoir accès en un coup d'oeil à
 Le tout se base sur l'utilisation d'un module [ShellyEM](https://www.shelly.cloud/products/shelly-em-smart-home-automation-device/) sorte d'ampèremètre et voltmètre combinés pour faire simple qui me permet donc d'obtenir les puissances sur lesquels je travaille.
 
 Techniquement le serveur permettant de créer cette interface graphique est constitué d'un noyau en [Node.js](https://nodejs.org/fr/) stockant ses informations notamment dans une base de données [InfluxDB](https://www.influxdata.com/). Le code source du serveur se trouve sur [Github](https://github.com/cedced19/solar-panel-watch).
+
+## Système de stockage de l'énergie produite en excès
 
 Par la suite, on a pu constater que ce fonctionnement en regardant uniquement ne permettait pas de "matcher" la courbe de production: ainsi on donnait gratuitement de l'énergie au réseau. Cela est un grand désavantage au niveau du retour sur investissement de notre installation. Mais cela va au-delà puisque à terme, si des systèmes tels ne sont pas mise en place, il peut y avoir des congestions au niveau du réseau. En effet, il faut savoir qu'historiquement le réseau est conçu dans un seul sens: de la centrale électrique vers le consommateur. Or aujourd'hui si chacun installe sa propre installation solaire, il se pourrait que certains jours d'été, il y ait trop de courant au niveau local qui ne pourrait pas être distribué vers d'autres noeuds de consommations comme les industries par exemple.
 
@@ -66,6 +70,8 @@ Voici deux exemples de journées avec une activation basique de la résistance R
 ![Exemple 1](/assets/images/solar-panel-power/activation_example.png)
 ![Exemple 2](/assets/images/solar-panel-power/activation_example_2.png)
 
+## Vers un système de réglage de la puissance plus discret
+
 Ce système de règles basiques a l'avantage d'être simple à mettre en place. Cependant il présente de nombreux désavantages:
 * pour P<500W on perd toute la puissance excédentaire produite, ce qui est dommage puisque la majorité de nos excédents en hiver sont de moins de 500W. 
 * le système une fois programmé est assez figé
@@ -83,7 +89,9 @@ Malheureusement il est à noter que nous ne pouvons pas contrôler de cette faç
 
 Les détails de ce système de réglage de la puissance d'un appareil sont disponibles sur [Github](https://github.com/cedced19/solar-panel-watch). Pour une vision plus "physique" de la chose j'ai rédigé une [note](/assets/pdf/solar-panel-power/triac_usage.pdf) accompagné d'une [feuille de calcul](/assets/pdf/solar-panel-power/alpha_calc.pdf). 
 
-Finalement on peut résumer le système de réglage de la puissance avec ce diagramme:
+## Résumé
+
+Finalement on peut résumer le système de distribution de la puissance avec ce diagramme:
 ![Répartition de la puissance supplémentaire](/assets/images/solar-panel-power/diagramme_solar_panel.png)
 
 Vision globale vulgarisée:

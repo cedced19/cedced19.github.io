@@ -33,9 +33,14 @@ ul, ol, dl, figure,
 /**
  * Images
  */
-img {
+img, iframe {
   max-width: 100%;
+  max-height: 500px;
   vertical-align: middle; }
+
+img {
+    max-height: 500px;
+}
 
 /**
  * Figures
