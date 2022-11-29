@@ -89,7 +89,7 @@ Malheureusement il est à noter que nous ne pouvons pas contrôler de cette faç
 
 Les détails de ce système de réglage de la puissance d'un appareil sont disponibles sur [Github](https://github.com/cedced19/solar-panel-watch). Pour une vision plus "physique" de la chose j'ai rédigé une [note](/assets/pdf/solar-panel-power/triac_usage.pdf) accompagné d'une [feuille de calcul](/assets/pdf/solar-panel-power/alpha_calc.pdf). 
 
-## Résumé
+## Résumé
 
 Finalement on peut résumer le système de distribution de la puissance avec ce diagramme:
 ![Répartition de la puissance supplémentaire](/assets/images/solar-panel-power/diagramme_solar_panel.png)
