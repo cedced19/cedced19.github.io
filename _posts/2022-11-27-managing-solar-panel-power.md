@@ -71,7 +71,7 @@ Here are two examples of days with a basic activation of the R1 resistor:
 ![Example 1](/assets/images/solar-panel-power/activation_example.png)
 ![Example 2](/assets/images/solar-panel-power/activation_example_2.png)
 
-## Vers un système de réglage de la puissance plus continue
+## Towards a finer power control system
 
 This system of basic rules has the advantage of being simple to set up. However it has many disadvantages:
 * for P<500W we lose all the excess power produced, which is a pity since the majority of our excess power in winter is less than 500W. 

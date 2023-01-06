@@ -70,7 +70,7 @@ Voici deux exemples de journées avec une activation basique de la résistance R
 ![Exemple 1](/assets/images/solar-panel-power/activation_example.png)
 ![Exemple 2](/assets/images/solar-panel-power/activation_example_2.png)
 
-## Vers un système de réglage de la puissance plus continue
+## Vers un système de réglage de la puissance plus fin
 
 Ce système de règles basiques a l'avantage d'être simple à mettre en place. Cependant il présente de nombreux désavantages:
 * pour P<500W on perd toute la puissance excédentaire produite, ce qui est dommage puisque la majorité de nos excédents en hiver sont de moins de 500W. 
