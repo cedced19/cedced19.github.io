@@ -70,7 +70,7 @@ Voici deux exemples de journées avec une activation basique de la résistance R
 ![Exemple 1](/assets/images/solar-panel-power/activation_example.png)
 ![Exemple 2](/assets/images/solar-panel-power/activation_example_2.png)
 
-## Vers un système de réglage de la puissance plus discret
+## Vers un système de réglage de la puissance plus continue
 
 Ce système de règles basiques a l'avantage d'être simple à mettre en place. Cependant il présente de nombreux désavantages:
 * pour P<500W on perd toute la puissance excédentaire produite, ce qui est dommage puisque la majorité de nos excédents en hiver sont de moins de 500W. 
@@ -96,3 +96,21 @@ Finalement on peut résumer le système de distribution de la puissance avec ce 
 
 Vision globale vulgarisée:
 ![Vision globale vulgarisée](/assets/images/solar-panel-power/global.png)
+
+## Ajout du 06/01
+
+Après quelques ajustements j'ai enfin pu mettre en place ma vision d'un système activant plusieurs résistances durant les vacances de Noël. 
+![Exemple de contrôle avancé](/assets/images/solar-panel-power/activation_advanced_example.png)
+
+De 10h45 à 11h45 et de 12h15 à 13h, on voit que la consommation totale prend la dynamique de production des panneaux solaires à l'aide de l'activation des résistances du R1 et R2.
+
+On voit plusieurs pic en réinjection qui sont le résultat d'un retard puisque les décisions ont un retard de 4s. Cette valeurs de quelques secondes est lié à ma volonté de faire un système distribué (je ne veux pas qu'il y ait trop de requêtes). Deux solutions à cela, dimminuer cette valeur en la passant à 2s par exemple, ou alors, mettre au point un système plus complexe de contrôle (en utilisant un système PID ou autre résultant d'une modélisation plus fine).
+
+
+## Recommandation
+
+Je recommande ces deux vidéos de [André BUHART](https://f1atb.fr/index.php/fr/) qui explique plus en détail comment un tel système peut fonctionner. Il se trouve qu'il a partager son projet en même temps que moi.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_M0QMEMIU0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m0qxJGlqG4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
