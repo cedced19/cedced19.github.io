@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://cedric-jung.eu/fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedric-jung.eu/fr/" rel="alternate" type="text/html" /><updated>2022-11-29T20:07:20+01:00</updated><id>https://cedric-jung.eu/feed.xml</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG website.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="fr"><title type="html">Création d’un routeur solaire</title><link href="https://cedric-jung.eu/fr/solar-panel/2022/11/27/managing-solar-panel-power.html" rel="alternate" type="text/html" title="Création d’un routeur solaire" /><published>2022-11-27T23:45:40+01:00</published><updated>2022-11-27T23:45:40+01:00</updated><id>https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power</id><content type="html" xml:base="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://cedric-jung.eu/fr/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedric-jung.eu/fr/" rel="alternate" type="text/html" /><updated>2023-01-06T14:16:08+01:00</updated><id>https://cedric-jung.eu/feed.xml</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG website.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="fr"><title type="html">Création d’un routeur solaire</title><link href="https://cedric-jung.eu/fr/solar-panel/2022/11/27/managing-solar-panel-power.html" rel="alternate" type="text/html" title="Création d’un routeur solaire" /><published>2022-11-27T23:45:40+01:00</published><updated>2022-11-27T23:45:40+01:00</updated><id>https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power</id><content type="html" xml:base="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
 
 &lt;p&gt;Dans cet article je vais détailler de manière vulgarisée comment je me suis retrouvé à créer mon propre routeur solaire, système permettant de consommer de l’énergie électrique en fonction de la puissance produite par les panneaux solaires.&lt;/p&gt;
 
@@ -73,7 +73,7 @@ Je dispose donc de deux dispositifs contenant des résistances différentes:&lt;
 &lt;img src=&quot;/assets/images/solar-panel-power/activation_example.png&quot; alt=&quot;Exemple 1&quot; /&gt;
 &lt;img src=&quot;/assets/images/solar-panel-power/activation_example_2.png&quot; alt=&quot;Exemple 2&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;vers-un-système-de-réglage-de-la-puissance-plus-discret&quot;&gt;Vers un système de réglage de la puissance plus discret&lt;/h2&gt;
+&lt;h2 id=&quot;vers-un-système-de-réglage-de-la-puissance-plus-continue&quot;&gt;Vers un système de réglage de la puissance plus continue&lt;/h2&gt;
 
 &lt;p&gt;Ce système de règles basiques a l’avantage d’être simple à mettre en place. Cependant il présente de nombreux désavantages:&lt;/p&gt;
 &lt;ul&gt;
@@ -100,7 +100,24 @@ Je me suis inspiré de la solution de &lt;a href=&quot;https://ptiwatt.kyna.eu/p
 &lt;img src=&quot;/assets/images/solar-panel-power/diagramme_solar_panel.png&quot; alt=&quot;Répartition de la puissance supplémentaire&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Vision globale vulgarisée:
-&lt;img src=&quot;/assets/images/solar-panel-power/global.png&quot; alt=&quot;Vision globale vulgarisée&quot; /&gt;&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><category term="solar-panel" /><summary type="html">Introduction</summary></entry><entry xml:lang="fr"><title type="html">Rétrospective de mon année 2020</title><link href="https://cedric-jung.eu/fr/review/2020/12/31/review-2020.html" rel="alternate" type="text/html" title="Rétrospective de mon année 2020" /><published>2020-12-31T07:45:40+01:00</published><updated>2020-12-31T07:45:40+01:00</updated><id>https://cedric-jung.eu/review/2020/12/31/review-2020</id><content type="html" xml:base="https://cedric-jung.eu/review/2020/12/31/review-2020.html">&lt;p&gt;Les premiers mois de l’années ont été plutôt paisible. En effet, j’ai préparé les concours aux grandes écoles d’ingénieurs qui se sont finalement déroulés en raison de l’épidémie fin juin. 
+&lt;img src=&quot;/assets/images/solar-panel-power/global.png&quot; alt=&quot;Vision globale vulgarisée&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ajout-du-0601&quot;&gt;Ajout du 06/01&lt;/h2&gt;
+
+&lt;p&gt;Après quelques ajustements j’ai enfin pu mettre en place ma vision d’un système activant plusieurs résistances durant les vacances de Noël. 
+&lt;img src=&quot;/assets/images/solar-panel-power/activation_advanced_example.png&quot; alt=&quot;Exemple de contrôle avancé&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;De 10h45 à 11h45 et de 12h15 à 13h, on voit que la consommation totale prend la dynamique de production des panneaux solaires à l’aide de l’activation des résistances du R1 et R2.&lt;/p&gt;
+
+&lt;p&gt;On voit plusieurs pic en réinjection qui sont le résultat d’un retard puisque les décisions ont un retard de 4s. Cette valeurs de quelques secondes est lié à ma volonté de faire un système distribué (je ne veux pas qu’il y ait trop de requêtes). Deux solutions à cela, dimminuer cette valeur en la passant à 2s par exemple, ou alors, mettre au point un système plus complexe de contrôle (en utilisant un système PID ou autre résultant d’une modélisation plus fine).&lt;/p&gt;
+
+&lt;h2 id=&quot;recommandation&quot;&gt;Recommandation&lt;/h2&gt;
+
+&lt;p&gt;Je recommande ces deux vidéos de &lt;a href=&quot;https://f1atb.fr/index.php/fr/&quot;&gt;André BUHART&lt;/a&gt; qui explique plus en détail comment un tel système peut fonctionner. Il se trouve qu’il a partager son projet en même temps que moi.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/_M0QMEMIU0U&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/m0qxJGlqG4s&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Cédric JUNG</name></author><category term="solar-panel" /><summary type="html">Introduction</summary></entry><entry xml:lang="fr"><title type="html">Rétrospective de mon année 2020</title><link href="https://cedric-jung.eu/fr/review/2020/12/31/review-2020.html" rel="alternate" type="text/html" title="Rétrospective de mon année 2020" /><published>2020-12-31T07:45:40+01:00</published><updated>2020-12-31T07:45:40+01:00</updated><id>https://cedric-jung.eu/review/2020/12/31/review-2020</id><content type="html" xml:base="https://cedric-jung.eu/review/2020/12/31/review-2020.html">&lt;p&gt;Les premiers mois de l’années ont été plutôt paisible. En effet, j’ai préparé les concours aux grandes écoles d’ingénieurs qui se sont finalement déroulés en raison de l’épidémie fin juin. 
 Je me souviens avoir beaucoup progressé en Maths et en Physique en mars-avril confiné chez moi à Phalsbourg.&lt;/p&gt;
 
 &lt;p&gt;J’en oublierai presque que j’ai participé à l’élection municipale de ma commune Phalsbourg. Même si ma liste est arrivée deuxième sur cinq, j’en garde un bon souvenir. Cette expérience m’a permis de mieux comprendre les rouages politiques. J’en fais depuis bon usage.&lt;/p&gt;

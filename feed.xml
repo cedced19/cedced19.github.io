@@ -1,4 +1,120 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://cedric-jung.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedric-jung.eu/" rel="alternate" type="text/html" /><updated>2022-11-29T20:07:20+01:00</updated><id>https://cedric-jung.eu/feed.xml</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG website.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">Managing Solar Panel Power</title><link href="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html" rel="alternate" type="text/html" title="Managing Solar Panel Power" /><published>2022-11-27T23:45:40+01:00</published><updated>2022-11-27T23:45:40+01:00</updated><id>https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power</id><content type="html" xml:base="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html">&lt;p&gt;Translation to be done: &lt;a href=&quot;https://cedric-jung.eu/fr/solar-panel/2022/11/27/managing-solar-panel-power.html&quot;&gt;see French version&lt;/a&gt;.&lt;/p&gt;</content><author><name>Cédric JUNG</name></author><category term="solar-panel" /><summary type="html">Translation to be done: see French version.</summary></entry><entry xml:lang="en"><title type="html">My year in review 2020</title><link href="https://cedric-jung.eu/review/2020/12/31/review-2020.html" rel="alternate" type="text/html" title="My year in review 2020" /><published>2020-12-31T07:45:40+01:00</published><updated>2020-12-31T07:45:40+01:00</updated><id>https://cedric-jung.eu/review/2020/12/31/review-2020</id><content type="html" xml:base="https://cedric-jung.eu/review/2020/12/31/review-2020.html">&lt;p&gt;The first months of the year were quite peaceful. In fact, I prepared the competitive exams for the Grandes Ecoles d’Ingénieurs which finally took place because of the epidemic at the end of June. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://cedric-jung.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://cedric-jung.eu/" rel="alternate" type="text/html" /><updated>2023-01-06T14:16:08+01:00</updated><id>https://cedric-jung.eu/feed.xml</id><title type="html">Cédric JUNG</title><subtitle>{&quot;en&quot;=&gt;&quot;Cédric JUNG website.&quot;, &quot;fr&quot;=&gt;&quot;Site de Cédric JUNG.&quot;}</subtitle><author><name>Cédric JUNG</name></author><entry xml:lang="en"><title type="html">Managing Solar Panel Power</title><link href="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html" rel="alternate" type="text/html" title="Managing Solar Panel Power" /><published>2022-11-27T23:45:40+01:00</published><updated>2022-11-27T23:45:40+01:00</updated><id>https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power</id><content type="html" xml:base="https://cedric-jung.eu/solar-panel/2022/11/27/managing-solar-panel-power.html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;In this article, I will explain in layman’s terms how I ended up creating my own solar router, a system that consumes electricity based on the power produced by solar panels.&lt;/p&gt;
+
+&lt;p&gt;Following the start of the energy crisis in 2022, my father and I wondered if solar panel technology was mature enough and if we could install our own solar panels without having to go through an installer. That’s what we did, and it allowed us to save 10,000€. The only problem with this compared to a professional installation was that we didn’t have the required certifications to sell our excess production. We therefore have to use our production to the maximum in order to have a faster return on investment.&lt;/p&gt;
+
+&lt;h2 id=&quot;display-system&quot;&gt;Display system&lt;/h2&gt;
+
+&lt;p&gt;At first, I designed a display system for the total power consumed, consumed on the network, and produced.&lt;/p&gt;
+
+&lt;p&gt;This way, we could know if it was the right time of day to turn on the washing machine (the idea being to always consume as much as possible of what is produced by the solar panels).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/solar-panel-power/graph_example.png&quot; alt=&quot;Graph example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the graph below we can see a typical production of a cloudy autumn day, with the oven being turned on at 11am to cook Sunday’s chicken.&lt;/p&gt;
+
+&lt;p&gt;I also created a simplified version to quickly access the instantaneous production.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/solar-panel-power/home.png&quot; alt=&quot;Home screen capture&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of this is based on using a &lt;a href=&quot;https://www.shelly.cloud/products/shelly-em-smart-home-automation-device/&quot;&gt;ShellyEM&lt;/a&gt; module, a kind of combined ammeter and voltmeter, which allows me to obtain the powers that I work with.&lt;/p&gt;
+
+&lt;p&gt;Technically, the server that creates this graphical interface is composed of a  &lt;a href=&quot;https://nodejs.org/fr/&quot;&gt;Node.js&lt;/a&gt; kernel that stores its information, especially in an &lt;a href=&quot;https://www.influxdata.com/&quot;&gt;InfluxDB&lt;/a&gt; database. The source code of the server can be found on &lt;a href=&quot;https://github.com/cedced19/solar-panel-watch&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;energy-storage-system-for-excess-energy-produced&quot;&gt;Energy storage system for excess energy produced&lt;/h2&gt;
+
+&lt;p&gt;Later, we realized that this approach of only looking at the display was not sufficient to match the production curve: as a result, we were giving energy away to the grid for free. This is a major disadvantage in terms of the return on investment of our installation. But it goes beyond that, because in the long run, if systems like this are not put in place, there could be congestion on the network. It is important to know that historically, the network was designed in one direction: from the power plant to the consumer. However, today, if everyone installs their own solar installation, it is possible that on some summer days, there may be too much current at the local level that could not be distributed to other consumption nodes such as industries, for example.&lt;/p&gt;
+
+&lt;p&gt;Even though research is being done in this field in France and Europe, there seems to be very little political will to think long-term and plan solar panel installations, which are being installed freely and therefore haphazardly. The idea of a “smart grid” therefore seems very far off in France.&lt;/p&gt;
+
+&lt;p&gt;This is how, to return to our subject, the idea of intelligently consuming excess energy produced came about.&lt;/p&gt;
+
+&lt;p&gt;There are three ways to consume a lot of electricity at the scale of a house:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;turn on appliances that consume a lot of energy such as ovens, washing machines…&lt;/li&gt;
+  &lt;li&gt;store energy in the form of a battery to use later&lt;/li&gt;
+  &lt;li&gt;store energy in the form of hot water:&lt;/li&gt;
+  &lt;li&gt;everyone has a water heater and it must be turned on once a day to have hot water at the desired time&lt;/li&gt;
+  &lt;li&gt;others, like us, also have a heat pump with a hot water tank for underfloor heating&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first choice is much too complex to set up and assumes that the system knows that we need to turn on a washing machine. The second requires the purchase of a new, expensive system that requires some maintenance (replacing batteries) and precautions, especially regarding fire risks.&lt;/p&gt;
+
+&lt;p&gt;We therefore decided to focus on the third option: heating water.&lt;/p&gt;
+
+&lt;p&gt;So on my visualization system, I had to set up a system to activate the electric resistance of our heat pump water tanks.
+I therefore have two devices containing different resistances:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;R1 consuming 500W (underfloor heating)&lt;/li&gt;
+  &lt;li&gt;R2 consuming 1800W (hot water)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With these two values, we can have a very simple approach to the excess power P:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;activate resistance R1 with a relay when 500W &amp;lt; P &amp;lt; 1800W&lt;/li&gt;
+  &lt;li&gt;activate resistance R2 with a relay when 1800W &amp;lt; P &amp;lt; 2300W&lt;/li&gt;
+  &lt;li&gt;activate resistance R1 and R2 with a relay when P &amp;gt; 2300W&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is the first solution I implemented having already all the components:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;NodeMCU&lt;/li&gt;
+  &lt;li&gt;Relay&lt;/li&gt;
+  &lt;li&gt;5V power supply&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/solar-panel-power/basic.png&quot; alt=&quot;Basic system&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here are two examples of days with a basic activation of the R1 resistor:
+&lt;img src=&quot;/assets/images/solar-panel-power/activation_example.png&quot; alt=&quot;Example 1&quot; /&gt;
+&lt;img src=&quot;/assets/images/solar-panel-power/activation_example_2.png&quot; alt=&quot;Example 2&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vers-un-système-de-réglage-de-la-puissance-plus-continue&quot;&gt;Vers un système de réglage de la puissance plus continue&lt;/h2&gt;
+
+&lt;p&gt;This system of basic rules has the advantage of being simple to set up. However it has many disadvantages:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;for P&amp;lt;500W we lose all the excess power produced, which is a pity since the majority of our excess power in winter is less than 500W.&lt;/li&gt;
+  &lt;li&gt;the system, once programmed, is rather frozen&lt;/li&gt;
+  &lt;li&gt;in summer we don’t heat the house and therefore we don’t turn on the R1 resistor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So the idea came to use a system using a triac electrical module to vary the power consumption.
+I was inspired by the solution of &lt;a href=&quot;https://ptiwatt.kyna.eu/post/2018/07/23/Fabriquer-un-power-router&quot;&gt;Philippe de Craene&lt;/a&gt; which uses the &lt;a href=&quot;https://fr.aliexpress.com/item/1005001965951718.html?spm=a2g0o.store_pc_groupList.8148356.23.5135230frdD40y&quot;&gt;Dimmer module for 16/24A 600V High Load, 1 Channel, 3.3V/5V logic&lt;/a&gt;. I used the same composting unit as shown on the following diagram.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/solar-panel-power/advanced.png&quot; alt=&quot;Advanced system&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Example of variation of the power supplied to a lamp:&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/yIDccZcvLCg&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Unfortunately, we cannot control the power of our heat pumps and other water heaters in this way, since they are not resistive devices. We are therefore content to use electrical resistances with a lower efficiency. However, it should be remembered that our goal is to consume the excess electrical energy, from an economic point of view for us, we have no economic problem to do this.&lt;/p&gt;
+
+&lt;p&gt;The details of this system for adjusting the power of a device are available on &lt;a href=&quot;https://github.com/cedced19/solar-panel-watch&quot;&gt;Github&lt;/a&gt;. For a more physical point of view of the thing I wrote a &lt;a href=&quot;/assets/pdf/solar-panel-power/triac_usage.pdf&quot;&gt;note&lt;/a&gt; along with a &lt;a href=&quot;/assets/pdf/solar-panel-power/alpha_calc.pdf&quot;&gt;spreadsheet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;Finally, the power distribution system can be summarized with this diagram:
+&lt;img src=&quot;/assets/images/solar-panel-power/diagramme_solar_panel_en.png&quot; alt=&quot;Distribution of additional power&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Simplified overall vision:
+&lt;img src=&quot;/assets/images/solar-panel-power/global.png&quot; alt=&quot;Simplified overall vision&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;added-on-0106&quot;&gt;Added on 01/06&lt;/h2&gt;
+
+&lt;p&gt;After some adjustments, I was finally able to implement my vision of a system activating multiple resistors during the Christmas holidays.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/solar-panel-power/activation_advanced_example.png&quot; alt=&quot;Advanced control example&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;From 10:45 to 11:45 and from 12:15 to 13:00, we see that the total consumption takes on the production dynamics of the solar panels using the activation of the R1 and R2 resistors.&lt;/p&gt;
+
+&lt;p&gt;There are several peaks in re-injection, which are the result of a delay since the decisions have a delay of 4 seconds. This value of a few seconds is linked to my desire to create a distributed system (I do not want there to be too many requests). There are two solutions to this: to decrease this value by setting it to 2 seconds, for example, or to develop a more complex control system (using a PID system or other resulting from more fine modeling).&lt;/p&gt;
+
+&lt;h2 id=&quot;recommandation&quot;&gt;Recommandation&lt;/h2&gt;
+
+&lt;p&gt;I recommend this video by &lt;a href=&quot;https://f1atb.fr/index.php/f1atb-ham-radio/&quot;&gt;André BUHART&lt;/a&gt;, who explains in more detail how such a system can work. It just so happens that he shared his project at the same time as me.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/87h3AHCK4a8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;</content><author><name>Cédric JUNG</name></author><category term="solar-panel" /><summary type="html">Introduction</summary></entry><entry xml:lang="en"><title type="html">My year in review 2020</title><link href="https://cedric-jung.eu/review/2020/12/31/review-2020.html" rel="alternate" type="text/html" title="My year in review 2020" /><published>2020-12-31T07:45:40+01:00</published><updated>2020-12-31T07:45:40+01:00</updated><id>https://cedric-jung.eu/review/2020/12/31/review-2020</id><content type="html" xml:base="https://cedric-jung.eu/review/2020/12/31/review-2020.html">&lt;p&gt;The first months of the year were quite peaceful. In fact, I prepared the competitive exams for the Grandes Ecoles d’Ingénieurs which finally took place because of the epidemic at the end of June. 
 I remember making a lot of progress in Maths and Physics in March-April at my home in Phalsbourg.&lt;/p&gt;
 
 &lt;p&gt;I will almost forget that I took part in the municipal election of my town Phalsbourg. Even if my list came second out of five, I still have good memories of it. This experience gave me a better understanding of how politics works. I’ve been using it ever since.&lt;/p&gt;
