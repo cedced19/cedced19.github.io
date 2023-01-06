@@ -9,7 +9,7 @@ permalink: /license
 
 *La majorité des logiciels de Cédric JUNG sont distribués sous licence MIT.*
 
-### COPYRIGHT (C) 2014-2020 CÉDRIC JUNG
+### COPYRIGHT (C) 2014-2022 CÉDRIC JUNG
 
 L'autorisation est accordée, gracieusement, à toute personne acquérant une copie de ce logiciel et des fichiers de documentation associés (le "Logiciel"), de commercialiser le Logiciel sans restriction, notamment les droits d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de sous-licencier et / ou de vendre des copies du Logiciel, ainsi que d'autoriser les personnes auxquelles le Logiciel est fournie à le faire, sous réserve des conditions suivantes :
 
