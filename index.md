@@ -9,7 +9,7 @@ lang: en
 
 
 <h1 class="page-heading">Publications</h1>
-<h2>Conference Proceedings:</h1>
+<h2>Conference Proceedings:</h2>
 * Jung C., Toguyéni A.K.A. & Ould Bouamama B. (2023). Supervised machine learning from digital twin data for railway switch fault diagnosis. in the proceedings of European Control Conference, June 2023, Bucharest, Roumania 
 
 
